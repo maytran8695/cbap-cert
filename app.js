@@ -245,10 +245,10 @@
     const wrongSet = loadSet(LS_WRONG);
     const results = session.questions.map(q => {
       const chosen = session.answers[q.uid];
-      const correct = chosen === q.correct;
-      if (correct) wrongSet.delete(q.uid);
+      const isCorrect = chosen === q.correct;
+      if (isCorrect) wrongSet.delete(q.uid);
       else wrongSet.add(q.uid);
-      return { ...q, chosen, correct };
+      return { ...q, chosen, isCorrect };
     });
     saveSet(LS_WRONG, wrongSet);
     saveSet(LS_BOOKMARKS, session.bookmarked);
@@ -261,7 +261,7 @@
 
   function renderResult(results) {
     const total = results.length;
-    const correctCount = results.filter(r => r.correct).length;
+    const correctCount = results.filter(r => r.isCorrect).length;
     document.getElementById("score-big").textContent = `${correctCount}/${total}`;
     document.getElementById("score-pct").textContent = `${Math.round((correctCount / total) * 100)}%`;
 
@@ -269,7 +269,7 @@
     for (const r of results) {
       kaStats[r.ka] ??= { total: 0, correct: 0 };
       kaStats[r.ka].total++;
-      if (r.correct) kaStats[r.ka].correct++;
+      if (r.isCorrect) kaStats[r.ka].correct++;
     }
     const kaTable = document.getElementById("ka-table");
     const rows = Object.entries(kaStats)
@@ -285,16 +285,16 @@
   function renderReviewList(results) {
     const container = document.getElementById("review-list");
     const wrongOnly = document.getElementById("filter-wrong-only").checked;
-    const items = wrongOnly ? results.filter(r => !r.correct) : results;
+    const items = wrongOnly ? results.filter(r => !r.isCorrect) : results;
     container.innerHTML = items.map((r, i) => {
       const chosenText = r.chosen ? `${r.chosen}. ${escapeHtml(r.options[r.chosen])}` : "(chưa trả lời)";
       const correctText = `${r.correct}. ${escapeHtml(r.options[r.correct])}`;
       return `
-        <div class="review-item ${r.correct === r.chosen ? "correct" : "wrong"}">
-          <div class="rq-head"><span>${r.ka} · ${r.sourceLabel}</span><span>${r.correct === r.chosen ? "✓ Đúng" : "✗ Sai"}</span></div>
+        <div class="review-item ${r.isCorrect ? "correct" : "wrong"}">
+          <div class="rq-head"><span>${r.ka} · ${r.sourceLabel}</span><span>${r.isCorrect ? "✓ Đúng" : "✗ Sai"}</span></div>
           <p class="rq-text">${escapeHtml(r.question)}</p>
-          <div class="rq-answer ${r.correct === r.chosen ? "" : "wrong-ans"}">Bạn chọn: ${chosenText}</div>
-          ${r.correct !== r.chosen ? `<div class="rq-answer correct-ans">Đáp án đúng: ${correctText}</div>` : ""}
+          <div class="rq-answer ${r.isCorrect ? "" : "wrong-ans"}">Bạn chọn: ${chosenText}</div>
+          ${!r.isCorrect ? `<div class="rq-answer correct-ans">Đáp án đúng: ${correctText}</div>` : ""}
           <div class="rq-expl">${escapeHtml(r.explanation)}</div>
         </div>`;
     }).join("");
@@ -340,7 +340,7 @@
       updateReviewButton();
     });
     document.getElementById("btn-review-wrong-now").addEventListener("click", () => {
-      const wrongQuestions = session.lastResults.filter(r => !r.correct).map(r => QUESTIONS_BY_UID[r.uid]);
+      const wrongQuestions = session.lastResults.filter(r => !r.isCorrect).map(r => QUESTIONS_BY_UID[r.uid]);
       if (wrongQuestions.length === 0) { alert("Không có câu sai nào trong lần làm này!"); return; }
       startSession(shuffle(wrongQuestions), "practice", true);
     });
