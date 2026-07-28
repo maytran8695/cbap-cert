@@ -9,15 +9,18 @@ Browsers block `fetch()` of local JSON when opening `index.html` directly
 (`file://`), so serve it over HTTP:
 
 ```bash
-python3 -m http.server 8000
+npm run dev
+# or: python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
 ## Deploy to Cloudflare Pages
 
-Static site, no build command needed:
+Static site — `package.json`'s `build` script is a no-op so Cloudflare's
+default `npm run build` succeeds even with no bundler configured. In the
+Pages project settings:
 
-- **Build command:** (leave empty)
+- **Build command:** leave empty, or `npm run build` (either works)
 - **Build output directory:** `/`
 
 ## Project structure
