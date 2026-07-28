@@ -1,0 +1,8 @@
+{
+  "name": "cbap-cert",
+  "private": true,
+  "description": "CBAP Mock Exam Trainer — static HTML/CSS/JS, no bundler",
+  "scripts": {
+    "build": "echo 'static site — nothing to build'"
+  }
+}
