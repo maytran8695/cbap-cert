@@ -1,37 +1,55 @@
 :root {
-  --bg: #f6f7f9;
+  --bg: #f2f8f4;
   --card-bg: #ffffff;
-  --text: #1a1d23;
-  --text-muted: #63697a;
-  --border: #e2e5ea;
-  --primary: #2f5fdb;
-  --primary-hover: #274ec2;
+  --text: #1f2b24;
+  --text-muted: #5c6f63;
+  --border: #d9ead9;
+  --primary: #5fa87c;
+  --primary-hover: #4c8f68;
   --danger: #d84343;
   --danger-hover: #c13636;
-  --success: #1f9d55;
-  --success-bg: #e8f8ee;
+  --success: #3f9d5d;
+  --success-bg: #e3f5e9;
   --error-bg: #fdeceb;
-  --chip-bg: #eef1f6;
-  --chip-bg-active: #dde6fb;
+  --chip-bg: #e8f3ea;
+  --chip-bg-active: #cbe8d3;
   --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
 }
 
+:root[data-theme="dark"] {
+  --bg: #17131f;
+  --card-bg: #211c2e;
+  --text: #ece7f5;
+  --text-muted: #ab9dc4;
+  --border: #3a3150;
+  --primary: #b088f9;
+  --primary-hover: #c39ffb;
+  --danger: #e5645f;
+  --danger-hover: #ea7d78;
+  --success: #4cc27c;
+  --success-bg: #1c3427;
+  --error-bg: #3a1e22;
+  --chip-bg: #2a2340;
+  --chip-bg-active: #4a3a72;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14161b;
-    --card-bg: #1d2027;
-    --text: #e8e9ed;
-    --text-muted: #9198a8;
-    --border: #2c303a;
-    --primary: #6b8ff5;
-    --primary-hover: #85a2f7;
+  :root:not([data-theme="light"]) {
+    --bg: #17131f;
+    --card-bg: #211c2e;
+    --text: #ece7f5;
+    --text-muted: #ab9dc4;
+    --border: #3a3150;
+    --primary: #b088f9;
+    --primary-hover: #c39ffb;
     --danger: #e5645f;
     --danger-hover: #ea7d78;
     --success: #4cc27c;
-    --success-bg: #163425;
-    --error-bg: #3a1e1e;
-    --chip-bg: #262a33;
-    --chip-bg-active: #33406b;
+    --success-bg: #1c3427;
+    --error-bg: #3a1e22;
+    --chip-bg: #2a2340;
+    --chip-bg-active: #4a3a72;
     --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
   }
 }
@@ -53,6 +71,22 @@ body {
 }
 
 .hidden { display: none !important; }
+
+.theme-toggle-btn {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  background: var(--chip-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.theme-toggle-btn:hover { background: var(--chip-bg-active); }
 
 .app-header {
   text-align: center;
@@ -278,6 +312,14 @@ body {
   font-weight: 700;
   margin-bottom: 6px;
   display: block;
+}
+.explanation-box p,
+.rq-expl p {
+  margin: 0 0 10px;
+}
+.explanation-box p:last-child,
+.rq-expl p:last-child {
+  margin-bottom: 0;
 }
 
 .quiz-nav {

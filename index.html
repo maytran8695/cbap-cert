@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,17 @@
 </head>
 <body>
 <div id="app">
+  <button id="theme-toggle" class="theme-toggle-btn" type="button">Dark mode</button>
 
   <!-- HOME SCREEN -->
   <section id="screen-home" class="screen">
     <header class="app-header">
       <h1>CBAP Mock Exam Trainer</h1>
-      <p class="subtitle">Luyện đề CBAP theo BABOK v3 — KA3–KA8</p>
+      <p class="subtitle">Practice CBAP mock exams based on BABOK v3 — KA3–KA8</p>
     </header>
 
     <div class="card">
-      <h2>1. Chọn bộ đề</h2>
+      <h2>1. Choose an exam set</h2>
       <div class="option-grid" id="source-select">
         <label class="pill-radio">
           <input type="radio" name="source" value="set1" checked>
@@ -33,13 +34,13 @@
         </label>
         <label class="pill-radio">
           <input type="radio" name="source" value="mixed">
-          <span>Trộn cả 3 bộ <small>(360 câu)</small></span>
+          <span>Mix all 3 sets <small>(360 questions)</small></span>
         </label>
       </div>
     </div>
 
     <div class="card">
-      <h2>2. Lọc theo Knowledge Area</h2>
+      <h2>2. Filter by Knowledge Area</h2>
       <div class="option-grid" id="ka-select">
         <label class="chip"><input type="checkbox" value="KA3" checked> KA3 — Planning &amp; Monitoring</label>
         <label class="chip"><input type="checkbox" value="KA4" checked> KA4 — Elicitation &amp; Collaboration</label>
@@ -49,29 +50,29 @@
         <label class="chip"><input type="checkbox" value="KA8" checked> KA8 — Solution Evaluation</label>
       </div>
       <div class="ka-actions">
-        <button type="button" class="link-btn" id="ka-select-all">Chọn tất cả</button>
-        <button type="button" class="link-btn" id="ka-select-none">Bỏ chọn tất cả</button>
+        <button type="button" class="link-btn" id="ka-select-all">Select all</button>
+        <button type="button" class="link-btn" id="ka-select-none">Deselect all</button>
       </div>
     </div>
 
     <div class="card">
-      <h2>3. Chế độ làm bài</h2>
+      <h2>3. Mode</h2>
       <div class="option-grid" id="mode-select">
         <label class="pill-radio">
           <input type="radio" name="mode" value="practice" checked>
-          <span>Practice <small>Xem đáp án ngay</small></span>
+          <span>Practice <small>Instant feedback</small></span>
         </label>
         <label class="pill-radio">
           <input type="radio" name="mode" value="exam">
-          <span>Exam <small>Làm hết mới chấm, có đồng hồ</small></span>
+          <span>Exam <small>Graded at the end, timed</small></span>
         </label>
       </div>
     </div>
 
     <div class="card">
       <div class="row-between">
-        <button id="btn-start" class="btn btn-primary">Bắt đầu làm bài</button>
-        <button id="btn-review" class="btn btn-secondary" disabled>Ôn lại câu sai / đã đánh dấu (<span id="review-count">0</span>)</button>
+        <button id="btn-start" class="btn btn-primary">Start</button>
+        <button id="btn-review" class="btn btn-secondary" disabled>Review wrong / bookmarked (<span id="review-count">0</span>)</button>
       </div>
     </div>
   </section>
@@ -80,17 +81,17 @@
   <section id="screen-quiz" class="screen hidden">
     <div class="quiz-topbar">
       <div class="quiz-progress">
-        <span id="quiz-position">Câu 1 / 120</span>
+        <span id="quiz-position">Question 1 / 120</span>
         <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
       </div>
       <div id="quiz-timer" class="quiz-timer hidden">03:00:00</div>
-      <button id="btn-exit-quiz" class="btn btn-ghost">Thoát</button>
+      <button id="btn-exit-quiz" class="btn btn-ghost">Exit</button>
     </div>
 
     <div class="card question-card">
       <div class="question-meta">
         <span class="ka-tag" id="question-ka"></span>
-        <button id="btn-bookmark" class="bookmark-btn" title="Đánh dấu câu này để ôn lại">☆</button>
+        <button id="btn-bookmark" class="bookmark-btn" title="Bookmark this question for review">☆</button>
       </div>
       <p class="question-text" id="question-text"></p>
       <div id="options-list" class="options-list"></div>
@@ -98,37 +99,37 @@
     </div>
 
     <div class="quiz-nav">
-      <button id="btn-prev" class="btn btn-secondary">← Câu trước</button>
-      <button id="btn-next" class="btn btn-primary">Câu tiếp →</button>
-      <button id="btn-submit" class="btn btn-danger hidden">Nộp bài</button>
+      <button id="btn-prev" class="btn btn-secondary">← Previous</button>
+      <button id="btn-next" class="btn btn-primary">Next →</button>
+      <button id="btn-submit" class="btn btn-danger hidden">Submit</button>
     </div>
   </section>
 
   <!-- RESULT SCREEN -->
   <section id="screen-result" class="screen hidden">
     <div class="card result-summary">
-      <h2>Kết quả</h2>
+      <h2>Result</h2>
       <div class="score-big" id="score-big">0/0</div>
       <div class="score-pct" id="score-pct">0%</div>
     </div>
 
     <div class="card">
-      <h3>Kết quả theo Knowledge Area</h3>
+      <h3>Score by Knowledge Area</h3>
       <table class="ka-table" id="ka-table"></table>
     </div>
 
     <div class="card">
       <div class="row-between">
-        <h3>Chi tiết từng câu</h3>
-        <label class="chip"><input type="checkbox" id="filter-wrong-only"> Chỉ hiện câu sai</label>
+        <h3>Question review</h3>
+        <label class="chip"><input type="checkbox" id="filter-wrong-only"> Show incorrect only</label>
       </div>
       <div id="review-list"></div>
     </div>
 
     <div class="card">
       <div class="row-between">
-        <button id="btn-review-wrong-now" class="btn btn-secondary">Ôn ngay câu sai của lần này</button>
-        <button id="btn-back-home" class="btn btn-primary">Về trang chủ</button>
+        <button id="btn-review-wrong-now" class="btn btn-secondary">Review this round's mistakes</button>
+        <button id="btn-back-home" class="btn btn-primary">Back to home</button>
       </div>
     </div>
   </section>

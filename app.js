@@ -7,6 +7,7 @@
 
   const LS_BOOKMARKS = "cbap_bookmarks";
   const LS_WRONG = "cbap_wrong";
+  const LS_THEME = "cbap_theme";
 
   /** @type {Record<string, any>} raw datasets keyed by examId */
   const DATA = {};
@@ -43,7 +44,7 @@
         QUESTIONS_BY_UID[u] = { ...q, uid: u, examId, sourceLabel: SET_LABELS[examId] };
       }
       const countEl = document.getElementById(`count-${examId}`);
-      if (countEl) countEl.textContent = `(${data.questions.length} câu)`;
+      if (countEl) countEl.textContent = `(${data.questions.length} questions)`;
     }
   }
 
@@ -84,7 +85,7 @@
 
   function startSession(questions, mode, isReview) {
     if (questions.length === 0) {
-      alert("Không có câu hỏi nào khớp với bộ lọc đã chọn.");
+      alert("No questions match the selected filters.");
       return;
     }
     session = {
@@ -117,7 +118,7 @@
     const q = currentQuestion();
     const total = session.questions.length;
 
-    document.getElementById("quiz-position").textContent = `Câu ${session.index + 1} / ${total}`;
+    document.getElementById("quiz-position").textContent = `Question ${session.index + 1} / ${total}`;
     document.getElementById("progress-fill").style.width = `${((session.index + 1) / total) * 100}%`;
 
     const kaTag = document.getElementById("question-ka");
@@ -153,7 +154,7 @@
     if (showFeedback) {
       explBox.classList.remove("hidden");
       const correct = selected === q.correct;
-      explBox.innerHTML = `<span class="expl-label">${correct ? "✓ Chính xác" : `✗ Sai — đáp án đúng là ${q.correct}`}</span>${escapeHtml(q.explanation)}`;
+      explBox.innerHTML = `<span class="expl-label">${correct ? "✓ Correct" : `✗ Incorrect — correct answer is ${q.correct}`}</span>${formatExplanation(q.explanation)}`;
     } else {
       explBox.classList.add("hidden");
       explBox.innerHTML = "";
@@ -164,13 +165,13 @@
     const nextBtn = document.getElementById("btn-next");
     const submitBtn = document.getElementById("btn-submit");
     if (session.mode === "practice") {
-      nextBtn.textContent = isLast ? "Xem kết quả" : "Câu tiếp →";
+      nextBtn.textContent = isLast ? "View results" : "Next →";
       nextBtn.classList.remove("hidden");
       submitBtn.classList.add("hidden");
       nextBtn.disabled = !showFeedback;
     } else {
       nextBtn.classList.toggle("hidden", isLast);
-      nextBtn.textContent = "Câu tiếp →";
+      nextBtn.textContent = "Next →";
       submitBtn.classList.remove("hidden");
     }
   }
@@ -179,6 +180,13 @@
     const div = document.createElement("div");
     div.textContent = str;
     return div.innerHTML;
+  }
+
+  function formatExplanation(str) {
+    return escapeHtml(str)
+      .split("\n\n")
+      .map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`)
+      .join("");
   }
 
   function selectAnswer(letter) {
@@ -231,7 +239,7 @@
   }
 
   function exitQuiz() {
-    if (!confirm("Thoát bài làm hiện tại? Tiến trình sẽ không được lưu.")) return;
+    if (!confirm("Exit the current session? Your progress will not be saved.")) return;
     stopTimer();
     session = null;
     showScreen("home");
@@ -276,7 +284,7 @@
       .sort((a, b) => a[0].localeCompare(b[0]))
       .map(([ka, s]) => `<tr><td>${ka}</td><td>${s.correct}/${s.total}</td><td>${Math.round((s.correct / s.total) * 100)}%</td></tr>`)
       .join("");
-    kaTable.innerHTML = `<tr><th>KA</th><th>Đúng</th><th>%</th></tr>${rows}`;
+    kaTable.innerHTML = `<tr><th>KA</th><th>Correct</th><th>%</th></tr>${rows}`;
 
     renderReviewList(results);
     document.getElementById("filter-wrong-only").checked = false;
@@ -287,21 +295,41 @@
     const wrongOnly = document.getElementById("filter-wrong-only").checked;
     const items = wrongOnly ? results.filter(r => !r.isCorrect) : results;
     container.innerHTML = items.map((r, i) => {
-      const chosenText = r.chosen ? `${r.chosen}. ${escapeHtml(r.options[r.chosen])}` : "(chưa trả lời)";
+      const chosenText = r.chosen ? `${r.chosen}. ${escapeHtml(r.options[r.chosen])}` : "(not answered)";
       const correctText = `${r.correct}. ${escapeHtml(r.options[r.correct])}`;
       return `
         <div class="review-item ${r.isCorrect ? "correct" : "wrong"}">
-          <div class="rq-head"><span>${r.ka} · ${r.sourceLabel}</span><span>${r.isCorrect ? "✓ Đúng" : "✗ Sai"}</span></div>
+          <div class="rq-head"><span>${r.ka} · ${r.sourceLabel}</span><span>${r.isCorrect ? "✓ Correct" : "✗ Incorrect"}</span></div>
           <p class="rq-text">${escapeHtml(r.question)}</p>
-          <div class="rq-answer ${r.isCorrect ? "" : "wrong-ans"}">Bạn chọn: ${chosenText}</div>
-          ${!r.isCorrect ? `<div class="rq-answer correct-ans">Đáp án đúng: ${correctText}</div>` : ""}
-          <div class="rq-expl">${escapeHtml(r.explanation)}</div>
+          <div class="rq-answer ${r.isCorrect ? "" : "wrong-ans"}">Your answer: ${chosenText}</div>
+          ${!r.isCorrect ? `<div class="rq-answer correct-ans">Correct answer: ${correctText}</div>` : ""}
+          <div class="rq-expl">${formatExplanation(r.explanation)}</div>
         </div>`;
     }).join("");
   }
 
+  // ---------- theme ----------
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    document.getElementById("theme-toggle").textContent = theme === "dark" ? "Light mode" : "Dark mode";
+  }
+
+  function initTheme() {
+    const saved = localStorage.getItem(LS_THEME);
+    const theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    applyTheme(theme);
+  }
+
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    localStorage.setItem(LS_THEME, next);
+    applyTheme(next);
+  }
+
   // ---------- wiring ----------
   function wireEvents() {
+    document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
     document.getElementById("ka-select-all").addEventListener("click", () => {
       document.querySelectorAll("#ka-select input").forEach(i => i.checked = true);
     });
@@ -313,7 +341,7 @@
       const source = document.querySelector('input[name="source"]:checked').value;
       const mode = document.querySelector('input[name="mode"]:checked').value;
       const kaFilter = getSelectedKAs();
-      if (kaFilter.length === 0) { alert("Vui lòng chọn ít nhất một Knowledge Area."); return; }
+      if (kaFilter.length === 0) { alert("Please select at least one Knowledge Area."); return; }
       const questions = buildQuestionList(source, kaFilter);
       startSession(questions, mode, false);
     });
@@ -330,7 +358,7 @@
     document.getElementById("btn-prev").addEventListener("click", goPrev);
     document.getElementById("btn-next").addEventListener("click", goNext);
     document.getElementById("btn-submit").addEventListener("click", () => {
-      if (confirm("Nộp bài ngay bây giờ?")) finishSession();
+      if (confirm("Submit the exam now?")) finishSession();
     });
     document.getElementById("btn-exit-quiz").addEventListener("click", exitQuiz);
 
@@ -341,7 +369,7 @@
     });
     document.getElementById("btn-review-wrong-now").addEventListener("click", () => {
       const wrongQuestions = session.lastResults.filter(r => !r.isCorrect).map(r => QUESTIONS_BY_UID[r.uid]);
-      if (wrongQuestions.length === 0) { alert("Không có câu sai nào trong lần làm này!"); return; }
+      if (wrongQuestions.length === 0) { alert("No incorrect answers in this round!"); return; }
       startSession(shuffle(wrongQuestions), "practice", true);
     });
     document.getElementById("filter-wrong-only").addEventListener("change", () => {
@@ -350,12 +378,13 @@
   }
 
   async function init() {
+    initTheme();
     wireEvents();
     updateReviewButton();
     try {
       await loadData();
     } catch (err) {
-      alert("Không thể tải dữ liệu đề thi. Nếu bạn đang mở file trực tiếp (file://), hãy chạy một local server, ví dụ: python3 -m http.server");
+      alert("Could not load exam data. If you're opening this file directly (file://), run a local server instead, e.g.: python3 -m http.server");
       console.error(err);
     }
   }
