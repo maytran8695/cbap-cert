@@ -1,0 +1,1686 @@
+{
+  "examId": "set1",
+  "title": "CBAP Mock Exam — Standard",
+  "questions": [
+    {
+      "id": 1,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A BA at an insurance company is planning the approach for a claims modernization initiative. The project has a contractual 6-month go-live date, requires formal Legal sign-off on all compliance requirements, and the development team has no Agile experience. Which BA approach is MOST appropriate?",
+      "options": {
+        "A": "Adaptive, because requirements in insurance change frequently",
+        "B": "Hybrid, because all modern projects should combine both approaches",
+        "C": "Adaptive, because iterative delivery reduces the risk of missing the deadline",
+        "D": "Predictive, because the fixed deadline, regulatory sign-off needs, and team experience all favor upfront planning"
+      },
+      "correct": "D",
+      "explanation": "Predictive is indicated when: timelines are contractually fixed, formal sign-offs are required (regulated environment), requirements are relatively stable (well-understood domain), and the team lacks Agile experience. Option A is wrong — Adaptive does not inherently reduce deadline risk when the delivery date is fixed and formal approvals are mandatory. Option C treats Hybrid as a default rather than a reasoned choice. Option D contradicts the scenario — insurance claim processes are well-understood, stable domains."
+    },
+    {
+      "id": 2,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "During BA approach planning, the BA is deciding on the level of formality for requirements documentation. Which factor would MOST strongly push toward higher formality?",
+      "options": {
+        "A": "The Product Owner prefers verbal communication",
+        "B": "The project uses two-week sprints",
+        "C": "The organization is subject to external regulatory audits",
+        "D": "The team is co-located in one office"
+      },
+      "correct": "C",
+      "explanation": "Regulatory audit exposure requires written, auditable documentation — an auditor cannot review verbal agreements. Co-location (A) and PO preference (C) push toward LESS formality. Sprint cadence (D) relates to delivery approach, not documentation formality per se."
+    },
+    {
+      "id": 3,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A BA lists all planned activities: document analysis, workshops, interviews, process mapping, BRD writing, traceability maintenance. What is the PRIMARY purpose of creating this activity list during planning?",
+      "options": {
+        "A": "To enable realistic estimation of BA effort and scheduling",
+        "B": "To justify hiring additional business analysts",
+        "C": "To create a template for future projects",
+        "D": "To impress the sponsor with the volume of BA work"
+      },
+      "correct": "A",
+      "explanation": "The BA activity list feeds effort estimation and scheduling — BAs who skip this often underestimate analysis workload and get pulled into development support before analysis completes. B is the BABOK rationale. A, C, D are incidental side effects at best."
+    },
+    {
+      "id": 4,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A stakeholder analysis places the Legal Officer in the High Power / Low Interest quadrant. She has authority to block the release but is not interested in day-to-day project details. What engagement strategy is MOST appropriate?",
+      "options": {
+        "A": "Monitor her with minimal engagement since her interest is low",
+        "B": "Escalate to the sponsor to have her replaced with a more engaged stakeholder",
+        "C": "Keep her satisfied: brief her regularly and seek her input only on key compliance decisions",
+        "D": "Invite her to all daily standups to increase her interest"
+      },
+      "correct": "C",
+      "explanation": "High Power / Low Interest = Keep Satisfied: regular briefings plus targeted involvement in decisions within her domain. Over-engaging (A) wastes her time and creates friction. Under-engaging (C) risks a late-stage compliance block. D is not a legitimate engagement strategy."
+    },
+    {
+      "id": 5,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA is designing the RACI matrix. For compliance-tagged User Stories, both the Product Owner and the Legal Officer must approve. The Legal Officer's review is only meaningful after business scope is settled. How should the approvals be structured?",
+      "options": {
+        "A": "Sequential: PO approves scope first, then Legal approves compliance aspects",
+        "B": "Either party's approval is sufficient",
+        "C": "Legal approves first since compliance is highest priority",
+        "D": "Parallel approval to save time"
+      },
+      "correct": "A",
+      "explanation": "When one approval depends on the outcome of another, sequential is correct. Legal review of compliance aspects is only meaningful once the business scope/intent is finalized — otherwise Legal may approve something that subsequently changes. Parallel (A) risks rework; C inverts the dependency; D violates the dual-approval requirement."
+    },
+    {
+      "id": 6,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A prior IT project at the organization failed partly because end users were engaged only at UAT. How should the BA apply this lesson when planning stakeholder engagement?",
+      "options": {
+        "A": "Rely on the Claims Manager to represent all end users",
+        "B": "Increase the length of UAT to compensate",
+        "C": "Engage end users in elicitation workshops from the start and consider a champions program",
+        "D": "Skip UAT this time to avoid the failure point"
+      },
+      "correct": "C",
+      "explanation": "The lesson from the failure is late engagement → no ownership → low adoption. The fix is early involvement (workshops from week 1) and peer advocacy (champions). A removes a necessary activity; C repeats the mistake of not hearing end users directly; D addresses the symptom, not the cause."
+    },
+    {
+      "id": 7,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "In planning BA governance, the BA proposes that any change to baselined requirements estimated at 3 or more development days must go to the Change Control Board, while smaller changes can be approved by the PM and BA. What governance concept does this represent?",
+      "options": {
+        "A": "Decision-making thresholds within the decision framework",
+        "B": "Stakeholder analysis",
+        "C": "Requirements traceability",
+        "D": "Requirements prioritization"
+      },
+      "correct": "A",
+      "explanation": "Defining WHICH decisions go to WHICH authority level based on size/impact thresholds is a core part of the decision-making framework in the governance approach. It is not prioritization (ranking requirements), traceability (linking artifacts), or stakeholder analysis."
+    },
+    {
+      "id": 8,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Which statement BEST describes the relationship between the Business Analysis Approach (Task 3.1) and subsequent BABOK tasks?",
+      "options": {
+        "A": "It is finalized after elicitation is complete",
+        "B": "It replaces the need for a project charter",
+        "C": "It is an input to more tasks than any other output in BABOK v3, guiding formality and methods throughout",
+        "D": "It is only used by the PM for project scheduling"
+      },
+      "correct": "C",
+      "explanation": "The BA Approach feeds Tasks 3.2–3.5 and is referenced across KA4–KA8 for formality and method guidance — it is foundational. It is a BA planning artifact (not just PM's), is created BEFORE elicitation, and complements rather than replaces the project charter."
+    },
+    {
+      "id": 9,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA plans an information management approach specifying: BRD in Word on SharePoint, User Stories in Jira with a custom BR-ID field, and a weekly-updated Excel traceability matrix. A developer later asks why he can't just keep requirements in a personal OneNote. The BEST response is:",
+      "options": {
+        "A": "Requirements must live in the agreed repositories so they remain findable, current, traceable, and auditable by everyone who needs them",
+        "B": "OneNote is acceptable if he shares the notebook",
+        "C": "The BA will manually copy his OneNote content weekly",
+        "D": "Personal tools are fine as long as work gets done"
+      },
+      "correct": "A",
+      "explanation": "The IM approach exists precisely to prevent information fragmentation. Personal repositories break traceability, auditability, and single-source-of-truth. C and D create shadow processes with sync burden and error risk; A ignores the governance rationale entirely."
+    },
+    {
+      "id": 10,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "During planning, the BA defines requirement attributes to be captured: Priority (MoSCoW), Complexity, Stability, Compliance Tag, Business Owner. What is the PRIMARY benefit of defining attributes at the planning stage rather than ad hoc later?",
+      "options": {
+        "A": "Consistent attributes across all requirements enable filtering, prioritization, and gap detection at scale",
+        "B": "It eliminates the need for requirement descriptions",
+        "C": "Attributes are required by law in insurance",
+        "D": "It makes the Jira board more colorful"
+      },
+      "correct": "A",
+      "explanation": "Attributes defined upfront ensure every requirement carries consistent metadata — enabling queries like 'Must Have items with no test case.' Ad-hoc attribution produces gaps that make such analysis impossible. B is the BABOK rationale."
+    },
+    {
+      "id": 11,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA proposes measuring their own performance with metrics: post-baseline change rate <10%, first-pass User Story approval >90%, workshop attendance >85%. Which BABOK task does this support?",
+      "options": {
+        "A": "Task 3.5 Identify Business Analysis Performance Improvements",
+        "B": "Task 4.3 Confirm Elicitation Results",
+        "C": "Task 8.1 Measure Solution Performance",
+        "D": "Task 5.3 Prioritize Requirements"
+      },
+      "correct": "A",
+      "explanation": "Task 3.5 covers planning and executing assessment of BA work performance itself. Task 8.1 measures the SOLUTION's performance, not the BA's. This distinction (BA performance vs. solution performance) is a classic exam discriminator."
+    },
+    {
+      "id": 12,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A high post-baseline change rate (25% of requirements changed after sign-off) is discovered during a BA performance assessment. What does this metric MOST likely indicate?",
+      "options": {
+        "A": "Elicitation or confirmation was insufficient — requirements were baselined before they were truly understood",
+        "B": "Change control is working well",
+        "C": "Stakeholders are being unreasonable",
+        "D": "The development team is too slow"
+      },
+      "correct": "A",
+      "explanation": "Excessive post-baseline change signals that the baseline was premature — elicitation gaps, missed stakeholders, or skipped confirmation. It is a leading indicator of BA process quality, which is why it belongs in a BA performance assessment. A, C deflect; D confuses volume of change with quality of control."
+    },
+    {
+      "id": 13,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The organization's culture shows medium-high resistance to change, with senior staff saying 'we've done it this way for 20 years.' How should this cultural finding influence BA PLANNING (not solution design)?",
+      "options": {
+        "A": "Plan for more intensive stakeholder engagement, earlier end-user involvement, and champion identification within the BA approach",
+        "B": "Reduce elicitation activities to avoid provoking resistance",
+        "C": "Recommend cancelling the project",
+        "D": "It should not — culture is the change manager's problem"
+      },
+      "correct": "A",
+      "explanation": "Organizational culture is an explicit planning consideration in BABOK — it calibrates engagement intensity, timing, and communication design. B integrates the finding into the plan. A silos a shared responsibility; C makes elicitation gaps MORE likely; D is disproportionate."
+    },
+    {
+      "id": 14,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "In the governance plan, the BA specifies: 'A verbal yes in a meeting is not a valid approval. Valid approval = written confirmation from the authorized approver on the current document version.' Why is the version qualifier important?",
+      "options": {
+        "A": "Approval of an outdated version does not cover subsequent changes, creating a false sense of baseline",
+        "B": "It allows the BA to skip re-approval after edits",
+        "C": "Versions are only relevant for code, not documents",
+        "D": "It is not important — approval of any version counts"
+      },
+      "correct": "A",
+      "explanation": "An approver who signed v1.0 has not approved the changes in v1.1. Treating stale approvals as current creates untracked scope: stakeholders believe they approved something different from what is being built. This is why re-approval follows material amendment."
+    },
+    {
+      "id": 15,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Which is the BEST example of a decision that should be escalated per a well-designed governance approach, rather than decided by the BA?",
+      "options": {
+        "A": "Choosing between two synonyms in the glossary",
+        "B": "Deciding the order of sections in the BRD",
+        "C": "Two senior stakeholders fundamentally disagree on release scope after facilitation has failed",
+        "D": "Rewording a requirement for clarity without changing meaning"
+      },
+      "correct": "C",
+      "explanation": "Scope disputes between senior stakeholders that survive facilitation exceed BA authority — they go to the defined escalation path (PM mediation, then Sponsor arbitration). A, C, D are within the BA's editorial discretion."
+    },
+    {
+      "id": 16,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA decides that customer-facing survey communications will go through the Customer Service Manager rather than directly from the BA. This decision reflects which planning consideration?",
+      "options": {
+        "A": "Leveraging established, trusted communication channels and respecting organizational relationships",
+        "B": "Avoiding accountability for survey results",
+        "C": "Reducing the BA's workload",
+        "D": "The BA's lack of communication skills"
+      },
+      "correct": "A",
+      "explanation": "Stakeholder engagement planning includes selecting the right MESSENGER, not just the message. Customers trust and recognize their established contact point; a survey from an unknown BA gets lower response rates. This is channel design, not skill deficiency or workload avoidance."
+    },
+    {
+      "id": 17,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A new BA joins mid-project and asks where to find the rules on who approves what. The correct answer references which artifact?",
+      "options": {
+        "A": "The Business Analysis Governance Approach",
+        "B": "The sprint burndown chart",
+        "C": "The test plan",
+        "D": "The project Gantt chart"
+      },
+      "correct": "A",
+      "explanation": "Approval authority, change control, prioritization rules, and escalation paths are documented in the BA Governance Approach (Task 3.3 output). The other artifacts serve scheduling, progress tracking, and testing."
+    },
+    {
+      "id": 18,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "When is it MOST appropriate to update the Business Analysis Approach after it has been approved?",
+      "options": {
+        "A": "When significant context changes occur, such as a shift in delivery approach, major scope change, or repeated process failures identified in performance assessment",
+        "B": "Only at project close as a lessons-learned exercise",
+        "C": "Every week regardless of need",
+        "D": "Never — it is fixed for the project duration"
+      },
+      "correct": "A",
+      "explanation": "The BA Approach is a living plan updated when circumstances materially change — e.g., the organization pivots to Agile mid-project, or Task 3.5 findings reveal the current approach is failing. A is rigid; C is churn without cause; D is too late to be useful."
+    },
+    {
+      "id": 19,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Before a workshop with 15 claims handlers, the BA prepares: session objectives, an agenda circulated 48 hours in advance, an AS-IS process straw model to react to, and logistics (room, whiteboard, remote dial-in). Which task do these activities belong to?",
+      "options": {
+        "A": "Task 4.1 Prepare for Elicitation",
+        "B": "Task 3.2 Plan Stakeholder Engagement",
+        "C": "Task 4.3 Confirm Elicitation Results",
+        "D": "Task 4.2 Conduct Elicitation"
+      },
+      "correct": "A",
+      "explanation": "All are preparation activities: defining scope/objectives, selecting techniques, preparing materials, and logistics — Task 4.1. Conduct (4.2) is the session itself; Confirm (4.3) is post-session validation; 3.2 is the overall engagement strategy set earlier."
+    },
+    {
+      "id": 20,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA wants to understand the actual claim workflow, including undocumented workarounds handlers may not think to mention. Which elicitation technique is MOST likely to surface tacit, undocumented behavior?",
+      "options": {
+        "A": "Observation of handlers doing real work",
+        "B": "Email questionnaire",
+        "C": "Document analysis of the procedures manual",
+        "D": "Survey with closed-ended questions"
+      },
+      "correct": "A",
+      "explanation": "Observation reveals what people actually DO, including workarounds they don't consciously report. Surveys and questionnaires capture what people SAY; the procedures manual documents what SHOULD happen. The gap between documented and actual process is precisely what observation exposes — as with Mike Chen's personal Excel fraud tool."
+    },
+    {
+      "id": 21,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "During a process mapping workshop, a senior handler mentions in passing that he runs all claims over $20,000 through 'his spreadsheet' before assessment. This step appears in no documentation. What should the BA do FIRST?",
+      "options": {
+        "A": "Probe immediately: ask what the spreadsheet does, why, and how often it is used",
+        "B": "Add a requirement to ban personal spreadsheets",
+        "C": "Report the handler to compliance for policy violation",
+        "D": "Ignore it — undocumented steps are out of scope"
+      },
+      "correct": "A",
+      "explanation": "An undocumented process step discovered during elicitation is a discovery goldmine — the BA probes to understand its function, rationale, and risk before making any judgment. A discards critical information; C poisons the elicitation relationship and future candor; D jumps to a solution before understanding the need the workaround serves."
+    },
+    {
+      "id": 22,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA schedules a 90-minute structured interview with the Legal Officer using a prepared question guide organized by regulation area. Why is a structured interview more appropriate here than an open workshop?",
+      "options": {
+        "A": "Compliance elicitation needs precision, confidentiality of legal reasoning, and systematic coverage of regulatory topics — better achieved one-on-one with prepared questions",
+        "B": "Interviews are cheaper",
+        "C": "Workshops are always inferior to interviews",
+        "D": "Legal officers dislike other people"
+      },
+      "correct": "A",
+      "explanation": "Technique selection matches stakeholder and information type. Regulatory requirements demand systematic, precise, well-documented elicitation; a domain expert giving legal opinions needs a focused setting. B captures the reasoning. C overgeneralizes; A and D are not analysis."
+    },
+    {
+      "id": 23,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A customer survey receives 187 responses; 78% report frustration at having to call for claim status updates. How should the BA treat this finding?",
+      "options": {
+        "A": "As statistically invalid because not all 500 customers responded",
+        "B": "As marketing data irrelevant to requirements",
+        "C": "As unconfirmed elicitation results to be analyzed and converted into candidate requirements, then confirmed",
+        "D": "As a confirmed requirement ready for the baseline"
+      },
+      "correct": "C",
+      "explanation": "Survey outputs are elicitation results — raw material. They must be analyzed, translated into candidate requirements (e.g., automated status notifications), and confirmed. 187/500 is a strong response rate for this purpose; the finding is highly relevant to the CSAT objective."
+    },
+    {
+      "id": 24,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Mid-workshop, two handlers disagree strongly: one says manager review takes 'a few hours,' another says 'up to 3 days.' What is the BA's BEST in-session move?",
+      "options": {
+        "A": "Record both statements, note the discrepancy, and plan to verify against system data (e.g., SLA reports) after the session",
+        "B": "Accept the more senior handler's estimate",
+        "C": "End the workshop until they agree",
+        "D": "Take a vote among attendees"
+      },
+      "correct": "A",
+      "explanation": "Conflicting elicitation data should be captured, flagged, and triangulated against objective sources — this is exactly what document analysis of SLA reports enables. Voting and seniority are not evidence; halting the session wastes the opportunity to gather more input. (In the case, both were right: it ranged 0.5–3 days because no SLA existed.)"
+    },
+    {
+      "id": 25,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Which of the following is the BEST example of an output of Task 4.2 Conduct Elicitation?",
+      "options": {
+        "A": "An approved traceability matrix",
+        "B": "A solution recommendation",
+        "C": "Unconfirmed elicitation results: workshop notes, interview transcripts, observation logs, survey data",
+        "D": "A signed BRD"
+      },
+      "correct": "C",
+      "explanation": "Conduct Elicitation produces elicitation results in an UNCONFIRMED state. The BRD (Task 7.1 + 5.5), traceability matrix (5.1), and solution recommendation (7.6) come much later in the workflow."
+    },
+    {
+      "id": 26,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA sends the documented AS-IS process map to the Claims Manager with the message: 'Please review — reply CONFIRMED or list corrections by Friday.' The manager replies with two corrections, which the BA incorporates, and the manager then confirms. Which task was just performed?",
+      "options": {
+        "A": "Task 4.3 Confirm Elicitation Results",
+        "B": "Task 5.5 Approve Requirements",
+        "C": "Task 7.2 Verify Requirements",
+        "D": "Task 4.1 Prepare for Elicitation"
+      },
+      "correct": "A",
+      "explanation": "Checking captured information back with its source for accuracy — including a correction cycle — is Confirm Elicitation Results. It is NOT approval (5.5 is formal authorization of requirements) and NOT verification (7.2 is the BA's own quality check on written requirements)."
+    },
+    {
+      "id": 27,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Why does BABOK insist that CONFIRMED (not raw) elicitation results feed into requirements specification?",
+      "options": {
+        "A": "Errors locked into requirements from unconfirmed sources are far more expensive to fix downstream — at development or UAT",
+        "B": "Confirmation is a billing checkpoint",
+        "C": "Stakeholders prefer to sign things",
+        "D": "Raw results are illegally obtained"
+      },
+      "correct": "A",
+      "explanation": "The cost-of-defect curve: an error caught at confirmation costs a conversation; the same error caught at UAT costs rework across requirements, code, and tests. Confirmation is the cheap quality gate before commitment."
+    },
+    {
+      "id": 28,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "During confirmation, the Claims Manager corrects the BA's draft: manager review time is not 'about 1 day' but '0.5 to 3 days, with no SLA — the 3-day cases are what customers complain about.' What is the significance of this correction?",
+      "options": {
+        "A": "It changes the problem definition: the absence of an SLA and the variance (not the average) is the actionable root-cause insight",
+        "B": "It means the BA should not use averages anywhere",
+        "C": "It proves the manager was hiding information",
+        "D": "Trivial wording preference"
+      },
+      "correct": "A",
+      "explanation": "Confirmation converted a vague average into an actionable finding: no SLA governs the step, and the tail (3-day cases) drives dissatisfaction. This directly shaped the future-state requirement for SLA enforcement with escalation. That is exactly the value confirmation adds."
+    },
+    {
+      "id": 29,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA is eliciting from 45 handlers but cannot interview each individually. The plan: 3 cohort workshops of 15, plus 2 days of floor observation, plus confirmation sessions with the manager and a senior handler. What elicitation risk does this design mitigate?",
+      "options": {
+        "A": "Sponsor disengagement",
+        "B": "Tool licensing constraints",
+        "C": "Elicitation incompleteness — missing edge cases and minority workflows",
+        "D": "Budget overrun"
+      },
+      "correct": "C",
+      "explanation": "Multiple techniques (workshops + observation) across multiple cohorts triangulate the process from different angles, and confirmation catches remaining gaps — directly reducing the risk that important scenarios go un-elicited."
+    },
+    {
+      "id": 30,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A stakeholder emails the BA a 40-page regulatory circular and says 'the requirements are in there somewhere.' Which technique should the BA apply?",
+      "options": {
+        "A": "Document analysis",
+        "B": "Brainstorming",
+        "C": "Focus group",
+        "D": "Observation"
+      },
+      "correct": "A",
+      "explanation": "Extracting requirements-relevant content from existing written material is document analysis. The other techniques target people and ideas, not documents."
+    },
+    {
+      "id": 31,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "During elicitation, the Dev Lead states: 'Claims Tracker has no API — any integration must be batch-file based.' How should the BA categorize this information?",
+      "options": {
+        "A": "An assumption to be validated later at UAT",
+        "B": "Out of scope for BA work",
+        "C": "A technical constraint that will bound future-state design",
+        "D": "A stakeholder requirement"
+      },
+      "correct": "C",
+      "explanation": "This is a constraint — a non-negotiable boundary from the environment. It is not a requirement (nobody 'wants' it) and not an assumption (it is verified fact from the system owner). Capturing constraints during elicitation prevents designing infeasible solutions."
+    },
+    {
+      "id": 32,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Five 45-minute customer interviews are planned in addition to the survey. What does the interview add that the survey cannot provide?",
+      "options": {
+        "A": "Depth: the ability to probe WHY customers feel frustrated and explore unanticipated topics through follow-up questions",
+        "B": "Lower cost per respondent",
+        "C": "Statistical significance",
+        "D": "Larger sample size"
+      },
+      "correct": "A",
+      "explanation": "Surveys give breadth (quantified patterns across many respondents); interviews give depth (probing, follow-ups, discovery of unanticipated issues). They are complementary — which is why the BA planned both."
+    },
+    {
+      "id": 33,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "After a workshop, the BA writes up outputs and circulates them within 24 hours while memories are fresh, asking attendees to flag inaccuracies. This practice PRIMARILY supports:",
+      "options": {
+        "A": "Confirmation accuracy — stakeholders can reliably validate only what they still remember",
+        "B": "Reducing meeting invitations",
+        "C": "BA performance metrics",
+        "D": "Task 5.1 traceability"
+      },
+      "correct": "A",
+      "explanation": "Rapid write-up and circulation is a confirmation best practice: recall decays quickly, and confirmation against faded memory produces false confirmations. Timeliness protects the quality of Task 4.3."
+    },
+    {
+      "id": 34,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A handler workshop surfaces 24 pain points. The BA groups them into 4 root-cause clusters (system fragmentation, manual communication, waiting/queues, undocumented processes) before the confirmation session. Why cluster before confirming?",
+      "options": {
+        "A": "To let stakeholders confirm patterns and priorities efficiently rather than re-litigating 24 individual items",
+        "B": "Clustering is required by law",
+        "C": "To reduce the pain point count for reporting",
+        "D": "To hide unpopular findings"
+      },
+      "correct": "A",
+      "explanation": "Synthesis into root-cause groups makes confirmation efficient and analytically useful — stakeholders validate the pattern-level story that will drive solution design. It is organization, not concealment; every underlying item remains traceable."
+    },
+    {
+      "id": 35,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Which situation would MOST justify a follow-up elicitation session rather than proceeding to specification?",
+      "options": {
+        "A": "All stakeholders confirmed the results without changes",
+        "B": "The workshop ran 10 minutes over time",
+        "C": "Confirmation revealed that document collection (the single largest delay) was described inconsistently by three sources and no objective data exists for it",
+        "D": "A stakeholder used an acronym the BA already knows"
+      },
+      "correct": "C",
+      "explanation": "When confirmation exposes unresolved inconsistency on a materially important topic with no data to triangulate, the correct move is targeted follow-up elicitation. Proceeding to specification would bake uncertainty into the baseline."
+    },
+    {
+      "id": 36,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA discovers during elicitation that customers over 65 strongly prefer postal/fax document submission. This finding is BEST characterized as:",
+      "options": {
+        "A": "Stakeholder characteristic information that will influence future-state design and adoption expectations",
+        "B": "A reason to exclude older customers from the solution",
+        "C": "A compliance requirement",
+        "D": "An error in the survey design"
+      },
+      "correct": "A",
+      "explanation": "Understanding stakeholder segments' behaviors and preferences is legitimate elicitation output that shapes design (e.g., assisted submission channels) and sets realistic adoption assumptions. It is neither an error, an exclusion rationale, nor a regulatory item."
+    },
+    {
+      "id": 37,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "What is the key difference between CONFIRMING elicitation results (4.3) and VALIDATING requirements (7.3)?",
+      "options": {
+        "A": "4.3 is done by developers; 7.3 by testers",
+        "B": "7.3 happens before 4.3",
+        "C": "4.3 checks that captured information accurately reflects what sources conveyed; 7.3 checks that written requirements will deliver the intended business value",
+        "D": "They are the same activity with different names"
+      },
+      "correct": "C",
+      "explanation": "Confirmation = accuracy of capture ('did I record what you said/what happens correctly?'). Validation = value alignment of formal requirements ('if we build exactly this, does it solve your problem?'). Different questions, different stages, both stakeholder-facing."
+    },
+    {
+      "id": 38,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A stakeholder repeatedly cancels elicitation sessions. Per good elicitation and collaboration practice, the BA's FIRST response should be to:",
+      "options": {
+        "A": "Remove the stakeholder's requirements from scope",
+        "B": "Proceed without their input and note it in the risk log only",
+        "C": "Understand the cause (workload, timing, perceived value), adapt the engagement format (shorter/async/delegate), and use the communication plan's alternatives",
+        "D": "Escalate immediately to the Sponsor"
+      },
+      "correct": "C",
+      "explanation": "Collaboration management starts with diagnosis and adaptation — async written input, a shorter slot, or an authorized delegate may resolve it. Escalation is the later step if adapted approaches fail. C and D silently create elicitation gaps on that stakeholder's domain."
+    },
+    {
+      "id": 39,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Objective system data (SLA reports showing 8.2-day average, error logs showing 23%) was gathered before any workshops. What elicitation advantage does leading with document analysis provide?",
+      "options": {
+        "A": "It arms the BA with baseline facts, sharpens workshop questions, and lets stakeholder claims be triangulated against evidence",
+        "B": "It guarantees requirements completeness",
+        "C": "It is the only technique auditors accept",
+        "D": "It eliminates the need to talk to people"
+      },
+      "correct": "A",
+      "explanation": "Document analysis first = informed elicitation: the BA enters workshops knowing the quantified problem, can probe anomalies ('the data says 96% of time is waiting — where does the waiting happen?'), and can test subjective claims against records. It complements — never replaces — human elicitation."
+    },
+    {
+      "id": 40,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA schedules the BA Performance Assessment every 2 sprints rather than only at project close. What is the PRIMARY advantage of this cadence?",
+      "options": {
+        "A": "Problems in the BA process (e.g., rising post-baseline change rate) are detected while there is still time to correct course within the project",
+        "B": "End-of-project assessments are prohibited by BABOK",
+        "C": "It doubles the documentation volume for audits",
+        "D": "It satisfies the timesheet system"
+      },
+      "correct": "A",
+      "explanation": "Periodic in-flight assessment turns Task 3.5 into a corrective mechanism rather than a post-mortem: a failing metric at Sprint 4 can trigger a process fix that benefits Sprints 5-12. A close-only review can document lessons but cannot save the current initiative."
+    },
+    {
+      "id": 41,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "An external auditor asks: 'Prove that compliance requirement CR-005a was implemented and tested.' The BA answers in 5 minutes using a matrix linking CR-005a → US-033 → TC-051 (Passed) → Release v1.0 → Legal sign-off. Which KA5 output made this possible?",
+      "options": {
+        "A": "The Requirements Traceability Matrix (Task 5.1)",
+        "B": "The BA Approach",
+        "C": "The Change Request log",
+        "D": "Prioritized Requirements"
+      },
+      "correct": "A",
+      "explanation": "Bidirectional traceability from regulation to test evidence is the audit-readiness function of the RTM. Prioritization ranks requirements; the CR log tracks changes; the BA Approach is a plan — none provides the requirement-to-evidence chain."
+    },
+    {
+      "id": 42,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "The BA runs a weekly Jira filter: 'User Stories where Business Requirement ID is empty.' What traceability problem does this detect?",
+      "options": {
+        "A": "Orphaned requirements — stories with no link to any business requirement, indicating potential scope creep or missing traceability",
+        "B": "Overdue stories",
+        "C": "Stories without estimates",
+        "D": "Duplicate stories"
+      },
+      "correct": "A",
+      "explanation": "A story with no parent BR either represents untracked scope (someone added work with no business justification link) or a traceability data gap. Weekly orphan detection is a standard traceability hygiene practice."
+    },
+    {
+      "id": 43,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "In a regulated insurance environment with quarterly external audits, what level of traceability formality is appropriate?",
+      "options": {
+        "A": "Full bidirectional traceability with an auditable chain from regulation through requirement, test, and release, including sign-off evidence for compliance items",
+        "B": "Traceability only for rejected requirements",
+        "C": "No traceability — Agile teams don't need it",
+        "D": "Lightweight — links only where convenient"
+      },
+      "correct": "A",
+      "explanation": "Formality is calibrated to regulatory exposure and risk. External audits require demonstrable, complete chains. B reflects BABOK's guidance that formality should match — not exceed and not fall short of — the initiative's needs; here the needs are high."
+    },
+    {
+      "id": 44,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A stakeholder asks: 'Why don't we have AI fraud detection? I never heard a decision about it.' The BA retrieves the rejected requirement BR-047 with its documented CCB rationale (out of scope, no ML budget, deferred to future business case). Which principle of Task 5.2 Maintain Requirements does this illustrate?",
+      "options": {
+        "A": "Only Must Have requirements are maintained",
+        "B": "Maintenance ends at project close",
+        "C": "Requirements in ANY state — including rejected — are maintained with rationale, preserving the decision audit trail",
+        "D": "Rejected requirements should be deleted to keep the repository clean"
+      },
+      "correct": "C",
+      "explanation": "Task 5.2's input is 'Requirements (any state).' Maintaining rejected items with rationale means questions like this have authoritative answers instead of re-litigated debates. Deleting them (A) destroys the audit trail."
+    },
+    {
+      "id": 45,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Fourteen months after go-live, a new BA team building v2.0 finds every v1.0 requirement with full history: elicitation source, approvals, test results, and post-go-live performance. Which BABOK point does this demonstrate?",
+      "options": {
+        "A": "Task 5.2 maintenance explicitly extends beyond the project lifecycle — requirements are reusable organizational knowledge",
+        "B": "Archives are read-only legal formalities",
+        "C": "New teams should always re-elicit from scratch",
+        "D": "Requirements maintenance was excessive"
+      },
+      "correct": "A",
+      "explanation": "BABOK states maintenance extends beyond the change: requirements serve future enhancements, audits, and disputes. Well-maintained requirements let the v2.0 team absorb context in hours instead of weeks — active knowledge capital, not a dead archive."
+    },
+    {
+      "id": 46,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "In Sprint 6 the Dev Lead suggests 'just changing' a baselined routing threshold from $20K to $30K since 'it's a small tweak.' The BA raises a formal CR instead. Why is the BA correct?",
+      "options": {
+        "A": "Developers are not allowed to have ideas",
+        "B": "The threshold can never change",
+        "C": "The requirement is baselined; the change affects Claims Manager expectations, Finance reporting, and audit parameters — impact must be assessed and the change formally authorized",
+        "D": "BAs must generate paperwork"
+      },
+      "correct": "C",
+      "explanation": "Post-baseline changes go through change control regardless of perceived size, because 'small technical tweaks' can have non-technical ripple effects (business expectations, reports, compliance parameters). The CR process exists to surface exactly those impacts before deciding."
+    },
+    {
+      "id": 47,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "During Sprint 1 prioritization, stakeholders collectively mark 52 of 68 requirements as Must Have, but capacity supports only 40 stories. The BA's BEST move is:",
+      "options": {
+        "A": "Apply the pre-agreed weighted scoring criteria to produce an objective ranking, and facilitate stakeholders to distinguish true blockers from strong preferences",
+        "B": "Let the loudest stakeholder decide",
+        "C": "Cut the 12 items submitted last",
+        "D": "Accept all 52 and hope for the best"
+      },
+      "correct": "A",
+      "explanation": "'Everything is Must Have' is the classic prioritization anti-pattern. The remedy is the pre-agreed basis for prioritization: objective, weighted criteria applied consistently. A defers the collision to delivery; C and D substitute politics/arbitrary order for analysis."
+    },
+    {
+      "id": 48,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "The CTO demands an executive dashboard as Must Have because the CEO's quarterly review is next month — but admits it will be used once. The BA identifies this as:",
+      "options": {
+        "A": "High urgency but low-to-medium priority — time sensitivity conflated with business value",
+        "B": "A defect",
+        "C": "A compliance requirement",
+        "D": "A genuine Must Have"
+      },
+      "correct": "A",
+      "explanation": "Priority = long-term business value; urgency = time sensitivity. A one-time report has high urgency, modest priority. Recognizing the distinction lets the BA propose a lightweight fast-track that doesn't displace genuinely high-value items."
+    },
+    {
+      "id": 49,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Mid-project, a new regulation makes a previously Could Have audit-log enhancement legally mandatory. What should happen to its priority, and via what mechanism?",
+      "options": {
+        "A": "Promote to Must Have through the change control process (e.g., emergency CCB), documenting the regulatory trigger and identifying what gets deferred to make room",
+        "B": "The BA promotes it silently",
+        "C": "Defer it to the next release since baselines shouldn't change",
+        "D": "Nothing — priorities are fixed after baseline"
+      },
+      "correct": "A",
+      "explanation": "Re-prioritization is expected when triggered by external events; regulatory mandates are non-negotiable. The change is executed through governance (documented trigger, CCB decision, offset item identified) — not silently and not deferred, since legal compliance cannot wait."
+    },
+    {
+      "id": 50,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "What does a well-formed Prioritization Results document include BEYOND the ranked list?",
+      "options": {
+        "A": "The BA's personal preferences",
+        "B": "Screenshots of the voting session",
+        "C": "Rationale per classification, explicit dependencies affecting sequence, and a re-prioritization log recording what changed, why, who decided, and when",
+        "D": "Nothing — the list is sufficient"
+      },
+      "correct": "C",
+      "explanation": "BABOK expects rationale (defensible when challenged later), dependency notes (sequencing ≠ importance), and a change log (living-document history). A bare list cannot answer 'why is X above Y?' six months later."
+    },
+    {
+      "id": 51,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A Change Request proposes adding real-time fraud alerts during claim intake. The BA's impact assessment covers: affected requirements, scope, effort, schedule, cost, risk, and traceability updates. Whose decision is approve/defer/reject?",
+      "options": {
+        "A": "The Change Control Board's — the BA provides the assessment and a recommendation; the CCB decides",
+        "B": "The requestor's — they raised it",
+        "C": "The developer who would build it",
+        "D": "The BA's — they did the analysis"
+      },
+      "correct": "A",
+      "explanation": "Task 5.4 separates roles: BA = impact analysis + options + recommendation; CCB = authorized decision. The requestor has authority to REQUEST, not approve. This separation is a frequent CBAP exam pattern."
+    },
+    {
+      "id": 52,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A CR's impact assessment reveals it would add 12 person-days, push the sprint plan by one sprint, and trigger a new GDPR profiling review. The go-live date is contractual. The BA's recommendation of 'Defer to v1.1' is BEST justified because:",
+      "options": {
+        "A": "Deferral avoids all documentation",
+        "B": "The feature has no business value",
+        "C": "The contractual go-live is a hard constraint, the core risk is already partially mitigated by an in-scope feature, and deferral preserves time for the required compliance review",
+        "D": "The requestor is not senior enough"
+      },
+      "correct": "C",
+      "explanation": "A defensible defer recommendation weighs the hard constraint (contractual date) against mitigating factors (existing coverage of the core risk) and unresolved gates (GDPR review). The business case remains sound — the timing is wrong — hence defer, not reject."
+    },
+    {
+      "id": 53,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Which element distinguishes 'Assess Impact on Project' from the core requirements impact assessment in Task 5.4?",
+      "options": {
+        "A": "It adds project-level dimensions: triple constraint trade-offs, stakeholder relationship consequences, strategic alignment, and precedent-setting effects",
+        "B": "It is done by the PMO only",
+        "C": "It only applies to rejected changes",
+        "D": "It repeats the same analysis in different words"
+      },
+      "correct": "A",
+      "explanation": "Requirements impact covers artifacts and technical/compliance effects; project impact covers scope/schedule/cost trade-offs the decision-makers must choose between, plus relational, strategic, and precedent considerations. The CCB needs both perspectives."
+    },
+    {
+      "id": 54,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A CCB approves a late-stage additive change without any impact assessment. Per BABOK, what is the main problem?",
+      "options": {
+        "A": "The decision was made without full information; accountability for consequences is unassignable and the change's ripple effects are unknown",
+        "B": "Approvals require notarization",
+        "C": "The BA loses billable hours",
+        "D": "Nothing — CCBs can decide however they like"
+      },
+      "correct": "A",
+      "explanation": "The Requirements Change Assessment is the CCB's information basis. Approving without it means unknown effort, schedule, risk, and compliance consequences — and when things go wrong, no one can show due diligence was performed."
+    },
+    {
+      "id": 55,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Before initiating approval activities, the BA maps who approves what: BRD → PM + PO + Legal (compliance sections only); User Stories → PO alone; Architecture → CTO. Which Task 5.5 element is this?",
+      "options": {
+        "A": "Understand Stakeholder Roles and Responsibilities in approval",
+        "B": "Conflict Resolution",
+        "C": "Track and Communicate Approval",
+        "D": "Signoff"
+      },
+      "correct": "A",
+      "explanation": "Establishing WHO holds approval authority for WHICH artifacts — including partial-scope authority like Legal's compliance-only sign-off — is the 'understand responsibilities' element that must precede any approval request."
+    },
+    {
+      "id": 56,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "During BRD sign-off, the Legal Officer approves all sections EXCEPT one requirement involving automatic data sharing with a third-party medical provider, citing a missing Data Processing Agreement. The BA's BEST resolution is:",
+      "options": {
+        "A": "Proceed with development anyway since two of three approvers signed",
+        "B": "Delete the requirement permanently",
+        "C": "Facilitate a resolution: amend the requirement to make implementation conditional on a compliant DPA being executed, obtain re-approval, and log the DPA as a project risk",
+        "D": "Remove the Legal Officer from the approval chain"
+      },
+      "correct": "C",
+      "explanation": "A conditional-approval amendment satisfies the compliance concern without losing the business capability: the requirement stands, gated on the DPA. The BA facilitates, amends, re-secures approval, and flags the dependency as a risk. Proceeding without the compliance approver (C) invites regulatory exposure."
+    },
+    {
+      "id": 57,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A developer comments on a User Story in Jira: 'This looks good to me.' The BA does NOT treat this as approval. Why?",
+      "options": {
+        "A": "Approval requires the AUTHORIZED approver (the PO) acting through the agreed mechanism (Jira status change); a peer comment is valuable technical input but not authorization",
+        "B": "Jira comments are legally void",
+        "C": "The BA dislikes the developer",
+        "D": "Developers' opinions are worthless"
+      },
+      "correct": "A",
+      "explanation": "Valid sign-off = right person + right mechanism + current version. The developer lacks approval authority for stories; his review is welcome input. The BA routes the story to the PO for formal status change — exactly the invalid-signoff discipline BABOK expects."
+    },
+    {
+      "id": 58,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "What operationally changes at the moment requirements become Approved (baselined)?",
+      "options": {
+        "A": "They come under change control: development may begin against them, and any modification now requires a formal Change Request",
+        "B": "The BA's job ends",
+        "C": "Testing is no longer needed",
+        "D": "Requirements become permanently immutable"
+      },
+      "correct": "A",
+      "explanation": "Approval creates a baseline, not immutability — changes remain possible but only via the CR/CCB path. It also authorizes downstream work to proceed on a stable foundation. A and C are common misconceptions the exam tests."
+    },
+    {
+      "id": 59,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "'Silence after the document was circulated' and 'a verbal yes in a hallway' are both examples of:",
+      "options": {
+        "A": "Adaptive governance",
+        "B": "Escalation triggers",
+        "C": "Invalid sign-off that a BA must not treat as approval",
+        "D": "Efficient lightweight approvals"
+      },
+      "correct": "C",
+      "explanation": "Neither creates a documented, attributable authorization on a known document version. Treating them as approval produces the classic UAT dispute: 'Who approved this? When? What did they see?'"
+    },
+    {
+      "id": 60,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Which sequence correctly orders the states a requirement passes through before development can rely on it in a predictive approach?",
+      "options": {
+        "A": "Verified → Validated → Approved",
+        "B": "Validated → Verified → Approved",
+        "C": "Approved → Elicited → Confirmed",
+        "D": "Approved → Verified → Validated"
+      },
+      "correct": "A",
+      "explanation": "The BA first verifies quality of the written requirement (7.2), stakeholders then validate value alignment (7.3), and only then is formal approval sought (5.5). Approval of unverified/unvalidated requirements is the anti-pattern."
+    },
+    {
+      "id": 61,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Elicitation confirmed that of an 8.2-day average claim cycle, only ~2.5 hours is active work — 96% is waiting (document collection, manager queue, finance handoff). What is the MOST important implication for current-state analysis?",
+      "options": {
+        "A": "More handlers should be hired",
+        "B": "The average is wrong and should be recomputed",
+        "C": "The root cause of slow processing is waiting between steps, so the solution direction should be eliminating waits (automation of handoffs), not making active steps faster",
+        "D": "Handlers are lazy and need supervision"
+      },
+      "correct": "C",
+      "explanation": "Value-stream logic: when elapsed time is dominated by waiting, speeding up active work barely moves the total. This single confirmed finding redirects the whole solution toward automated document collection, SLA-enforced queues, and automated handoffs."
+    },
+    {
+      "id": 62,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "'Customers complain about processing time' vs. 'MayOptimize is losing competitive position due to failure to meet modern service standards' vs. 'Five non-integrated legacy systems force manual re-entry and manual communication.' These three statements respectively represent:",
+      "options": {
+        "A": "Symptom, business need/problem, root cause",
+        "B": "Risk, issue, action",
+        "C": "Goal, objective, KPI",
+        "D": "Requirement, constraint, assumption"
+      },
+      "correct": "A",
+      "explanation": "The three-layer model: observable symptom → the underlying business problem/need → the analyzed root cause. Solving only symptoms (e.g., adding staff) leaves the causal system intact — distinguishing the layers is the core skill of Task 6.1."
+    },
+    {
+      "id": 63,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A BA assessing organizational culture notes: a 2019 IT project failed on adoption, senior handlers are skeptical, and one informal leader's endorsement sways the floor. Why does this belong in CURRENT STATE analysis rather than being left to change management later?",
+      "options": {
+        "A": "Culture constrains what future states are adoptable and directly shapes the change strategy; ignoring it produces technically sound solutions that fail in practice",
+        "B": "Because auditors require a culture section",
+        "C": "It is only relevant for HR",
+        "D": "It doesn't — culture is out of BABOK scope"
+      },
+      "correct": "A",
+      "explanation": "BABOK's Task 6.1 explicitly includes organizational structure and culture: a perfect solution the organization won't adopt delivers zero value. These findings later drove the Champions Program and phased rollout in the change strategy."
+    },
+    {
+      "id": 64,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A capability gap analysis finds: processes work but slowly (automation deficit), five systems function but don't talk (integration deficit), staff are deeply expert but digitally untrained (readiness deficit), and data exists but is fragmented (consolidation deficit). What is the BEST use of this analysis?",
+      "options": {
+        "A": "To define what the future state must ADD (automation, integration) versus LEVERAGE (domain expertise) versus BUILD AROUND (existing systems)",
+        "B": "To postpone the project until all gaps close naturally",
+        "C": "To justify replacing all staff",
+        "D": "To assign blame per department"
+      },
+      "correct": "A",
+      "explanation": "Capability analysis feeds future-state design decisions: leverage strengths (design around handler expertise), close gaps (integration hub), respect what stays (legacy systems). It is a design input, not a blame or delay instrument."
+    },
+    {
+      "id": 65,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Applying 5 Whys to the 23% error rate leads to: errors → manual retyping → systems don't share data → no API between CRM and the claims system. Which statement about this chain is correct?",
+      "options": {
+        "A": "Five Whys always requires exactly five iterations",
+        "B": "The error rate is a symptom of handler incompetence",
+        "C": "The chain ends at a technical root cause; a solution addressing only retyping behavior (e.g., 'be more careful' training) would leave the causal structure intact",
+        "D": "The analysis should stop at 'manual retyping' since that is where errors occur"
+      },
+      "correct": "C",
+      "explanation": "Root cause analysis continues until a cause is found whose removal prevents recurrence. Here, integration eliminates the re-entry step entirely; training on the symptom would not. The technique iterates until the actionable root, not a fixed count."
+    },
+    {
+      "id": 66,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Which of the following belongs in the Current State Description but NOT in the Future State Description?",
+      "options": {
+        "A": "Scope of the solution",
+        "B": "Transition assumptions",
+        "C": "Documented root causes of why performance falls short of the need",
+        "D": "Business goals and objectives"
+      },
+      "correct": "C",
+      "explanation": "Root causes are inherently properties of the CURRENT state (why things underperform now). Goals/objectives, scope, and assumptions are future-state content. This mapping of content-to-artifact is a common exam item."
+    },
+    {
+      "id": 67,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "In defining the future state, the BA tests every proposed feature with: 'Does this directly contribute to ≤3 days processing, <2% errors, or ≥80% CSAT?' A real-time fraud alert fails the test; an automated document portal passes strongly. What planning function is the Need serving here?",
+      "options": {
+        "A": "A staffing model",
+        "B": "A test plan",
+        "C": "A scope filter that prevents scope creep and keeps the future state anchored to the objectives",
+        "D": "A budget cap"
+      },
+      "correct": "C",
+      "explanation": "Using the Need's measurable dimensions as an admission test for future-state elements is BABOK's way of preventing 'nice-to-have' accretion. Features not moving the objectives are deferred or descoped regardless of enthusiasm."
+    },
+    {
+      "id": 68,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Which of the following is the BEST-formed business objective (as opposed to a goal)?",
+      "options": {
+        "A": "Reduce average claim processing time from 8.2 to ≤3 business days within 6 months of go-live, with ≥90% of claims meeting the threshold",
+        "B": "Modernize our technology",
+        "C": "Improve the customer experience substantially",
+        "D": "Become a digital-first insurer"
+      },
+      "correct": "A",
+      "explanation": "Objectives are SMART: specific metric, baseline, target, threshold, timeframe. A, C, D are directional goals — legitimate but unverifiable as stated. The exam frequently asks candidates to pick the measurable formulation."
+    },
+    {
+      "id": 69,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The solution scope explicitly lists 'Claims Tracker decommissioning' and 'customer mobile app' as OUT of v1.0. Six months later a stakeholder is upset the mobile app isn't at go-live. What does this illustrate about out-of-scope documentation?",
+      "options": {
+        "A": "Explicit exclusions with rationale are the defense against assumed inclusion — the BA can point to the documented, communicated boundary rather than debate memories",
+        "B": "The stakeholder should have been excluded from the project",
+        "C": "Everything should be in scope to avoid disappointment",
+        "D": "Out-of-scope lists are pointless since people forget them"
+      },
+      "correct": "A",
+      "explanation": "Undocumented exclusions become assumed inclusions. The documented out-of-scope list (with rationale and communication trail) converts a memory dispute into a reference lookup — and channels the desire into the v1.1 backlog constructively."
+    },
+    {
+      "id": 70,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A constraint states: 'All payments must route through the Finance System — the new solution cannot initiate payments directly.' In future-state design this means:",
+      "options": {
+        "A": "The solution integrates via the Finance System's API to trigger payments, but never executes payments itself — the design must respect the constraint, not work around it",
+        "B": "Payments are out of scope entirely",
+        "C": "Finance staff must be retrained on the new system",
+        "D": "The Finance requirement is negotiable if the CTO agrees"
+      },
+      "correct": "A",
+      "explanation": "Constraints are non-negotiable design boundaries identified BEFORE design. The compliant pattern is an API trigger into the authorized payment system. Designs violating known constraints must be rejected early — discovering the violation late is a planning failure."
+    },
+    {
+      "id": 71,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "An organizational readiness assessment two months before go-live rates: stakeholders mostly ready, process redesign complete, technology 85% (two minor UAT defects), data 94% clean post-scrub. Which conclusion is BEST?",
+      "options": {
+        "A": "Readiness assessments are only done after go-live",
+        "B": "Data must be 100% clean before any go-live",
+        "C": "Readiness is broadly adequate; the residual items (UAT defects, skeptical minority of users) become targeted pre-go-live actions rather than blockers",
+        "D": "Go-live must be postponed indefinitely"
+      },
+      "correct": "C",
+      "explanation": "Readiness assessment converts fuzzy 'are we ready?' anxiety into a punch list: fix the two defects, extra onboarding for the skeptical 10%. It informs the change strategy's final actions — not an automatic stop/go binary."
+    },
+    {
+      "id": 72,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Which pair correctly matches the risk to its PRIMARY source, per the two inputs of Task 6.3?",
+      "options": {
+        "A": "Mike's-spreadsheet single-point-of-failure → current state weakness; customer portal security exposure → new risk introduced by the future state",
+        "B": "Both risks come only from stakeholder interviews",
+        "C": "Neither is a risk since both are known",
+        "D": "Portal security breach → current state; Mike's-spreadsheet dependency → future state"
+      },
+      "correct": "A",
+      "explanation": "Task 6.3 systematically mines BOTH inputs: current-state weaknesses become transition risks (key-person dependency), and future-state elements introduce new risk categories (an external-facing portal creates an attack surface that didn't exist). Knowing a risk doesn't un-risk it."
+    },
+    {
+      "id": 73,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Two risks are linked: if migrated data quality is poor (R2), routing errors rise, handlers lose trust, and adoption (R4) collapses. Why should the BA document this cascade explicitly?",
+      "options": {
+        "A": "Cascades are theoretical and never occur",
+        "B": "So each risk can be assigned to two owners",
+        "C": "Because mitigating R4 (champions, training) will fail if R2 is not mitigated first — the relationship changes mitigation sequencing and priority",
+        "D": "To make the risk register longer"
+      },
+      "correct": "C",
+      "explanation": "Risk relationship mapping prevents tunnel vision: treating R4 in isolation (more training!) while dirty data keeps discrediting the system wastes effort. The cascade makes R2 mitigation a prerequisite — a sequencing insight only visible when links are documented."
+    },
+    {
+      "id": 74,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A risk is assessed as Low probability but Very High impact (customer portal data breach). The chosen responses are: mandatory penetration testing before launch (mitigate) plus IT Security owning the testing protocol and monitoring (transfer). Which statement about this combination is correct?",
+      "options": {
+        "A": "Mitigation reduces probability further; transfer shifts accountability to the party best positioned to manage it — the risk itself is not eliminated, residual risk remains and is monitored",
+        "B": "Low-probability risks never need responses",
+        "C": "Accepting the risk would have been equivalent",
+        "D": "Transfer eliminates the risk entirely"
+      },
+      "correct": "A",
+      "explanation": "Very High impact justifies layered response even at low probability. Transfer reallocates ownership/accountability, not existence, of risk. Acceptance is for low-probability AND low-impact items — a breach is neither trivial nor equivalent."
+    },
+    {
+      "id": 75,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Under what condition is ACCEPT a legitimate risk response per BABOK?",
+      "options": {
+        "A": "When the BA personally judges the risk unimportant",
+        "B": "Accept is never legitimate in regulated industries",
+        "C": "When the cost of mitigation exceeds the expected loss, the residual exposure is consciously documented, and — for higher-impact items — an authorized party signs off on the acceptance",
+        "D": "Whenever mitigation is inconvenient"
+      },
+      "correct": "C",
+      "explanation": "Acceptance is an economically rational, documented, authorized decision — not neglect. The 15-minute data-lag limitation was accepted this way: low severity, monitored, documented. Even regulated industries accept risks; they just document and authorize the acceptance."
+    },
+    {
+      "id": 76,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The gap between current state (5 manual systems, zero automation) and future state (integrated digital platform, ~90% automation) is assessed as a large-scale transformation. What is the DIRECT planning consequence in Task 6.4?",
+      "options": {
+        "A": "A comprehensive change strategy is required: phased rollout, parallel run, champions, cohort training — a 'flip the switch' cutover is inappropriate for this magnitude",
+        "B": "The timeline should be halved to build urgency",
+        "C": "Only the technology plan matters at this scale",
+        "D": "The project should be split into two separate companies"
+      },
+      "correct": "A",
+      "explanation": "Change magnitude calibrates strategy intensity. Incremental change → light strategy; transformation → phased transitions, rollback options, structured adoption support. Magnitude assessment is the first analytical step of Task 6.4."
+    },
+    {
+      "id": 77,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The transition plan defines Phase 1 as a two-branch pilot with the legacy system running in parallel and explicit exit criteria (<5% routing errors, no compliance findings, handler satisfaction >70%) before full rollout. What TWO risk-management functions does this design serve?",
+      "options": {
+        "A": "Early validation before full commitment (a failed pilot damages 2 branches, not 5) and a rollback safety net via the parallel run",
+        "B": "Vendor negotiation leverage and tax benefits",
+        "C": "None — pilots only delay projects",
+        "D": "Cost reduction and marketing"
+      },
+      "correct": "A",
+      "explanation": "Transition states exist for exactly these reasons: staged validation with objective gates, and operational continuity/rollback through parallel running. The exit criteria make 'pilot success' a measured fact rather than an opinion."
+    },
+    {
+      "id": 78,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The fraud-screening module was declared a 'Day 1 non-negotiable' in the change strategy — no soft launch — because the informal spreadsheet-based screening would be retired at go-live. What principle does this illustrate?",
+      "options": {
+        "A": "When the future state ELIMINATES a current-state control at cutover, its replacement must be production-ready at cutover — otherwise the transition creates a control gap",
+        "B": "Fraud features can never be phased in any project",
+        "C": "The spreadsheet should have been kept as permanent backup",
+        "D": "All features must always be Day 1 complete"
+      },
+      "correct": "A",
+      "explanation": "Phasing decisions must map controls: retiring the old fraud check while its replacement is 'beta' would leave large claims unscreened — a transition-created compliance and financial exposure. Features whose predecessors are being switched off cannot be phased."
+    },
+    {
+      "id": 79,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Which pairing correctly distinguishes the PM's project plan from the BA's change strategy?",
+      "options": {
+        "A": "Project plan: milestones, resources, delivery schedule. Change strategy: stakeholder readiness, process transition, adoption monitoring, and benefits realization — ensuring the change actually delivers the intended value",
+        "B": "The change strategy replaces the project plan in Agile",
+        "C": "The project plan covers people; the change strategy covers technology",
+        "D": "They are identical documents with different logos"
+      },
+      "correct": "A",
+      "explanation": "The PM executes delivery; the BA's change strategy ensures the delivered change is adopted and yields value (training design, communication, adoption metrics, contingency triggers). They interlock but answer different questions."
+    },
+    {
+      "id": 80,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A business case maps benefits to requirements and finds that four requirements deliver ~85% of the quantified value, while the customer portal group delivers the remaining ~15% (mostly the CSAT benefit). If cost pressure forces scope cuts, what does this mapping tell decision-makers?",
+      "options": {
+        "A": "The mapping proves no cuts are possible",
+        "B": "Benefits mapping is only for auditors",
+        "C": "Cutting the portal sacrifices most of the CSAT benefit specifically — decision-makers can now trade scope against WHICH objective they are willing to under-deliver",
+        "D": "Cut the four high-value requirements first since they're expensive"
+      },
+      "correct": "C",
+      "explanation": "Requirement-to-benefit mapping converts a generic 'cut something' debate into an explicit objective trade-off: the portal cut is a CSAT cut. This is the BA's core contribution to informed scope decisions under constraint."
+    },
+    {
+      "id": 81,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "An elicitation finding states: 'Handlers manually email customers after each decision; ~15 minutes per claim; no standardization.' The BA converts it to: 'The system shall automatically generate and send a claim decision notification within 15 minutes of the handler recording the decision, via email (mandatory) and SMS (if a mobile number is on file), including claim reference, decision summary, next steps, and contact information.' What Task 7.1 transformation does this represent?",
+      "options": {
+        "A": "Converting a confirmed pain point into a formal, testable, unambiguous requirement statement",
+        "B": "Writing a test case",
+        "C": "Designing the notification service architecture",
+        "D": "Copying stakeholder words verbatim into the BRD"
+      },
+      "correct": "A",
+      "explanation": "Task 7.1 shapes confirmed elicitation 'raw clay' into structured specifications: measurable timing (15 min), defined channels, mandatory content, and conditions. It stays at WHAT level (no architecture) and precedes test design."
+    },
+    {
+      "id": 82,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A draft requirement reads: 'The system shall use PostgreSQL with a normalized schema and foreign keys to store claims.' The BA rewrites it as: 'The system shall store all claim records with a unique identifier, links to customer/policy/documents, and full status history with timestamps.' Why?",
+      "options": {
+        "A": "The original specified HOW (design — the architect's domain); the rewrite specifies WHAT must be stored and linked — the correct abstraction level for a business requirement",
+        "B": "Requirements must never mention data",
+        "C": "The rewrite is shorter",
+        "D": "PostgreSQL is a bad database"
+      },
+      "correct": "A",
+      "explanation": "Abstraction-level discipline: business requirements state what the solution must achieve; technology selection belongs to design. Writing design specs into a BRD locks in decisions the BA has no authority to make and constrains the architect prematurely."
+    },
+    {
+      "id": 83,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Complex auto-routing logic depends on claim type × value × completeness across 24 rule combinations. Which model BEST supplements the text requirement?",
+      "options": {
+        "A": "A decision table enumerating every condition combination and its routing outcome",
+        "B": "A Gantt chart",
+        "C": "A stakeholder onion diagram",
+        "D": "An organization chart"
+      },
+      "correct": "A",
+      "explanation": "Decision tables are BABOK's tool for multi-condition business logic: they force completeness (every combination covered), expose contradictions, and give developers and testers an unambiguous specification. Text alone hides gaps in combinatorial rules."
+    },
+    {
+      "id": 84,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "BABOK's position on models versus text requirements is BEST summarized as:",
+      "options": {
+        "A": "Text replaces models in regulated industries",
+        "B": "Only UML models are acceptable",
+        "C": "Models and text are complementary: text states WHAT precisely; models show structure, flow, and relationships — neither alone suffices for complex requirements",
+        "D": "Models replace text for modern teams"
+      },
+      "correct": "C",
+      "explanation": "Each medium has strengths: text carries precision and testability; models carry context and relationships (a requirement shown inside a swimlane flow is far easier to validate). BABOK treats them as one cohesive output."
+    },
+    {
+      "id": 85,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Which requirement statement violates the UNAMBIGUOUS quality characteristic?",
+      "options": {
+        "A": "'The system shall be fast and user-friendly with appropriate security'",
+        "B": "'The system shall retain claim records for 7 years'",
+        "C": "'The system shall require 2FA for every access to customer credit data'",
+        "D": "'The system shall complete routing within 15 minutes of all mandatory fields being populated'"
+      },
+      "correct": "A",
+      "explanation": "'Fast,' 'user-friendly,' and 'appropriate' are the classic ambiguity blacklist — each reader supplies their own meaning, so UAT pass/fail is undefined. The other options quantify behavior objectively."
+    },
+    {
+      "id": 86,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A draft requirement combines three obligations: 'authenticate with 2FA AND log all access AND display a confirmation banner.' Per the ATOMIC characteristic, the BA should:",
+      "options": {
+        "A": "Split it into three separate requirements, each independently traceable and testable",
+        "B": "Move it to the glossary",
+        "C": "Delete two of the three obligations",
+        "D": "Leave it — fewer requirements look cleaner"
+      },
+      "correct": "A",
+      "explanation": "Atomic = one testable obligation per requirement. Bundled requirements break traceability (which part failed the test?) and change control (a change to the banner shouldn't force re-approval of 2FA). Splitting preserves all content with clean structure."
+    },
+    {
+      "id": 87,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "'The system shall send an automated document request when documents are missing.' Verification flags this as INCOMPLETE. What is missing?",
+      "options": {
+        "A": "Exception and boundary behavior: what happens if the customer doesn't respond, responds partially, or is unreachable — the non-happy paths",
+        "B": "A marketing tagline",
+        "C": "The developer's name",
+        "D": "A cost estimate"
+      },
+      "correct": "A",
+      "explanation": "Completeness = happy path + exceptions + boundaries. Real-world flows fail in predictable ways (48h no response → reminder; 5 days → escalate to handler). Requirements silent on exceptions get improvised — inconsistently — at build time."
+    },
+    {
+      "id": 88,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Two baselined requirements conflict: one routes Motor claims <$10K to Pool A; another routes Motor claims <$15K to Pool A, leaving the $10K–$14,999 band ambiguous. Which quality characteristic failed, and what is the fix?",
+      "options": {
+        "A": "Conciseness; delete both",
+        "B": "Testability; write two test cases",
+        "C": "Consistency; confirm the correct threshold with the business owner and reconcile both requirements to a single rule",
+        "D": "Feasibility; ask the developer to pick one"
+      },
+      "correct": "C",
+      "explanation": "Contradictory requirements = consistency failure. The fix is a business decision (owner confirms the threshold) followed by reconciliation. Developers should never silently resolve business contradictions; two test cases would just institutionalize the conflict."
+    },
+    {
+      "id": 89,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Why does the BA use a structured verification checklist rather than simply reading requirements 'carefully'?",
+      "options": {
+        "A": "To slow down the project deliberately",
+        "B": "Reading carefully is impossible",
+        "C": "Consistency (every requirement judged by the same standard), completeness (no quality dimension skipped), and reproducibility (another BA can see why each item passed or was flagged)",
+        "D": "Checklists are required for ISO certification"
+      },
+      "correct": "C",
+      "explanation": "Judgment-only review drifts: fatigue, familiarity, and time pressure cause uneven scrutiny. The checklist operationalizes the 8 quality characteristics into a repeatable gate applied to all 78 requirements identically."
+    },
+    {
+      "id": 90,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A requirement is well-written (passes verification) but, when walked through with the Claims Manager, turns out to solve the wrong problem. Which statement is correct?",
+      "options": {
+        "A": "It passed Verification (7.2 — is it well-written?) but failed Validation (7.3 — does it deliver the needed value?); both gates are necessary and test different things",
+        "B": "The Claims Manager should be overruled",
+        "C": "Validation failed, therefore verification was wasted effort",
+        "D": "Verification failed"
+      },
+      "correct": "A",
+      "explanation": "The two-gate model: a requirement can be beautifully specified and still wrong (passes 7.2, fails 7.3), or right in intent but untestably written (fails 7.2, passes 7.3 conceptually). Only requirements passing BOTH proceed to approval."
+    },
+    {
+      "id": 91,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "During a validation walkthrough, the Claims Manager changes a dashboard threshold from 'no update in 3 days' to 'no update in 1 business day.' What must happen to the amended requirement BEFORE it is treated as validated?",
+      "options": {
+        "A": "The BA updates the requirement, re-verifies the amended text against quality characteristics, and re-confirms it with the stakeholder",
+        "B": "The developer decides whether the change is worth it",
+        "C": "It goes directly to the CCB",
+        "D": "Nothing — verbal agreement in the session suffices permanently"
+      },
+      "correct": "A",
+      "explanation": "An amendment re-opens both gates for the changed text: re-verify (is the new wording still atomic, testable, consistent?) then re-validate. Pre-baseline, this cycle is BA + stakeholder collaboration — no CCB needed yet."
+    },
+    {
+      "id": 92,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "In the same validation session, the manager asks: 'What happens when I'm on leave and claims queue in my inbox past SLA?' No requirement covers this. This is a validation outcome of type:",
+      "options": {
+        "A": "Gap — a missing requirement discovered through scenario walkthrough, leading to a new requirement (deputy-manager routing) that is then verified and validated",
+        "B": "Stakeholder obstruction",
+        "C": "Wrong direction — return to elicitation entirely",
+        "D": "Correction to an existing requirement"
+      },
+      "correct": "A",
+      "explanation": "Validation findings come in kinds: confirmed / corrected / gap / wrong-direction. A realistic scenario exposing an uncovered case is a gap; the remedy is a new requirement through the normal verify-validate cycle — exactly why walkthroughs beat 'read this 45-page document.'"
+    },
+    {
+      "id": 93,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The BA validates compliance requirements first with Legal, fraud and routing next with the Claims Manager and technical leads, and bulk-reviews reporting requirements asynchronously. What principle drives this design?",
+      "options": {
+        "A": "Risk-based validation prioritization: requirements whose wrongness has the severest consequences (regulatory findings, systematic routing errors, financial loss) get the deepest, earliest scrutiny",
+        "B": "Legal always goes first by law",
+        "C": "Asynchronous review is always inferior",
+        "D": "Alphabetical order of stakeholders"
+      },
+      "correct": "A",
+      "explanation": "Stakeholder time is finite; validation depth is allocated by risk-if-wrong. Compliance errors mean regulatory findings; routing errors are systematic; a reporting label error is trivially fixed. Tiering focuses scarce attention where it matters most."
+    },
+    {
+      "id": 94,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Why does the BA present requirements WITHIN a TO-BE process flow during validation rather than sending the raw requirements list?",
+      "options": {
+        "A": "Lists are forbidden in BABOK",
+        "B": "To hide weak requirements among strong ones",
+        "C": "Context enables judgment: a stakeholder can assess 'the fraud score appears at Step 5a before assessment begins' far more reliably than an isolated numbered statement",
+        "D": "Process diagrams look impressive"
+      },
+      "correct": "C",
+      "explanation": "Requirements in workflow context let stakeholders simulate their real work and spot timing, sequence, and gap issues (like the on-leave scenario). Isolated statements invite superficial 'looks fine' responses — the enemy of real validation."
+    },
+    {
+      "id": 95,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "After Tasks 7.1–7.3 the BA has 79 validated requirements. What does Task 7.4 (Define Requirements Architecture) add that the flat list lacks?",
+      "options": {
+        "A": "Prettier fonts",
+        "B": "A replacement for traceability",
+        "C": "Structure: capability groupings, dependency relationships, goal-coverage mapping, and detection of gaps and overlaps invisible in a flat list",
+        "D": "More requirements"
+      },
+      "correct": "C",
+      "explanation": "Architecture reveals what a list hides: which requirement blocks which, whether every goal is adequately covered, and where duplicates or gaps sit. It's how the BA discovered Goal 5 was under-covered and two notification requirements overlapped."
+    },
+    {
+      "id": 96,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Architecture analysis shows CRM integration is a prerequisite for BOTH auto-routing and the customer portal. The PM concludes: 'If CRM integration slips, two major capabilities are blocked — front-load it into the first development sprint.' This decision was enabled by which architecture component?",
+      "options": {
+        "A": "The color scheme of the diagram",
+        "B": "The out-of-scope list",
+        "C": "The dependency map",
+        "D": "The glossary"
+      },
+      "correct": "C",
+      "explanation": "Dependency mapping surfaces critical-path concentration: one requirement gating multiple capabilities is the highest schedule risk. This sequencing insight is invisible in a flat requirements list — the canonical payoff of Task 7.4."
+    },
+    {
+      "id": 97,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The BA produces different 'views' of the same requirements: a one-page goal-coverage map for the Sponsor, a compliance-by-regulation matrix for Legal, a build-order dependency tree for the Dev Lead. What is TRUE of these views?",
+      "options": {
+        "A": "Views replace the requirements themselves",
+        "B": "Only one view can be official",
+        "C": "Each is a different lens on the SAME underlying requirement set, tailored to a stakeholder's information need — no new information is created",
+        "D": "Each view contains different requirements"
+      },
+      "correct": "C",
+      "explanation": "Views reorganize; they don't multiply content. The Sponsor asks 'do we cover all goals?', Legal asks 'which requirement satisfies which article?', the Dev Lead asks 'what do I build first?' — same 87 requirements, three lenses."
+    },
+    {
+      "id": 98,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Architecture review finds Goal 5 (eliminate undocumented processes) is supported by only one requirement, and no requirement covers system behavior when the Finance API is unavailable. What TWO architecture functions do these findings represent?",
+      "options": {
+        "A": "Goal-coverage gap detection and functional gap detection — both leading to traceability correction or new requirements",
+        "B": "Approval and sign-off",
+        "C": "Budgeting and staffing",
+        "D": "Prioritization and estimation"
+      },
+      "correct": "A",
+      "explanation": "Systematic architecture analysis catches (a) under-covered goals — fixed by correcting a missing traceability tag, and (b) uncovered failure scenarios — fixed by a new retry/fallback requirement. Both escaped item-by-item review."
+    },
+    {
+      "id": 99,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "In Task 7.5, why must the BA present MULTIPLE design options rather than a single preferred solution?",
+      "options": {
+        "A": "A single option hides trade-offs; multiple options make cost/capability/risk/speed trade-offs explicit so decision-makers can choose deliberately — the BA enables informed choice rather than making the choice by omission",
+        "B": "Because stakeholders enjoy meetings",
+        "C": "Regulations mandate exactly three options",
+        "D": "To triple the documentation volume"
+      },
+      "correct": "A",
+      "explanation": "Presenting one option is effectively deciding for the stakeholders while appearing neutral. Options with explicit trade-offs (custom-build vs. SaaS vs. extend-legacy) put the real decision — what to trade for what — in the authorized hands."
+    },
+    {
+      "id": 100,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A SaaS platform option would deliver all capabilities but needs 8–12 months of implementation against a contractual 6-month go-live. How should the BA treat this option?",
+      "options": {
+        "A": "Flag it as violating a hard constraint and disqualify it for the current release, while noting it may merit evaluation for the long-term roadmap",
+        "B": "Ask the customer to extend the contract unilaterally",
+        "C": "Hide it from the comparison",
+        "D": "Recommend it anyway because it is the best long-term product"
+      },
+      "correct": "A",
+      "explanation": "Constraint-violating options are documented and clearly labeled — transparency shows due diligence — but cannot be recommended for the constrained release. Preserving it as a v2.0 roadmap candidate keeps the analysis honest and useful."
+    },
+    {
+      "id": 101,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Requirement allocation for the 'extend legacy system' option reveals two in-scope portal requirements (mobile responsiveness, custom upload types) that the legacy architecture cannot deliver. Why does allocation matter here?",
+      "options": {
+        "A": "Allocation is only for the winning option",
+        "B": "The two requirements should be silently deleted",
+        "C": "Allocation exposes capability gaps per option: choosing this option means explicitly accepting those requirements as undeliverable — a fact decision-makers must see BEFORE choosing, not discover at UAT",
+        "D": "It doesn't — allocation is bookkeeping"
+      },
+      "correct": "C",
+      "explanation": "Mapping every requirement to a delivering component per option is the coverage proof. Gaps become explicit acceptance decisions with known consequences (here: CSAT goal risk) rather than late-stage surprises."
+    },
+    {
+      "id": 102,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "In value analysis, Option A costs more upfront but delivers the full portal (high CSAT confidence) and needs no re-architecture; Option C is cheaper now but delivers a limited portal (~50% of the CSAT benefit) and requires re-architecture in year 3–4. On a risk-adjusted 5-year TCO basis, Option A wins. What analytical practices produced this conclusion?",
+      "options": {
+        "A": "Risk-adjusting benefits (discounting Option C's uncertain CSAT value) and extending the cost horizon to include predictable future re-architecture — total value over time, not sticker price",
+        "B": "Averaging the two options",
+        "C": "Following the CTO's preference",
+        "D": "Choosing the cheapest upfront number"
+      },
+      "correct": "A",
+      "explanation": "Naive comparison stops at upfront cost. BABOK's value analysis adjusts benefits for probability of realization and includes lifecycle costs — which reversed the apparent ranking. This is the exam's favorite value-analysis trap."
+    },
+    {
+      "id": 103,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Which statement about the BA's recommendation in Task 7.6 is aligned with BABOK?",
+      "options": {
+        "A": "The BA's recommendation is binding on the CCB",
+        "B": "Recommendations should hide downsides to be persuasive",
+        "C": "The BA MUST make an evidence-based recommendation, acknowledge its trade-offs honestly, and may attach conditions — while decision authority remains with the stakeholders",
+        "D": "The BA presents options neutrally and never recommends, to stay unbiased"
+      },
+      "correct": "C",
+      "explanation": "Refusing to recommend abdicates the analytical role; hiding downsides destroys credibility; claiming decision authority oversteps. The BABOK posture: lead with a reasoned, conditional recommendation ('conditional on penetration testing passing and the Dev Lead confirming the timeline') and let the authorized body decide."
+    },
+    {
+      "id": 104,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The BA's recommendation includes a fallback: 'If the upfront cost of Option A is prohibitive, deliver core processing on Option A's architecture and a simpler portal now, architected for upgrade in the next release.' What does offering this alternative demonstrate?",
+      "options": {
+        "A": "Practical value engineering: preserving the highest-value objectives under a tighter budget by phasing the differentiating capability, rather than forcing a binary all-or-nothing choice",
+        "B": "That Option A was never viable",
+        "C": "A violation of change control",
+        "D": "Indecisiveness"
+      },
+      "correct": "A",
+      "explanation": "Strong recommendations anticipate the decision-makers' real constraints. The phased alternative protects processing-time and error objectives fully while deferring (not abandoning) full portal value — informed flexibility, not weakness."
+    },
+    {
+      "id": 105,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Post-go-live KPIs are defined directly from the future-state objectives: processing ≤3 days, errors <2%, CSAT ≥80%, audit 100%, zero external tools. Why anchor measures to business objectives rather than technical metrics like uptime?",
+      "options": {
+        "A": "Uptime is a KA7 concern",
+        "B": "Auditors ban technical metrics",
+        "C": "Business-objective measures tell you whether the change is delivering intended VALUE; technical metrics matter only insofar as they explain or enable business outcomes — 'measuring what matters, not what's easy'",
+        "D": "Technical metrics are impossible to collect"
+      },
+      "correct": "C",
+      "explanation": "BABOK warns against defaulting to easily-captured system metrics that don't answer 'is the business need being met?' 99.9% uptime with 8-day processing is a well-running failure. Technical measures are supporting, not primary."
+    },
+    {
+      "id": 106,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Before go-live, the BA runs a 'measurement readiness check': can the system actually produce each KPI's data? One integration defect (survey emails failing for addresses with special characters) is found and fixed in UAT. Why perform this check BEFORE go-live?",
+      "options": {
+        "A": "Because measurement points not built into the implemented solution mean baseline and early performance data are unrecoverable — post-hoc measurement planning is a classic failure mode",
+        "B": "It is optional busywork",
+        "C": "To generate more defects",
+        "D": "To delay go-live"
+      },
+      "correct": "A",
+      "explanation": "Task 8.1 belongs before (or at) go-live: if the system can't log the timestamps or trigger the surveys, months of performance data are simply lost. The readiness check converts 'we'll measure later' into verified collection capability on Day 1."
+    },
+    {
+      "id": 107,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Handler adoption rate and portal adoption rate are tracked weekly from Week 1, while CSAT is first formally reported in Month 3. What measurement concept explains the different timing?",
+      "options": {
+        "A": "Leading indicators (adoption) predict outcomes early and enable course correction; lagging indicators (CSAT) need time and sample size to be meaningful — a balanced framework uses both",
+        "B": "Surveys are unreliable and should be delayed indefinitely",
+        "C": "Weekly reporting is only for cheap metrics",
+        "D": "CSAT is less important"
+      },
+      "correct": "A",
+      "explanation": "If adoption is at 60% in Week 2, CSAT will not hit target by Month 3 — the leading signal triggers intervention months before the lagging measure could. Reporting CSAT on <30 responses would be noise, hence the delay for statistical adequacy."
+    },
+    {
+      "id": 108,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Month-2 raw data: adoption 74% (target 85%), portal 41% (target 50%), processing 4.8 days (target ≤3), errors 3.2% (target <2%). A stakeholder concludes 'the solution is failing on four of eight measures.' Per Task 8.2, what is wrong with this conclusion?",
+      "options": {
+        "A": "It reads raw data without analysis: segmentation, trend, and root cause may show the gaps share one or two causes (e.g., an adoption gap in specific branches) rather than solution failure",
+        "B": "The data must be fabricated",
+        "C": "The targets were set too aggressively and should be lowered",
+        "D": "Nothing — the numbers speak for themselves"
+      },
+      "correct": "A",
+      "explanation": "Task 8.2 exists precisely because data ≠ insight. In the case, segmentation showed DCMS-adopted branches at 2.8 days (ON target) — the blended 4.8-day average was an adoption artifact, not a system defect. Wrong reading → wrong (expensive) intervention."
+    },
+    {
+      "id": 109,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Segmentation shows: claims processed in fully-adopting branches average 2.8 days; claims in two low-adoption branches average 7.2 days; blended average 4.8 days. What is the correct root-cause conclusion?",
+      "options": {
+        "A": "More handlers should be hired in the slow branches",
+        "B": "The 2.8-day branches are cutting corners",
+        "C": "The solution performs at target where adopted; the blended shortfall is explained by the adoption gap — fix adoption and the average corrects itself",
+        "D": "The system is too slow and needs performance tuning"
+      },
+      "correct": "C",
+      "explanation": "Correlation of performance with adoption, per-segment, isolates the causal variable. Intervening on the system (tuning) or headcount would spend money on a non-cause. This segmentation-first discipline is the heart of Task 8.2's root cause analysis."
+    },
+    {
+      "id": 110,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Error analysis shows re-entry errors are now 0% (as designed) but a new error type — CRM legacy field-format mismatches in the batch sync — accounts for 67% of the residual 3.2%. It was not caught in UAT because UAT used test data. How should this finding be classified?",
+      "options": {
+        "A": "An enterprise limitation requiring reorganization",
+        "B": "Proof that automation increases errors",
+        "C": "A DEFECT in the integration layer (the system is not doing what was specified for real production data) — fixable via a field-mapping correction, distinct from a design limitation",
+        "D": "A solution limitation to be accepted permanently"
+      },
+      "correct": "C",
+      "explanation": "Defect vs. limitation: the mapping was supposed to work for production data and doesn't → defect (fix the code/mapping). A limitation is when the system does exactly what was specified but the specification itself constrains performance. The classification determines the remedy path."
+    },
+    {
+      "id": 111,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "When presenting Month-2 results, the BA tells the Sponsor: 'DCMS achieves 2.8-day processing where fully adopted; the blended 4.8-day figure reflects two branches without champions. Fixing adoption there is the single highest-leverage action.' Which Task 8.2 element is being performed?",
+      "options": {
+        "A": "Requirements approval",
+        "B": "Risk transfer",
+        "C": "Interpretation — translating analytical findings into accurate, audience-appropriate meaning so stakeholders draw the RIGHT conclusion and see the implied action",
+        "D": "Data collection"
+      },
+      "correct": "C",
+      "explanation": "Interpretation is the communication half of analysis: the same data presented raw ('4.8 days, below target') would have led the Sponsor to conclude 'DCMS is failing.' The BA's framing separates solution performance from change-management performance — accurately."
+    },
+    {
+      "id": 112,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "By Month 4, adoption is fixed (87%) and the mapping defect resolved, yet overall processing sits at 3.4 days. Segmentation shows mixed claims (motor + personal injury, 18% of volume) average 5.8 days because they were deliberately excluded from auto-routing in the v1.0 scope. This residual gap is BEST classified as:",
+      "options": {
+        "A": "An INTERNAL SOLUTION LIMITATION — a known, documented design scope boundary now confirmed to have a quantified performance impact",
+        "B": "An enterprise limitation caused by management",
+        "C": "Random statistical noise",
+        "D": "A defect requiring an emergency hotfix"
+      },
+      "correct": "A",
+      "explanation": "The system does exactly what was designed; the design deliberately excluded complex routing. That is the definition of an internal limitation (missing capability by design) — not a defect. The quantified impact (0.4-day gap) becomes evidence for the v1.1 enhancement recommendation."
+    },
+    {
+      "id": 113,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Portal adoption is 83% among customers under 55 but 24% among those 65+, who state they distrust online uploads and prefer post/fax. The portal itself is well-designed and functional. This is BEST classified as:",
+      "options": {
+        "A": "An EXTERNAL limitation (customer behavioral/demographic factor outside the solution's and largely the organization's control) — addressed by complementary measures such as agent-assisted submission, not by changing the portal",
+        "B": "A defect in the upload feature",
+        "C": "Evidence the portal should be scrapped",
+        "D": "An internal solution limitation — redesign the portal"
+      },
+      "correct": "A",
+      "explanation": "External limitations restrict value from outside the solution. No portal redesign converts a structural preference against digital channels. The correct response is a complementary service (assisted submission via phone) that routes around the behavioral ceiling."
+    },
+    {
+      "id": 114,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "A 15-minute data-refresh lag (batch sync, because the legacy system has no API) has caused zero incorrect decisions in four months of monitoring. The BA classifies it as a low-severity internal limitation and recommends 'document and monitor — no action.' Is this appropriate?",
+      "options": {
+        "A": "Yes — limitation responses are proportionate to impact; a documented, monitored acceptance of a low-severity architectural constraint is legitimate and economically rational",
+        "B": "No — batch processing is always unacceptable",
+        "C": "Yes, but only if it is hidden from stakeholders",
+        "D": "No — every limitation must be eliminated"
+      },
+      "correct": "A",
+      "explanation": "Not every limitation warrants investment. With zero observed business impact, re-architecting for real-time sync fails any cost-benefit test. The disciplined move is transparent documentation plus a monitoring trigger — the acceptance is conscious, not neglectful."
+    },
+    {
+      "id": 115,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Branch C matches other branches on adoption (89%), claim mix, and technical setup, yet runs 4.1 days vs. 2.7–2.9 elsewhere. Investigation reveals its newly promoted manager (2 years tenure) re-verifies every claim manually rather than trusting the fraud score, making the manager-review step 18h vs. 6h. This gap is BEST classified as:",
+      "options": {
+        "A": "An ENTERPRISE limitation — a management capability/experience gap in leveraging the solution's decision-support, addressable by coaching and an onboarding protocol, not by changing the system",
+        "B": "A defect in Branch C's installation",
+        "C": "Evidence that Branch C staff should be dismissed",
+        "D": "A solution limitation — the fraud score is broken"
+      },
+      "correct": "A",
+      "explanation": "The elimination logic of KA8: not adoption (89%), not a defect (system provides all information), not a design boundary (other branches hit target with the same design). What remains is an organizational factor — manager proficiency — the definition of an enterprise limitation. The remedy is organizational (coaching), not technical."
+    },
+    {
+      "id": 116,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "The recommended fix for Branch C is a 4-hour coaching session on using the fraud score and decision-support features, plus a standing 60-minute module in future new-manager onboarding. Why does the SECOND recommendation matter even though only one branch is affected today?",
+      "options": {
+        "A": "It converts a one-off fix into recurrence prevention: every future manager promotion will otherwise reproduce the same performance pattern — enterprise recommendations should address the systemic pattern, not just the instance",
+        "B": "It doubles the training budget",
+        "C": "Onboarding modules are legally mandated",
+        "D": "It doesn't — one branch is one branch"
+      },
+      "correct": "A",
+      "explanation": "Root-cause thinking applied organizationally: the cause is 'new managers lack calibrated trust in decision support,' which recurs with every promotion. The protocol addresses the class of problem; the coaching addresses today's instance. Both belong in the recommendation."
+    },
+    {
+      "id": 117,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "An enterprise recommendation (assisted portal submission for the 65+ segment) requires IT development and CSR training beyond the Claims Manager's authority. What is the BA's correct action?",
+      "options": {
+        "A": "Drop the recommendation since it exceeds BA authority",
+        "B": "Delegate the decision to the developers",
+        "C": "Quantify the impact, document the recommendation with cost and expected benefit, and ESCALATE to the appropriate decision-makers (Customer Service Manager, Sponsor) — the BA recommends and escalates but does not implement organizational change",
+        "D": "Implement it quietly to avoid bureaucracy"
+      },
+      "correct": "C",
+      "explanation": "BABOK's boundary: the BA surfaces, quantifies, recommends, and routes to the authorized owner. Recommendations exceeding the BA's (or immediate stakeholders') authority are escalated with a business case — not abandoned, not implemented by stealth."
+    },
+    {
+      "id": 118,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "The final Recommended Actions package presents: Priority 1 — Branch C coaching (4 hours, ~1.2-day processing improvement, no budget); Priority 2 — v1.1 mixed-claims routing (8–12 dev days, closes the final 0.4-day gap); Priority 3 — assisted portal (~$3K, closes portal/CSAT gap). What prioritization logic is being applied?",
+      "options": {
+        "A": "Value-versus-cost sequencing: highest-leverage, lowest-cost actions first, with larger investments justified by their specific, quantified objective impact",
+        "B": "Technical items always before people items",
+        "C": "Whoever asked first",
+        "D": "Alphabetical order"
+      },
+      "correct": "A",
+      "explanation": "The classic recommendation matrix: high-value/low-cost → immediate; high-value/higher-cost → business case and approval path; each item carries its quantified expected impact on a named objective. This evidence-per-recommendation structure is what makes the package decision-ready."
+    },
+    {
+      "id": 119,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Every recommendation in the package includes a monitoring plan (e.g., 'after coaching: Branch C processing ≤3.2 days by Month 5, tracked weekly by the BA'). Why is post-implementation monitoring part of the RECOMMENDATION rather than an afterthought?",
+      "options": {
+        "A": "Because recommendations are hypotheses about value improvement — monitoring defines in advance how success will be verified and when to intervene again, closing the loop back into Measure Solution Performance",
+        "B": "Monitoring is the auditor's job alone",
+        "C": "Recommendations are self-evidently correct once approved",
+        "D": "To create more meetings"
+      },
+      "correct": "A",
+      "explanation": "KA8 is a cycle: Measure → Analyze → Assess limitations → Recommend → implement → Measure again. A recommendation without a verification metric and timeline cannot be evaluated — building the monitoring plan into the recommendation is what makes solution evaluation continuous rather than one-time."
+    },
+    {
+      "id": 120,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Which statement BEST captures the overall relationship among KA8's five tasks?",
+      "options": {
+        "A": "They form a diagnostic funnel: 8.1 collects evidence, 8.2 explains it, 8.3 and 8.4 attribute remaining gaps to the solution or the enterprise respectively, and 8.5 synthesizes everything into prioritized, feasible, monitored actions",
+        "B": "8.5 is performed first to decide what to measure",
+        "C": "Only 8.1 is the BA's responsibility; the rest belong to the PMO",
+        "D": "They are five independent activities performed in any order"
+      },
+      "correct": "A",
+      "explanation": "The tasks build on each other through a process of elimination and attribution: measured gaps are first explained (adoption? defect?), residuals are classified as solution limitations or enterprise limitations, and the whole evidence chain converges in Recommended Actions. Understanding this flow — rather than five isolated tasks — is what KA8 exam scenarios test."
+    }
+  ]
+}

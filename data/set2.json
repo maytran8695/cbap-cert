@@ -1,0 +1,1686 @@
+{
+  "examId": "set2",
+  "title": "CBAP Mock Exam — Advanced Set 2",
+  "questions": [
+    {
+      "id": 1,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "After v1.0 succeeds, the organization launches v1.1 (mixed-claims routing) AND a separate fraud-analytics initiative, both demanding the same BA. The BA drafts one combined BA approach covering both. The structural flaw in a combined approach for two initiatives is:",
+      "options": {
+        "A": "The initiatives have different risk profiles, stakeholders, governance needs, and delivery rhythms (v1.1 is an enhancement under existing governance; fraud analytics is exploratory with unstable requirements) — a single approach either over-governs the exploration or under-governs the enhancement. The correct structure is separate tailored approaches sharing common infrastructure (repository, glossary, stakeholder register) where genuinely shared, with the BA's capacity allocation across both made explicit and approved",
+        "B": "Two approaches would confuse the sponsor",
+        "C": "Combined approaches are mandated when budgets are combined",
+        "D": "Nothing — one BA means one approach"
+      },
+      "correct": "A",
+      "explanation": "Tailoring operates per-initiative, not per-person. Shared-infrastructure-with-separate-tailoring captures reuse without forcing one risk posture onto two different problems. The capacity-allocation point is the advanced addition: one BA serving two initiatives is itself a planning risk requiring explicit treatment."
+    },
+    {
+      "id": 2,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A contractor BA is hired for 6 months to run elicitation and specification, after which an internal BA inherits the initiative. Which planning artifact decision MOST protects the handover, and against what specific failure?",
+      "options": {
+        "A": "A longer handover meeting at the end",
+        "B": "The internal BA should shadow every session from day one",
+        "C": "The information management approach should mandate contemporaneous rationale capture (why decisions were made, not just what) and repository completeness as a working practice — protecting against tacit-knowledge evaporation: without recorded rationale, the internal BA inherits artifacts whose logic left with the contractor, forcing re-litigation of settled decisions and re-elicitation of context stakeholders already gave once",
+        "D": "The contractor should work faster to finish everything before leaving"
+      },
+      "correct": "C",
+      "explanation": "Advanced continuity planning treats knowledge decay as a designed-against risk. End-loaded handover meetings (C) cannot transfer six months of reasoning; full shadowing (D) doubles cost. Contemporaneous rationale capture makes the repository self-explanatory — the same principle behind maintaining rejected requirements with rationale."
+    },
+    {
+      "id": 3,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The PMO mandates that BA effort be logged in 15-minute increments against 40 activity codes. The BA observes colleagues logging fiction to satisfy the tool. As a Task 3.5 matter, the deeper problem with fictional effort data is:",
+      "options": {
+        "A": "Performance improvement decisions get built on corrupted inputs: if effort data is fiction, analyses like 'elicitation is consuming 40% of capacity' or 'verification is under-resourced' are fabrications wearing precision — leading to confidently wrong process adjustments. The BA should either fix data collection to something maintainable-and-true, or explicitly exclude effort data from performance analysis until it is trustworthy; using known-bad data because it exists is worse than acknowledged ignorance",
+        "B": "The 40 codes should become 80 for more precision",
+        "C": "Fiction is only a problem if auditors find it",
+        "D": "It wastes 10 minutes a day"
+      },
+      "correct": "A",
+      "explanation": "Advanced measurement governance: data quality is a precondition for data-driven improvement, and precision theater (D) worsens the fiction. The 'known-bad data is worse than no data' principle — because it launders guesses into false confidence — is the mature analytic posture."
+    },
+    {
+      "id": 4,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Planning stakeholder engagement for v1.1, the BA finds the stakeholder landscape changed: Sarah Mitchell was promoted (her deputy now owns claims), Philippa Chen retired (replaced by an external law firm on retainer), and Mike Chen is now a team lead. Which change forces the LARGEST engagement-design revision, and why?",
+      "options": {
+        "A": "The Legal transition to an external firm: an outsourced compliance authority changes the engagement's fundamental mechanics — billing-clock constraints on consultation time, no ambient organizational context, formal engagement letters governing what they will opine on, slower turnaround, and no institutional memory of v1.0's compliance decisions. Internal-role successions (deputy, team lead) inherit context and channels; the externalization replaces a relationship with a procurement interface requiring redesigned consultation protocols, budgeted review time, and deliberate context-transfer",
+        "B": "None — the register just needs name updates",
+        "C": "Sarah's promotion — seniority changes everything",
+        "D": "Mike's promotion — champions matter most"
+      },
+      "correct": "A",
+      "explanation": "Advanced stakeholder analysis weighs structural change over personnel change. Internal successions preserve the engagement MODEL; externalization changes the model itself (cost per question, context deficit, formalized scope). Treating it as a name swap (D) guarantees SLA and budget surprises."
+    },
+    {
+      "id": 5,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA must plan governance for an initiative where the sponsor explicitly says: 'I want to personally approve every requirement — all of them.' The advanced governance counsel to this sponsor addresses which predictable failure?",
+      "options": {
+        "A": "Approval bottleneck and attention dilution: 150+ requirements through one executive's calendar creates queue delays measured in weeks, and — worse — an approver reviewing everything reviews nothing deeply, converting sign-off into ceremony while retaining its delay cost. The counsel: reserve the sponsor's approval for decision classes matching sponsor-level stakes (scope boundaries, budget-impacting changes, objective trade-offs), delegate artifact-level approval to domain-competent roles, and give the sponsor a designed visibility mechanism (dashboards, exception reports) that satisfies the underlying control need without the queue",
+        "B": "Refuse and escalate over the sponsor's head",
+        "C": "Batch all approvals into one annual mega-session",
+        "D": "Sponsors have the right to approve anything they want, so plan it as requested"
+      },
+      "correct": "A",
+      "explanation": "Advanced governance design diagnoses the need beneath the request (control, visibility) and satisfies it with a mechanism that scales. Literal compliance (A) predictably fails the sponsor's own goals; the counsel reframes rather than refuses (C). Authority-to-stakes matching plus designed visibility is the pattern."
+    },
+    {
+      "id": 6,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Two metrics from the BA's own performance plan point opposite directions in the same period: cycle time from elicitation to approved requirement improved 30%, while the defect-escape rate (requirement issues found in development) doubled. The MOST probable causal reading is:",
+      "options": {
+        "A": "Development got worse at reading requirements",
+        "B": "Both metrics should be replaced with stakeholder satisfaction",
+        "C": "Speed was bought with skipped rigor: the cycle-time gain likely came from compressing verification/validation, and the escaped defects are the deferred cost surfacing downstream — the two metrics are one phenomenon viewed at two pipeline stages. The response treats them jointly: restore the quality gates and accept the honest cycle time, because a fast pipeline that leaks defects into development is slower end-to-end once rework is counted",
+        "D": "The metrics are unrelated — celebrate the first and investigate the second separately"
+      },
+      "correct": "C",
+      "explanation": "Advanced metric interpretation looks for causal coupling between 'improvements' and degradations. The speed-quality trade viewed end-to-end (total cost including downstream rework) usually shows the cycle-time 'gain' is negative-sum. Joint treatment of coupled metrics is the discipline; separate treatment (A) misses the mechanism."
+    },
+    {
+      "id": 7,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The organization adopts a new requirements tool mid-initiative, migrating from Jira. The BA's migration plan includes a 'traceability reconciliation' phase that the PM wants to cut for schedule. The BA's defense quantifies which specific loss:",
+      "options": {
+        "A": "Migration without link verification silently severs traceability chains (tool migrations notoriously drop or corrupt relationship data), which destroys change-impact search and audit evidence — the losses that surface not at migration but months later, at the next CR assessment or audit, when reconstruction costs 10x the reconciliation phase. The defense prices the deferred failure: reconciliation now versus forensic reconstruction under audit pressure later",
+        "B": "Nothing — modern tools migrate perfectly",
+        "C": "The cost of Jira licenses already paid",
+        "D": "The team's familiarity with the old tool"
+      },
+      "correct": "A",
+      "explanation": "Advanced IM risk management: relationship data is the fragile layer in migrations, and its loss is invisible until exercised. Pricing the deferred failure mode (audit-time reconstruction) against the prevention cost is how the BA wins schedule arguments with evidence rather than principle."
+    },
+    {
+      "id": 8,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A BA plans elicitation coverage across 5 branches but the travel budget covers 2 site visits. The advanced coverage design under this constraint is:",
+      "options": {
+        "A": "Risk-stratified allocation: spend the visits where in-person observation has the highest marginal value — the branches whose context most differs from the well-understood ones (the branch with the divergent document-handling from prior workshops; a branch with unusual claim mix) — while covering the remaining branches through structured remote methods (video observation sessions, local liaison-collected artifacts, system-data analysis that needs no travel). Constraint-bound elicitation allocates the scarce high-fidelity method by expected information gain, not convenience",
+        "B": "Ask all branches to travel to headquarters instead",
+        "C": "Cancel site visits entirely for fairness",
+        "D": "Visit the 2 nearest branches and generalize"
+      },
+      "correct": "A",
+      "explanation": "Advanced planning under resource constraints applies expected-information-gain logic: high-cost methods go where difference (and thus discovery probability) is highest; commodity coverage uses cheaper channels. Convenience sampling (A) and false equity (C) both waste the constrained resource."
+    },
+    {
+      "id": 9,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Six weeks in, the BA realizes the approved BA approach assumed a dedicated PO, but the assigned PO gives the initiative 4 hours weekly, creating a chronic approval and prioritization bottleneck. The sequence of correct responses is:",
+      "options": {
+        "A": "First mitigate within the approach (batch decisions into the PO's window, pre-package options to minimize decision time), and if the structural gap persists, formally surface it as an approach-assumption failure to the PM/sponsor with quantified impact (decisions delayed, sprints affected) and options (increase PO allocation, delegate defined decision classes, accept slower cadence) — the BA neither quietly assumes the PO's authority nor lets an invalidated planning assumption silently degrade the initiative",
+        "B": "Redefine the BA role to include product ownership",
+        "C": "Escalate immediately on day one of the problem",
+        "D": "Silently absorb it by making decisions the PO should make"
+      },
+      "correct": "A",
+      "explanation": "Advanced assumption management: mitigate-then-escalate, with the escalation framed as an invalidated planning assumption carrying quantified impact and options. A and D breach the authority separation governance exists to protect; C skips the adaptation the BA owes first."
+    },
+    {
+      "id": 10,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA's stakeholder register includes attitude ratings ('supporter,' 'skeptic'). A colleague argues these are defamatory if disclosed and should be omitted. The advanced information-governance resolution is:",
+      "options": {
+        "A": "Record everything candidly — internal documents are private",
+        "B": "Keep attitudes in the BA's personal notebook off the record",
+        "C": "Record engagement-relevant assessments professionally: describe observable positions and stated concerns ('has expressed concerns about audit implications; requires evidence-first engagement') rather than character labels; classify the register's sensitive sections with restricted access per the IM approach; and review contents periodically. Attitude information is legitimately necessary for engagement design — the governance answer is professional phrasing plus access control, not information amputation that degrades the engagement plan",
+        "D": "Omit attitudes — too risky to record"
+      },
+      "correct": "C",
+      "explanation": "Advanced IM balances analytical necessity against disclosure risk through phrasing discipline and access tiering. Amputation (A) degrades planning; false privacy assumptions (C) ignore discovery/leak reality; shadow records (D) violate the single-source principle and create their own risks."
+    },
+    {
+      "id": 11,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "An initiative's complexity assessment must account for the fact that three of five integrated systems are owned by teams OUTSIDE the sponsor's authority. This ownership topology primarily inflates which planning dimension, with what mechanism?",
+      "options": {
+        "A": "Testing effort only",
+        "B": "Nothing — systems are systems regardless of owner",
+        "C": "Coordination and decision-latency risk: dependencies crossing authority boundaries cannot be resolved by sponsor fiat — each external team has its own priorities, and the initiative's requests queue against them. Planning must add negotiated interface agreements, earlier engagement lead times, escalation paths that route through the external teams' management, and schedule buffers on cross-boundary dependencies. The mechanism is that authority boundaries convert technical dependencies into negotiation dependencies",
+        "D": "Documentation formality, because more systems need more documents"
+      },
+      "correct": "C",
+      "explanation": "Advanced complexity assessment distinguishes technical topology from AUTHORITY topology. Same integration, different owner = different risk class: resolution speed becomes a function of another organization's priorities. The planning responses (interface agreements, lead times, buffers) target the negotiation dependency specifically."
+    },
+    {
+      "id": 12,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA proposes a 'decision log' capturing every material decision (what, who, when, rationale, alternatives considered) as a first-class planning artifact. The strongest justification, drawn from v1.0 experience, is:",
+      "options": {
+        "A": "v1.0's most expensive recurring time-sink was re-litigating settled decisions when new participants arrived or memories diverged ('why batch sync?', 'who decided the threshold?') — the decision log converts each future re-litigation from a meeting into a lookup, protects decisions from drift, and provides audit evidence of due process. Its cost is minutes per decision; its yield is measured in the meetings it prevents and the disputes it resolves by citation",
+        "B": "It replaces the need for a traceability matrix",
+        "C": "Regulators require decision logs by law",
+        "D": "Logs are professional-looking"
+      },
+      "correct": "A",
+      "explanation": "Advanced knowledge-management justification is empirical: the artifact is priced against the observed failure it prevents. The decision log complements (not replaces) traceability — decisions ABOUT requirements versus links AMONG artifacts. Evidence-based artifact justification beats compliance or aesthetics arguments."
+    },
+    {
+      "id": 13,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "A BA performance assessment should distinguish outcome metrics the BA CONTROLS from those they merely INFLUENCE. Which pairing correctly classifies two common metrics?",
+      "options": {
+        "A": "Requirement defect-escape rate is substantially within BA control (verification rigor, validation design), while project ROI is only influenced (delivery execution, market conditions, adoption all intervene) — holding the BA accountable for controlled metrics and merely informed by influenced ones prevents both unfair accountability and unearned credit; conflating the two produces either scapegoating or metric theater",
+        "B": "Both are outside BA control entirely",
+        "C": "Control distinctions don't matter if targets are met",
+        "D": "Both requirement defect-escape rate and project ROI are fully controlled by the BA"
+      },
+      "correct": "A",
+      "explanation": "Advanced performance design applies the controllability principle: accountability tracks control. Defect escape is a direct product of the BA's own quality gates; ROI passes through many non-BA hands. The distinction determines which metrics carry consequences versus context."
+    },
+    {
+      "id": 14,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Planning for an initiative with a hard regulatory deadline, the BA builds the elicitation and specification schedule BACKWARD from the deadline, discovering the start date needed was 3 weeks ago. The professionally correct next step is:",
+      "options": {
+        "A": "Present the backward-schedule analysis to the PM/sponsor immediately with explicit options: scope reduction to what the remaining time genuinely accommodates, rigor trade-offs with named risks (which confirmations get compressed and what that exposes), resource additions where parallelizable, or deadline renegotiation if any flexibility exists — an infeasible plan discovered at planning time is a gift; the failure is proceeding on a schedule already known to be fiction",
+        "B": "Resign from the initiative",
+        "C": "Proceed with the original scope and hope",
+        "D": "Compress every activity by 20% and proceed silently"
+      },
+      "correct": "A",
+      "explanation": "Advanced planning integrity: the backward pass exists to surface infeasibility EARLY, when options are cheapest. Silent compression (A) pre-decides rigor trade-offs that belong to stakeholders; hope (C) converts a known problem into a late surprise. Presenting quantified options is the BA's obligation."
+    },
+    {
+      "id": 15,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "An organization's culture rewards heroic firefighting over quiet prevention. The BA notices their own prevention work (confirmation sessions, verification gates) is invisible while colleagues gain status resolving crises those gates would have prevented. As a Task 3.5 and professional matter, the sustainable response is:",
+      "options": {
+        "A": "Make prevention measurable and visible: instrument the gates (defects caught at confirmation/verification, with downstream cost estimates), report prevented-cost alongside delivered work, and educate stakeholders that the absence of requirement crises IS the performance — while flagging the incentive misalignment itself as an organizational finding. Quietly excellent prevention in a firefighting culture is unsustainable; the fix is evidence-based visibility, not abandoning the practice or the culture war",
+        "B": "Complain informally and continue as before",
+        "C": "Sabotage a small crisis occasionally to demonstrate value",
+        "D": "Abandon prevention and join the firefighting for visibility"
+      },
+      "correct": "A",
+      "explanation": "Advanced professional sustainability: prevention's invisibility is a measurement gap, closable with caught-defect instrumentation and prevented-cost framing. D is unethical; A optimizes personal visibility over initiative value; the systemic incentive observation belongs in performance findings."
+    },
+    {
+      "id": 16,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The BA approach specifies Given/When/Then acceptance criteria for all User Stories. A new team member writes criteria that restate the story ('Given a user, when they use the feature, then it works'). The approach-level correction — beyond fixing these instances — is:",
+      "options": {
+        "A": "Remove acceptance criteria from the standard as too hard",
+        "B": "Have the BA write all criteria personally forever",
+        "C": "Recognize a standards-transmission gap: the approach mandated a FORMAT but the organization never operationalized the QUALITY bar behind it — the fix is exemplars (good/bad criteria pairs), a definition of 'testable criterion' (specific inputs, observable outputs, boundary cases), and criteria review in the Definition of Ready. Format compliance without quality substance is the predictable result of mandating syntax without teaching semantics; the approach should carry both",
+        "D": "Fire the new team member"
+      },
+      "correct": "C",
+      "explanation": "Advanced standards governance: mandates transmit form easily and substance poorly. The tautological criteria are compliant-and-useless — the signature of syntax-only standards. Exemplars plus a semantic definition plus a review gate operationalize the quality bar scalably; D doesn't scale and C abandons the control."
+    },
+    {
+      "id": 17,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "For a politically charged initiative (a merger integration where one company's processes will 'win'), the BA's engagement plan should treat which ordinarily-minor design choice as strategically significant?",
+      "options": {
+        "A": "The length of the kickoff meeting",
+        "B": "Nothing — politics is not the BA's concern",
+        "C": "Symbolic neutrality mechanics: whose terminology the glossary adopts, whose offices host workshops, whose process maps are the 'base' for comparison, speaking order and facilitation balance — in merger politics these signal predetermined outcomes and can collapse one side's candor before analysis begins. The plan deliberately neutralizes them: hybrid terminology, alternating venues, side-by-side (not base-vs-variant) process comparison, and balanced facilitation — because perceived prejudgment destroys the elicitation the analysis depends on",
+        "D": "The font of the meeting invitations"
+      },
+      "correct": "C",
+      "explanation": "Advanced engagement design in contested contexts: procedural symbols ARE substantive because they shape disclosure behavior. A side that reads the process as rigged stops contributing honestly, corrupting the analysis regardless of the BA's actual neutrality. Deliberate symbolic neutrality is elicitation-quality protection."
+    },
+    {
+      "id": 18,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "The governance approach must define what happens when the CCB itself DEADLOCKS (2-2 split, chair abstaining) on a time-critical change. Well-designed deadlock provisions specify:",
+      "options": {
+        "A": "A resolution ladder with a clock: a defined tie-break authority (e.g., sponsor decides within 48h of referred deadlock), interim default behavior while unresolved (change is held; work proceeds on current baseline), and documentation of the split rationale for the tie-breaker — because governance that assumes consensus fails exactly when stakes are highest, and the absence of a deadlock rule converts hard decisions into indefinite delays or shadow decisions",
+        "B": "The most senior person present always wins automatically",
+        "C": "The BA casts the deciding vote",
+        "D": "Deadlocks are impossible if people are professional"
+      },
+      "correct": "A",
+      "explanation": "Advanced governance completeness: decision systems need failure-mode provisions for their own machinery. The ladder-plus-clock-plus-default pattern keeps work flowing under the current baseline while routing the deadlock to a named authority. C violates the BA's non-decision role; D substitutes hierarchy for the designed process."
+    },
+    {
+      "id": 19,
+      "ka": "KA3",
+      "kaName": "Business Analysis Planning and Monitoring",
+      "question": "Comparing two candidate BA approaches for the fraud-analytics initiative — (i) heavy upfront specification, (ii) hypothesis-driven discovery with staged commitment — the decisive contextual factor from the initiative's nature is:",
+      "options": {
+        "A": "Requirements KNOWABILITY: fraud-analytics effectiveness depends on model behavior against real data that cannot be known before experimentation — upfront specification would fabricate certainty about detection thresholds and features that only discovery can establish. Where requirements are learnable-only-by-building, staged discovery with explicit learning gates is the honest approach; heavy upfront specification suits knowable domains (the v1.0 claims process was documentable in advance). Approach follows epistemics, not fashion",
+        "B": "Upfront is always safer in insurance",
+        "C": "Discovery is always faster everywhere",
+        "D": "Which approach the BA personally prefers"
+      },
+      "correct": "A",
+      "explanation": "The advanced tailoring criterion: can the requirements be KNOWN before building? Claims workflows: yes (observable, documented, stable). Detection-model behavior: no (emerges from data). Matching approach to knowability — rather than industry stereotype (C) or methodology fashion (D) — is the mature selection logic."
+    },
+    {
+      "id": 20,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Choosing between BRAINSTORMING and a FOCUS GROUP for exploring v1.1 portal enhancements with customers, the decisive functional difference is:",
+      "options": {
+        "A": "Brainstorming optimizes for idea VOLUME and divergence among participants who suspend judgment (best with engaged stakeholders generating options); a focus group optimizes for REACTIONS and attitudes — moderated discussion probing how a defined population feels about presented concepts. For customer input on candidate enhancements, the focus group fits: the BA has concepts to test and needs attitudinal depth from representative customers, not an unfiltered option pool from people without solution context",
+        "B": "They are interchangeable labels for group meetings",
+        "C": "Focus groups are for executives; brainstorming is for staff",
+        "D": "Brainstorming needs a whiteboard; focus groups need chairs"
+      },
+      "correct": "A",
+      "explanation": "Advanced technique selection matches the technique's OUTPUT TYPE to the information need: divergent generation versus attitudinal reaction. Customers reacting to concrete enhancement concepts is textbook focus-group territory; asking customers to brainstorm system features without context yields noise."
+    },
+    {
+      "id": 21,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA uses a clickable PROTOTYPE to elicit portal requirements from customers. Midway, they notice participants critiquing button colors and layout minutiae while major workflow gaps go unmentioned. This known prototyping pathology is best countered by:",
+      "options": {
+        "A": "Fidelity calibration: high-visual-fidelity prototypes anchor attention on surface polish and suppress structural feedback — switching to low-fidelity representations (wireframes, paper flows) for workflow-level elicitation signals 'this is unfinished, react to the SHAPE,' reserving high fidelity for later visual-design validation. The prototype's finish level is an elicitation instrument setting, not an aesthetic choice",
+        "B": "Banning comments about colors",
+        "C": "Only interviewing designers",
+        "D": "Better colors so participants stop mentioning them"
+      },
+      "correct": "A",
+      "explanation": "Advanced prototyping practice: fidelity is calibrated to the feedback layer sought. Polished surfaces elicit surface feedback (and implicit 'it's nearly done' framing); deliberately rough artifacts license structural critique. The pathology is a tool-setting error, not a participant failure."
+    },
+    {
+      "id": 22,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "During a COLLABORATIVE GAME ('buy a feature': stakeholders allocate a fixed budget of play money across candidate features), the Finance Director refuses to play, calling it childish, while others engage productively. The advanced facilitation recovery is:",
+      "options": {
+        "A": "Offer the objector an equivalent serious-format channel for the same input (a weighted allocation form capturing identical preference data), continue the game for engaged participants, and merge both inputs in analysis — the game is a preference-elicitation mechanism, not a loyalty test; the data matters, the format doesn't. Post-session, note the engagement-style finding for future session design with this stakeholder",
+        "B": "Insist everyone plays for data consistency",
+        "C": "Exclude the Finance Director's preferences from the results",
+        "D": "Stop the game to accommodate the objector"
+      },
+      "correct": "A",
+      "explanation": "Advanced facilitation separates the elicitation OBJECTIVE (preference data) from the MECHANISM (game format). Equivalent-channel accommodation preserves both the group's productive dynamic and the objector's input. A sacrifices the group to one stakeholder; B and D create data loss through rigidity."
+    },
+    {
+      "id": 23,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Eliciting NON-FUNCTIONAL requirements, the BA asks handlers 'how fast should screens load?' and receives 'instantly' universally. The advanced elicitation reframe that produces usable NFR data is:",
+      "options": {
+        "A": "Let the architect pick numbers without stakeholder input",
+        "B": "Average everyone's guesses",
+        "C": "Elicit tolerance boundaries behaviorally rather than aspirations verbally: 'At what delay do you start doing something else? What response time makes you distrust the system? Show me a screen today that feels fine and one that feels slow' — then measure those reference screens (the 'fine' one loads in 1.8s; the 'slow' one in 6s), converting subjective aspiration into calibrated, evidence-anchored thresholds (e.g., ≤2s target, >5s unacceptable). Aspirational questions produce ceilings; behavioral-boundary questions produce specifications",
+        "D": "Record 'instant' as the requirement"
+      },
+      "correct": "C",
+      "explanation": "Advanced NFR elicitation replaces aspiration questions (which always return 'perfect') with tolerance-boundary and reference-anchoring techniques — calibrating words against measured exemplars from the stakeholder's own environment. This is how 'instantly' becomes '≤2 seconds at the 95th percentile' with stakeholder-grounded evidence."
+    },
+    {
+      "id": 24,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A remote elicitation program spans handlers in three time zones. The BA notices asynchronous-channel contributions (shared documents, recorded walkthroughs) come disproportionately from senior staff, while junior handlers who spoke freely in live sessions go silent asynchronously. The design correction is:",
+      "options": {
+        "A": "Recognize channel-participation bias and diversify deliberately: async written channels favor those with confidence and formal-writing comfort; juniors' knowledge — often the richest source on actual workarounds — needs channels matching their disclosure comfort (small live sessions in their timezone, anonymous structured forms, one-on-one calls). Elicitation channel design is participation design: each channel systematically includes some voices and excludes others, so coverage requires a deliberate channel portfolio, not a single 'fair' medium",
+        "B": "Accept that seniors represent juniors adequately",
+        "C": "Require juniors to submit written input weekly",
+        "D": "Make everything asynchronous for equality"
+      },
+      "correct": "A",
+      "explanation": "Advanced remote-elicitation design treats channels as participation filters with predictable demographics. The portfolio approach (matched channels per group) is the structural fix; mandates (C) produce compliance text, not disclosure; A universalizes the bias rather than correcting it."
+    },
+    {
+      "id": 25,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA needs to elicit what handlers DON'T do — abandoned features of the old system, requests they've stopped making, claims they quietly route around. Why does standard elicitation systematically miss this 'negative space,' and what technique recovers it?",
+      "options": {
+        "A": "Standard questioning elicits what is salient and present; absences aren't salient to those habituated to them ('we just don't use that screen' never comes up unprompted). Recovery techniques: system-data archaeology (feature-usage logs revealing the unused), artifact comparison (what the manual says versus what observation shows skipped), and deliberate absence-probing ('what did you stop doing? what do you work around rather than report?'). The negative space often contains the strongest requirements evidence — abandonment is revealed-preference data about what failed",
+        "B": "Longer interviews will surface it naturally",
+        "C": "Only exit interviews with departing staff reveal it",
+        "D": "It doesn't exist — absence of mention means absence of issue"
+      },
+      "correct": "A",
+      "explanation": "Advanced elicitation epistemics: habituated absences are cognitively invisible to insiders, so they require instrumented detection (usage logs) and deliberate probes. Abandonment data is high-value because it is behavioral, not aspirational — people abandoned the fraud screen because it was slow; no one thought to mention it."
+    },
+    {
+      "id": 26,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "An OBSERVATION session is planned in a branch where the manager, wanting to impress, pre-briefs the team to 'show our best process.' The BA learns of the briefing beforehand. The recovery that preserves both data quality and the relationship is:",
+      "options": {
+        "A": "Reframe the session's contract openly with the manager: explain that the initiative needs the REAL process — including its friction — because requirements built on a performance produce a system that fails the actual workflow, making the branch's life worse; request normal-work conditions, supplement with system-log triangulation for the observed period, and if performance behavior persists, treat the observed 'best process' as data about the ASPIRATIONAL process (itself useful) while sourcing the actual process elsewhere. Managed transparency converts a contamination into a calibration",
+        "B": "Observe secretly on a different day without telling anyone",
+        "C": "Proceed and knowingly record the performance as the process",
+        "D": "Cancel the observation and report the manager"
+      },
+      "correct": "A",
+      "explanation": "Advanced observation management: the manager's incentive (looking good) is realigned by showing that authentic data serves his interest (a system that fits reality). The fallback reframe — performed process as aspiration data — extracts value even from contamination. B damages trust structurally; D knowingly corrupts the baseline."
+    },
+    {
+      "id": 27,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A SURVEY design review catches this question: 'How satisfied are you with the new faster portal?' The embedded defect and its consequence are:",
+      "options": {
+        "A": "Leading construction: 'new faster' presupposes the improvement being measured, priming positive responses and contaminating the satisfaction estimate — data from leading questions systematically overstates the outcome the sponsor hopes for, and decisions built on it (declaring the CSAT objective met) inherit the inflation. The fix is neutral wording ('How satisfied are you with the portal?') and instrument review for presupposition, priming, and double-barreled constructions before fielding",
+        "B": "Nothing — respondents ignore wording",
+        "C": "The word 'portal' is too technical",
+        "D": "Too short — surveys need long questions"
+      },
+      "correct": "A",
+      "explanation": "Advanced instrument literacy: question wording is a measurement device whose defects propagate into decisions. Leading constructions inflate precisely the metric being celebrated — a self-congratulation loop. Instrument review (presupposition/priming/double-barrel checks) is the quality gate."
+    },
+    {
+      "id": 28,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA elicits requirements from the external law firm now handling compliance. Their engagement letter bills consultation at 15-minute increments, and their first response to an open question ran 6 billable hours producing a memo mostly restating the regulation. The advanced consultation redesign is:",
+      "options": {
+        "A": "Convert open questions into closed, decision-shaped consultations: the BA does the preparatory analysis internally (draft interpretation, specific scenarios, proposed requirement text) and asks the firm to CONFIRM/CORRECT/CHOOSE rather than compose from scratch — 'Does requirement text X satisfy Article Y for scenarios A, B, C?' costs 30 minutes; 'What does Article Y require?' costs 6 hours. External-expert economics reward the BA absorbing the synthesis work and purchasing only the judgment",
+        "B": "Route compliance questions to internal staff who lack authority",
+        "C": "Ask the same questions but demand faster answers",
+        "D": "Stop consulting them — too expensive"
+      },
+      "correct": "A",
+      "explanation": "Advanced consultation economics with external experts: the cost driver is composition, not judgment. Decision-shaped questions (confirm/correct/choose against prepared material) purchase the authoritative sign-off — the only thing the firm uniquely provides — at minimum billable synthesis. This is the engagement-model redesign the Legal externalization (from the stakeholder-change question) demands."
+    },
+    {
+      "id": 29,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "During confirmation of workshop outputs, one participant emails corrections that CONTRADICT what the session recording shows they said. The advanced interpretation of testimony-versus-recording divergence is:",
+      "options": {
+        "A": "The divergence itself is the finding to explore, not a dispute to adjudicate: people revise in-session statements for many reasons — post-session reflection producing genuinely better information, realizing an in-session error, social pressure in the room having shaped the original statement, or political reconsideration. The BA follows up neutrally ('your correction differs from the session discussion — help me understand which reflects the actual process'), because the LATER statement is sometimes the more accurate one and confrontation-by-playback (A) converts an information opportunity into a credibility contest",
+        "B": "Split the difference between the two versions",
+        "C": "Ignore the correction as unreliable",
+        "D": "The recording wins — play it back to them as proof"
+      },
+      "correct": "A",
+      "explanation": "Advanced confirmation practice treats revision as data with multiple explanations, several of which make the correction MORE reliable than the in-session statement (reflection, reduced social pressure). Neutral exploration extracts the reason; adversarial playback (A) wins an argument while losing the informant."
+    },
+    {
+      "id": 30,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A DOCUMENT ANALYSIS of the claims procedures manual reveals it was last substantively updated 6 years ago, before two system changes. The advanced use of this stale document is:",
+      "options": {
+        "A": "Treat it as current since it's the official document",
+        "B": "Update it personally before starting elicitation",
+        "C": "Mine it as a historical layer with known staleness: it documents the INTENDED process design and its rationale (valuable for understanding why steps exist), while its divergence from current observed practice is itself a findings map — each observed deviation from the manual marks either legitimate evolution needing documentation or unauthorized drift needing decision. A stale authoritative document plus current observation yields a drift analysis neither source provides alone",
+        "D": "Discard it entirely as outdated"
+      },
+      "correct": "C",
+      "explanation": "Advanced document analysis exploits staleness: the intended-versus-actual delta is a structured discovery instrument (the same logic that surfaced the fraud spreadsheet — a step in no documentation). A discards design rationale; B imports six years of unexamined drift as fact; D puts the cart before the elicitation."
+    },
+    {
+      "id": 31,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA facilitates a requirements workshop where two departments must agree on a shared data definition ('customer'). Marketing includes prospects; Claims includes only policyholders; each insists their definition is 'obviously' correct. The advanced resolution technique is:",
+      "options": {
+        "A": "Vote on the definition",
+        "B": "Let each department keep its own private definition unreconciled",
+        "C": "Dissolve the false single-definition premise: elicit the USE CONTEXTS behind each definition (marketing needs prospect reach; claims needs policyholder validity), then model the concept as a structured domain with explicit subtypes ('customer' as umbrella; 'prospect' and 'policyholder' as defined subtypes with membership rules) so each department's operations bind to the precise subtype — most cross-department definition wars are two valid local definitions fighting for one global name, resolved by naming the structure rather than crowning a winner",
+        "D": "Pick the more senior department's definition"
+      },
+      "correct": "C",
+      "explanation": "Advanced glossary facilitation: definition conflicts usually encode legitimate contextual variation, resolved by subtype modeling rather than adjudication. Crowning a winner (A, B) breaks the loser's operations; unreconciled privacy (D) guarantees integration defects. The umbrella-plus-subtypes pattern serves both."
+    },
+    {
+      "id": 32,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "An INTERVIEW subject repeatedly answers questions the BA didn't ask, steering every topic to his pet grievance (the parking situation... then the overtime policy). Fifteen minutes remain. The advanced interviewing recovery balances which two obligations?",
+      "options": {
+        "A": "Respect-and-redirect: acknowledge the grievances explicitly with a named disposition ('I've noted the overtime concern and will pass it to the PM — it matters, and it's outside what I can fix here') to satisfy the being-heard need driving the steering, then redirect with tightly structured, concrete questions (closed and scenario-specific rather than open) that give less steering room — protecting both the remaining elicitation window and the relationship. Grievance-steering usually stops once the grievance has a documented destination",
+        "B": "Let him talk — all information is information",
+        "C": "Threaten to report the grievances to his manager",
+        "D": "None — end the interview immediately"
+      },
+      "correct": "A",
+      "explanation": "Advanced interview management: steering behavior typically seeks acknowledgment, and unacknowledged grievances resurface indefinitely. The named-disposition acknowledgment plus structural narrowing (question form as a steering constraint) recovers the session. B spends scarce elicitation time on non-initiative content; A and D damage the source relationship."
+    },
+    {
+      "id": 33,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA must confirm elicitation results with a stakeholder community of 45 handlers, but v1.0 experience showed circulate-to-all confirmation gets 3 responses. The advanced confirmation design for diffuse internal populations is:",
+      "options": {
+        "A": "Require all 45 to sign individually",
+        "B": "Confirm with the manager alone and skip the handlers",
+        "C": "Layered representative confirmation: a small panel of designated confirmers with explicit standing (cohort representatives including the informal leaders, chosen with the manager), active walkthrough with the panel, broadcast of the panel-confirmed summary to all 45 with a bounded objection window ('confirmed unless material objection by Friday'), and objection-handling that feeds back to the panel — combining genuine engagement (panel) with legitimate whole-population standing (transparent broadcast + objection right). Neither mass circulation nor silent-consent alone achieves both engagement and legitimacy",
+        "D": "Accept the 3 responses as sufficient"
+      },
+      "correct": "C",
+      "explanation": "Advanced confirmation architecture for populations: representative-panel depth plus broadcast-objection breadth. Universal individual sign-off (C) produces coerced checkbox behavior; manager-only (D) repeats the mistake of not hearing performers; 3-response acquiescence (A) is confirmation theater."
+    },
+    {
+      "id": 34,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "During v1.1 elicitation, a stakeholder proposes requirements by forwarding a competitor's product screenshots: 'Just build this.' The advanced treatment of competitor-artifact elicitation input is:",
+      "options": {
+        "A": "Use the artifact as a NEED-REVEALING stimulus, not a specification: elicit what about the competitor feature matters to the stakeholder ('which problem of ours does this solve? what would your team do with it?'), extract the underlying need into normal requirements analysis, and separately flag the legal/IP dimension of design copying to the appropriate authority — competitor artifacts are legitimate evidence of market expectations and effective stimuli, but 'build this' skips needs analysis and may import both a mismatched solution and legal exposure",
+        "B": "Forward the screenshots directly to developers",
+        "C": "Refuse to look at competitor material at all",
+        "D": "Copy the competitor's design as instructed"
+      },
+      "correct": "A",
+      "explanation": "Advanced input handling: competitor artifacts are stimulus material for needs elicitation (the same peel-back pattern as SME solution-embedding), with an added IP-awareness flag. A and D transmit unanalyzed solution and legal risk; B discards genuine market-expectation evidence."
+    },
+    {
+      "id": 35,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A stakeholder relationship audit shows the BA's collaboration health varies sharply: excellent with Claims and IT, chronically strained with Finance across two initiatives and predecessors ('Finance is just difficult'). The advanced diagnostic before accepting the difficult-stakeholder narrative is:",
+      "options": {
+        "A": "Examine the interaction STRUCTURE for systematic causes: what does the BA function chronically ask of Finance (late-notice cost assessments? changes landing after budgets lock?), what does Finance's incentive and cycle structure reward (predictability, early notice, formal documentation), and where do BA-side practices violate those (ad-hoc urgent requests, verbal estimates)? Chronic multi-person strain with one function usually indicates a structural interface mismatch, not accumulated difficult personalities — and structural causes have designable fixes (aligned request calendars, standard cost-assessment formats, early-warning protocols)",
+        "B": "Escalate Finance's behavior to the CFO",
+        "C": "Route around Finance wherever possible",
+        "D": "Accept it — some departments are difficult"
+      },
+      "correct": "A",
+      "explanation": "Advanced collaboration analysis: strain that persists across individuals and initiatives is structural. The interface-mismatch hypothesis (BA rhythms violating Finance's cycle-locked incentives) is testable and fixable; the difficult-people narrative (A) is unfalsifiable and fix-proof. C escalates a problem the structure creates; D creates governance gaps."
+    },
+    {
+      "id": 36,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "The BA pilots an AI transcription-and-summary tool for elicitation sessions. Reviewing its workshop summary, they find it confidently attributes a critical threshold statement to the wrong stakeholder and omits a dissenting comment entirely. The advanced practice conclusion is:",
+      "options": {
+        "A": "Treat AI outputs as unconfirmed drafts inside the existing quality architecture: the confirmation task (4.3) already exists precisely because CAPTURE is fallible — tool-generated capture changes the error profile (confident misattribution, silent omission) but not the governing principle that no capture is trusted until source-confirmed. Practices: verify attributions against recordings for material statements, spot-check summaries for omission, and never let tool output flow into requirements without the same confirmation gate human notes require. The tool accelerates drafting; it cannot absorb accountability",
+        "B": "Trust the tool — it's more objective than humans",
+        "C": "Use the tool but skip confirmation to bank the time savings",
+        "D": "Abandon all tooling and hand-write notes forever"
+      },
+      "correct": "A",
+      "explanation": "The advanced integration: new capture technology slots INTO the confirmation architecture rather than replacing it — its distinctive failure modes (fluent misattribution, invisible omission) make confirmation MORE necessary for material content, not less. D spends the safety margin the tool's speed was supposed to create; B mistakes fluency for accuracy."
+    },
+    {
+      "id": 37,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A cross-cultural elicitation involves a partner team whose professional norms discourage contradicting a counterpart in open session. The BA's workshop draft relies heavily on live challenge-and-correct dynamics. The culturally-informed redesign preserves the CORRECTIVE function through:",
+      "options": {
+        "A": "Skipping correction rounds with that team entirely",
+        "B": "Having their manager order participation in open debate",
+        "C": "Face-preserving correction channels: pre-circulated materials with written comment windows (correction without public contradiction), anonymous real-time input tools during sessions, one-on-one follow-ups where disagreement is private, and framing devices ('what would make this fail?' invites critique as contribution rather than confrontation) — the elicitation NEED is error-surfacing; the MECHANISM must fit the participants' disclosure norms, and mechanisms that require norm violation simply produce silence misread as agreement",
+        "D": "Telling the partner team to be more direct"
+      },
+      "correct": "C",
+      "explanation": "Advanced cross-cultural facilitation: disclosure norms are design constraints, not deficiencies to correct (A, D). The corrective function survives translation into face-preserving channels; without translation, the BA records polite silence as confirmation — the costliest elicitation error in cross-cultural work. C abandons quality; the redesign preserves it."
+    },
+    {
+      "id": 38,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "Synthesis: across all elicitation techniques, what single property distinguishes elicitation-grade evidence from ordinary workplace conversation, and which task operationalizes it?",
+      "options": {
+        "A": "Traceable provenance under source confirmation: elicitation-grade evidence is captured with its source, context, and method identified, then verified BY that source as accurately representing what they conveyed — operationalized by Task 4.3. Any technique's output (workshop, log analysis, AI transcript, hallway comment) earns requirements-input status through the same gate; conversation becomes evidence when its capture is confirmed and its lineage recorded, which is also what makes it defensible when challenged months later",
+        "B": "The BA's presence makes any conversation elicitation",
+        "C": "Elicitation happens in scheduled meetings only",
+        "D": "Elicitation uses more formal vocabulary"
+      },
+      "correct": "A",
+      "explanation": "The synthesis principle: provenance plus confirmation is what converts talk into analyzable, auditable evidence — uniform across techniques and capture technologies. This also explains earlier answers (hallway input is capturable but must pass the gate; AI transcripts are drafts until confirmed) as instances of one rule."
+    },
+    {
+      "id": 39,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "A planning decision must allocate the BA's 20% 'slack' capacity. Options: buffer for elicitation overruns, proactive repository hygiene, or unallocated reserve for emergent demands. The advanced capacity-design argument for the unallocated reserve is:",
+      "options": {
+        "A": "Slack proves the BA is overstaffed and should be cut",
+        "B": "All slack should go to documentation polish",
+        "C": "Fully pre-allocated capacity has zero absorption ability: every emergent demand (regulatory surprise, escalated CR, stakeholder crisis) then forcibly displaces planned work, creating cascading replanning — while a modest unallocated reserve absorbs variance invisibly. The reserve is not idleness; it is the planned price of schedule stability, sized from observed demand variance (v1.0's emergency-work history), and its systematic non-use or overuse is itself a planning signal to rebalance",
+        "D": "Slack should always be pre-assigned to look productive"
+      },
+      "correct": "C",
+      "explanation": "Advanced capacity planning: reserve capacity is variance insurance whose absence converts every surprise into replanning churn. Sizing it from observed emergency-demand history makes it evidence-based; monitoring its utilization closes the loop. A and C pre-spend the absorption capability; B misreads insurance as waste."
+    },
+    {
+      "id": 40,
+      "ka": "KA4",
+      "kaName": "Elicitation and Collaboration",
+      "question": "An elicitation retrospective finds that of 24 material requirements discoveries in v1.0, 17 came from observation and document/log analysis, and only 7 from interviews and workshops — yet the plan allocated 70% of effort to the latter. The advanced planning inference is:",
+      "options": {
+        "A": "Double the workshops since they underperformed",
+        "B": "Yield data is meaningless for planning",
+        "C": "Recalibrate the portfolio toward demonstrated yield WITH causal caution: the yield skew suggests this domain's knowledge lives more in artifacts and behavior than in articulable testimony (habituated processes, invisible workarounds) — but before reallocating, check whether the people-sessions ENABLED the artifact discoveries (workshop comments directing which logs to pull; the fraud spreadsheet surfacing in a workshop before observation confirmed it). Technique portfolios are tuned on yield evidence, but attribution must respect enabling chains — the correct rebalance may be sequencing (artifacts first, sessions to interpret) rather than substitution",
+        "D": "People-based techniques failed and should be abandoned"
+      },
+      "correct": "C",
+      "explanation": "Advanced portfolio tuning: evidence-based reallocation with enabling-chain attribution — the fraud spreadsheet WAS a workshop discovery that observation confirmed, so naive yield accounting would misprice the workshop. The sequencing insight (artifacts-then-interpretation) is the mature rebalance. A and B are opposite overreactions to unanalyzed yield data."
+    },
+    {
+      "id": 41,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "With v1.0 in production and v1.1 in development, a single requirement (BR-019 notifications) now exists in two active states: the production version (v1.0 behavior, subject to defect fixes) and the v1.1 enhanced version (adding digest logic). The multi-release traceability design must prevent which specific confusion?",
+      "options": {
+        "A": "Version-context collapse: a defect report, test case, or CR referencing 'BR-019' is ambiguous between the production contract and the in-development enhancement — misrouting fixes (patching v1.1 code for a v1.0 production defect), testing the wrong behavior, or approving a change against the wrong baseline. The design answer: release-qualified requirement states (BR-019@v1.0-prod, BR-019@v1.1-dev) with per-release traceability chains and explicit inheritance rules (does a v1.0 defect fix propagate into v1.1 automatically?)",
+        "B": "The requirement should be renamed in v1.1 to avoid the issue",
+        "C": "v1.0 requirements should be deleted once v1.1 starts",
+        "D": "Nothing — one requirement ID is one requirement"
+      },
+      "correct": "A",
+      "explanation": "Advanced multi-release lifecycle management: concurrent releases make 'the requirement' a family of release-bound states. Release qualification plus propagation rules is the standard resolution; renaming (C) severs lineage; deletion (D) destroys the production contract while it still governs live behavior."
+    },
+    {
+      "id": 42,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A production incident review asks: 'Requirement BR-007b mandates audit logging of credit-data access — why did last night's access by the batch job produce no log entry?' Traceability shows BR-007b → US-041 → TC-063 (Passed). The advanced forensic insight this chain enables is:",
+      "options": {
+        "A": "Precise defect localization within the lifecycle: since the requirement existed, was implemented (US-041), and its test passed, the failure is bounded to (a) TC-063's coverage — did the test include NON-INTERACTIVE access paths like batch jobs, or only handler sessions? (b) regression since testing, or (c) an unrequirement-ed access path added later. The chain converts 'why no log?' from an open mystery into three checkable hypotheses — and the likely answer (test covered interactive access only) reveals a REQUIREMENT-SCOPE ambiguity: 'every access' was validated against human access scenarios. Traceability's forensic value is hypothesis narrowing, not innocence proof",
+        "B": "Traceability is irrelevant to production incidents",
+        "C": "The batch job team should be blamed immediately",
+        "D": "The chain proves the system works, so the incident report must be wrong"
+      },
+      "correct": "A",
+      "explanation": "Advanced traceability application: the chain bounds the failure space. The scenario's probable root — 'every access' silently validated as 'every HUMAN access' — also loops back to specification quality (universal quantifiers need enumerated actor coverage). A misreads passed-tests as proof of correctness; the chain is a search tool, not a verdict."
+    },
+    {
+      "id": 43,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "An organization sunsets a legacy product. Its 340 maintained requirements face disposition. The advanced deprecation practice — as opposed to deletion or indefinite retention — requires:",
+      "options": {
+        "A": "Structured disposition: classify each requirement as (a) migrating (the need persists and transfers to a successor system — trace it forward), (b) retiring with the product (need extinct — mark deprecated with date and rationale, retain per the retention policy for audit/dispute horizons), or (c) latent (need persists but unserved — a documented capability gap the organization is consciously accepting). Blanket deletion destroys audit evidence and silently discards category (c); blanket retention without classification leaves successors unable to distinguish live obligations from archaeology",
+        "B": "Print them and store the paper offsite",
+        "C": "Keep everything active forever just in case",
+        "D": "Delete everything — the product is dead"
+      },
+      "correct": "A",
+      "explanation": "Advanced end-of-life requirements management: disposition is a classification exercise because requirements outlive products in three different ways. Category (c) — needs the organization stops serving — is the subtle one: undeclared, it resurfaces as 'why can't the new system do what the old one did?' months after deletion made the answer unrecoverable."
+    },
+    {
+      "id": 44,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Two approved requirements from different releases now CONFLICT: v1.0's BR-033 (data refresh 'within 15 minutes') and v1.1's new BR-v1.1-007 (fraud alerts 'in real time, within 60 seconds of claim submission'). Both are baselined. The advanced reconciliation recognizes:",
+      "options": {
+        "A": "The conflict is architectural, not editorial: BR-v1.1-007's 60-second obligation cannot be met through the batch-sync pathway BR-033 describes — so reconciliation requires a DESIGN decision (a separate real-time event channel for fraud alerts alongside batch sync for general data) and then requirement surgery reflecting it (scoping BR-033 to non-alert data flows; BR-v1.1-007 bound to the event channel), processed through change control with both requirements' stakeholders. Requirement conflicts that encode infrastructure conflicts are resolved in the architecture first; text edits follow the design decision, not vice versa",
+        "B": "Delete BR-033 since it's older",
+        "C": "Average them to 8 minutes",
+        "D": "Newer always wins — v1.1 overrides v1.0 automatically"
+      },
+      "correct": "A",
+      "explanation": "Advanced conflict resolution distinguishes editorial conflicts (fix the text) from architectural conflicts (the texts describe incompatible mechanisms). Precedence rules (A) and arithmetic (D) produce texts no architecture satisfies. The design-first-then-text sequence, under change control, is the mature pattern."
+    },
+    {
+      "id": 45,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "The v1.1 backlog inherits 21 deferred items from v1.0 ('Could Have — deferred with rationale'). During v1.1 prioritization, the BA re-scores them from scratch rather than importing their v1.0 rankings. The justification is:",
+      "options": {
+        "A": "Priority is context-dependent and the context changed: v1.0's rankings were computed against v1.0's objectives, constraints, and known facts — since then, production evidence arrived (mixed-claims impact quantified, 65+ adoption data), objectives evolved, and some deferred items' premises expired. Importing stale rankings would let a dead context govern live decisions; the deferral RATIONALE is imported (as re-scoring input), the RANK is recomputed. This mirrors the rejected-requirement principle: preserve reasoning, refresh conclusions",
+        "B": "Deferred items should automatically top the new list as 'owed'",
+        "C": "v1.0 rankings are binding precedent for consistency",
+        "D": "Re-scoring creates billable work"
+      },
+      "correct": "A",
+      "explanation": "Advanced prioritization treats rank as a derived, context-bound value and rationale as the durable asset. D is the seniority-of-waiting fallacy (queue position is not value); C fossilizes a superseded context. Production evidence re-pricing deferred items (mixed-claims data massively upgraded that item) is exactly why recomputation matters."
+    },
+    {
+      "id": 46,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A CR proposes a change the BA assesses as beneficial, cheap, and low-risk — but it arrived from a stakeholder who bypassed the intake process, emailing the CTO directly, who forwarded it marked 'make this happen.' The process-integrity handling is:",
+      "options": {
+        "A": "Separate the change's merits from its arrival path: route the item INTO the standard process (log it, assess it — the favorable assessment stands, CCB decides), while separately addressing the bypass — informing the CTO of the process and its purpose, and examining WHY the stakeholder bypassed (intake too slow? unknown? previously ignored?). Punishing good changes for bad paths (A) harms the initiative; honoring the bypass unprocessed (C) teaches everyone that executive routing beats the queue — the change gets due process, the pathway gets correction, and the bypass motive gets diagnosed",
+        "B": "Implement immediately — the CTO said so",
+        "C": "Return it to the stakeholder to resubmit properly before any assessment",
+        "D": "Reject the change to punish the bypass"
+      },
+      "correct": "A",
+      "explanation": "Advanced process stewardship: content-path separation. The change is processed on merits; the pathway breach is corrected without hostage-taking the change (D's resubmission ritual adds delay for ceremony). The diagnostic question — why bypass? — treats the breach as process feedback, echoing the shadow-system principle."
+    },
+    {
+      "id": 47,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "An approval-tracking audit finds requirement BR-051 marked 'Approved' with a valid PO signature — dated 3 days BEFORE the verification record shows BR-051 passed its quality check. The correct interpretation and remedy is:",
+      "options": {
+        "A": "A sequence violation with substantive risk: the PO approved a version that had not cleared verification, meaning the signed text may differ from the post-verification text (if verification then changed anything, the approval covers a superseded version; if it changed nothing, the approval was validly lucky). Remedy: diff the approved version against the verified version — if identical, document the finding and re-affirm; if different, the approval is void for the current text and must be re-obtained. Process remedy: make verification status a hard precondition in the approval workflow so out-of-order sign-off is mechanically impossible",
+        "B": "Void all of the PO's approvals project-wide as unreliable",
+        "C": "Backdate the verification record to fix the paperwork",
+        "D": "Harmless — it all got done eventually"
+      },
+      "correct": "A",
+      "explanation": "Advanced approval forensics: out-of-order gates create version-coverage ambiguity, resolved by diffing, not assumed away (A) or falsified (C — a record-integrity violation). The workflow hard-gate is the systemic fix. D's blanket voiding is disproportionate to a single sequencing defect."
+    },
+    {
+      "id": 48,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "The traceability matrix has grown to 4,000 links and the weekly maintenance consumes 6 BA-hours, mostly on links no one has ever queried. The advanced sustainability redesign applies which principle?",
+      "options": {
+        "A": "Delete the matrix — 6 hours is too expensive",
+        "B": "Assign the maintenance to an intern without context",
+        "C": "Risk-tiered traceability depth: compliance-tagged and high-dependency chains get full bidirectional maintenance with per-link coverage review (their query probability and failure cost justify it), while low-risk requirement families get lighter treatment (grouped links, tool-automated derivation from commit/test metadata, maintenance on-demand at CR time rather than weekly). Traceability is a cost-bearing control whose depth should track the value of the questions it answers — uniform maximum depth is as much a design failure as uniform absence",
+        "D": "Traceability is sacred — maintain everything at any cost"
+      },
+      "correct": "C",
+      "explanation": "Advanced control economics: the same proportionality logic applied everywhere else (formality to risk) applies to traceability itself. Tiering plus automation targets the maintenance where audit and impact-search value concentrates. B discards the control; D degrades link quality precisely where context matters."
+    },
+    {
+      "id": 49,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A prioritization dispute reveals two stakeholders are using the word 'priority' differently: the PO means build-order; the compliance officer means importance-if-forced-to-choose. Their agreement on ranks masks disagreement on meaning. The advanced facilitation move is:",
+      "options": {
+        "A": "Surface and separate the dimensions before the masked disagreement detonates: build-order (sequencing, driven by dependencies and logistics) and criticality (what survives a scope cut) are DIFFERENT orderings that coincidentally align today — the first scope-cut crisis will expose that the compliance officer believed rank 8 was 'safe' while the PO treats rank order as the cut line. Explicitly modeling both dimensions (sequence AND MoSCoW-style criticality) now converts a latent conflict into two clean, jointly-maintained orderings",
+        "B": "Adopt the compliance officer's meaning since compliance matters more",
+        "C": "Adopt the PO's meaning since the PO owns the backlog",
+        "D": "Ignore it — the ranks agree, ship the list"
+      },
+      "correct": "A",
+      "explanation": "Advanced prioritization semantics: agreement on numbers can mask disagreement on what the numbers MEAN — a latent-conflict pattern that surfaces at the worst moment (scope cuts). The dimensional separation (sequence vs. criticality, cf. the earlier priority-vs-approval-order distinction) is the structural fix; crowning either meaning (C, D) leaves the other unrepresented."
+    },
+    {
+      "id": 50,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A regulator introduces a rule with a 9-month compliance horizon, affecting requirements across BOTH the live v1.0 baseline (production behavior must change) and the v1.1 development scope. The advanced change-orchestration recognizes what about this single external trigger?",
+      "options": {
+        "A": "Handle it in v1.1 only — production can wait",
+        "B": "Handle it in production only — v1.1 will inherit somehow",
+        "C": "One trigger, multiple coordinated changes with different clocks: the production change (v1.0 patch or hotfix path, with its own release and testing regime, racing the 9-month deadline) and the development change (v1.1 scope amendment, absorbed into the normal sprint flow) are distinct change vehicles that must be COHERENT (identical interpretation of the rule, consistent implementation) but separately governed — plus a transition question (does v1.1's go-live supersede the v1.0 patch, and what if v1.1 slips past the deadline?). The BA orchestrates a change PROGRAM: linked CRs, one authoritative interpretation record, and a contingency if the elegant path (v1.1 delivers it) misses the regulatory clock",
+        "D": "One trigger means one CR"
+      },
+      "correct": "C",
+      "explanation": "Advanced multi-release change management: external mandates spanning live and in-flight releases require linked-but-separate changes sharing one interpretation, with an explicit fallback if the development vehicle misses the deadline. C gambles compliance on v1.1's schedule; D leaves v1.1 to rediscover the interpretation; A underestimates the orchestration."
+    },
+    {
+      "id": 51,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "The BA finds that requirement attributes are drifting: 'Priority' values in Jira no longer match the last CCB-ratified ranking because developers adjust the field during sprint planning 'for sorting convenience.' The layered fix is:",
+      "options": {
+        "A": "Let developers own priority since they do the work",
+        "B": "Manually re-fix the field every Friday forever",
+        "C": "Separate the semantic from the operational field: the governance-owned attribute (CCB-ratified priority) becomes read-only except through the change process, while sprint logistics get their own field (sprint-rank) developers may freely manage — the drift arose because one field served two masters with different authorities and change velocities. Field-level authority mapping plus purpose separation resolves it without either freezing legitimate sprint work or letting logistics overwrite governance",
+        "D": "Lock every field so no one can touch anything"
+      },
+      "correct": "C",
+      "explanation": "Advanced information governance: attribute drift signals dual-purpose fields crossing authority boundaries. Purpose-split fields with per-field write authority is the structural cure; total lockdown (A) obstructs work, abdication (C) dissolves governance, and Friday repair (D) is treadmill maintenance of a design flaw."
+    },
+    {
+      "id": 52,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "An impact assessment for a proposed change must include 'affected stakeholder communications' — who was told what, under the change. The advanced reason this belongs in the ASSESSMENT (not just implementation) is:",
+      "options": {
+        "A": "Communications only matter for marketing departments",
+        "B": "The CCB doesn't need this detail",
+        "C": "Stakeholder-knowledge state is part of the change's cost and risk: a change to behavior stakeholders were trained on, or to commitments externally communicated (customer-facing SLAs, regulator filings), carries re-training, re-communication, and expectation-repair costs that can exceed the technical cost — and changes contradicting prior external commitments carry reputational/regulatory exposure the CCB must weigh. The assessment prices the full change, and 'what did we already tell people?' is a real liability dimension discoverable through the communication records the engagement plan maintained",
+        "D": "It doesn't — communications are an afterthought"
+      },
+      "correct": "C",
+      "explanation": "Advanced impact assessment scope: prior communications create commitment liabilities that changes can breach. The retraining and expectation-repair costs, and the externally-communicated-commitment exposure, are decision-relevant and frequently dominate technical cost on customer-facing changes — which is why the assessment (not post-hoc implementation) must surface them."
+    },
+    {
+      "id": 53,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "During a scope-cut crisis, a stakeholder proposes 'approving requirements conditionally on funding' — sign everything now, let budget determine what gets built. The governance analysis of blanket conditional approval is:",
+      "options": {
+        "A": "It inverts the approval's function: approval exists to convert analysis into COMMITMENT that downstream work can rely on; making every approval funding-contingent means nothing is actually committed, development plans on quicksand, and the real scope decision migrates from the governed forum (CCB, with analysis) to the budget process (without requirements analysis). Legitimate conditional approval is targeted and tracked (specific conditions, owners, tripwires — like the DPA case); BLANKET conditionality is unapproval wearing approval's clothes. The honest instrument for the situation is explicit priority-tiered approval: approve the funded core firmly, hold the contingent tier as prioritized-but-unapproved",
+        "B": "Approve nothing until the budget is final",
+        "C": "All approvals should always be conditional for flexibility",
+        "D": "Efficient — sign once, decide later"
+      },
+      "correct": "A",
+      "explanation": "Advanced approval theory: commitment value is what approval produces; universal conditionality destroys it while retaining the ceremony. The migration-of-decision observation (scope decided by budget office without requirements analysis) is the governance harm. Targeted conditions remain legitimate; the tiered-approval alternative preserves honesty and flow. D stalls everything for certainty that may never arrive."
+    },
+    {
+      "id": 54,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A newly-arrived auditor requests 'evidence that requirement changes during the project were controlled.' The BA can produce the CR log, CCB minutes, and versioned baselines — but realizes the strongest single artifact linking them is:",
+      "options": {
+        "A": "The CR log by itself",
+        "B": "A signed statement that everything was controlled",
+        "C": "The per-requirement version history cross-referencing each version transition to its authorizing CR and CCB decision: the CR log proves changes were REQUESTED, the minutes prove decisions HAPPENED, but the version-to-authorization mapping proves every actual baseline modification corresponds to an authorized decision (and, in reverse, that every approved change landed) — closing both directions of the control claim: nothing changed without authorization; everything authorized was applied. Control evidence is the reconciliation between the change stream and the artifact stream, not either stream alone",
+        "D": "The BA's personal diary"
+      },
+      "correct": "C",
+      "explanation": "Advanced audit-evidence thinking: control is demonstrated by RECONCILIATION between authorization records and artifact states, in both directions (no unauthorized changes; no unapplied authorizations). Either stream alone leaves the other direction unproven; attestations (D) are assertions, not evidence."
+    },
+    {
+      "id": 55,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Post-v1.0, the organization wants requirement reuse: v1.1 and the fraud initiative should inherit relevant v1.0 requirements rather than rewrite them. The advanced reuse discipline requires each candidate requirement to pass which check before inheritance?",
+      "options": {
+        "A": "Context-revalidation: an inherited requirement carries assumptions from its origin (system landscape, regulatory versions, stakeholder decisions, glossary meanings) that the new context may violate — reuse imports the TEXT cheaply but the VALIDITY must be re-established: is the referenced constraint still true, the regulation still current, the defined term still meaning the same thing in the new initiative's glossary? Reused requirements enter the new initiative as high-quality DRAFTS requiring targeted re-verification and re-validation, not as pre-approved content — reuse accelerates the pipeline; it does not bypass it",
+        "B": "Only requirements the original author personally transfers can be reused",
+        "C": "Reformatting into the new template is sufficient",
+        "D": "None — approved once is approved forever"
+      },
+      "correct": "A",
+      "explanation": "Advanced reuse governance parallels the inherited-stakeholder-register principle: repository assets are validated hypotheses in a new context. The specific decay vectors (constraint drift, regulatory versioning, glossary divergence) make targeted revalidation efficient — far cheaper than rewriting, far safer than blind inheritance."
+    },
+    {
+      "id": 56,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A CCB member privately asks the BA to 'soften' an impact assessment so a politically favored change looks cheaper. The professional-integrity response, and its systemic justification, is:",
+      "options": {
+        "A": "Decline while offering legitimate alternatives: the assessment states the analysis as the evidence supports it (its entire value is neutrality — the CCB's decisions are only as good as unmanipulated inputs), but the member's underlying goal has legitimate channels: they may argue for the change DESPITE its cost in the CCB discussion, propose descoping to genuinely reduce the impact, or seek sponsor sponsorship for the investment. One softened assessment doesn't just misprice one change — it converts the assessment function into a negotiation instrument, after which every assessment is presumed political. The BA protects the instrument and redirects the member to honest paths",
+        "B": "Report the member to HR immediately",
+        "C": "Soften it but keep private notes on the real numbers",
+        "D": "Soften it — one assessment won't matter"
+      },
+      "correct": "A",
+      "explanation": "Advanced integrity handling: refuse the manipulation, preserve the relationship by routing the legitimate interest through legitimate channels, and understand the systemic stake (instrument credibility is a commons — cf. the prioritization-gaming question). D creates a two-books integrity breach; B escalates before attempting professional resolution."
+    },
+    {
+      "id": 57,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "An organization measures its requirements process maturity. Which indicator MOST distinguishes a genuinely mature lifecycle from a documented-but-hollow one?",
+      "options": {
+        "A": "Behavioral indicators under stress: what happens when a deadline collides with a quality gate (is the gate honored, formally waived with authority, or silently bypassed?), whether change control processes the awkward changes (executive-sourced, self-correcting) identically to routine ones, and whether traceability answers real questions in real incidents versus existing for audits — maturity is process behavior when the process is inconvenient; documentation volume (A), tool sophistication, and steady-state compliance all measure the easy case",
+        "B": "Whether the tooling is expensive and modern",
+        "C": "Whether audits have ever found anything",
+        "D": "The number of process documents published"
+      },
+      "correct": "A",
+      "explanation": "The advanced maturity criterion: controls reveal their reality under pressure and awkwardness — the same principle as the risk-gate-under-sponsor-pressure scenario. Steady-state compliance is nearly costless; stress-state behavior is the differentiator. D is perverse: zero findings often indicates hollow audits, not perfection."
+    },
+    {
+      "id": 58,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "Synthesis: a colleague asserts 'KA5 is bureaucracy that Agile eliminated.' The most precise rebuttal identifies what Agile actually changed about the five functions:",
+      "options": {
+        "A": "Agile replaced lifecycle management with daily standups",
+        "B": "KA5 only applies to waterfall projects by definition",
+        "C": "Agile changed the MECHANISMS and CADENCE, not the functions: tracing persists (story-to-epic-to-objective links, commit references), maintenance persists (living backlogs, definition refinement), prioritization intensifies (every sprint re-ranks), change assessment persists (though pre-commitment change is absorbed by re-prioritization, in-sprint and cross-team changes still get impact discussion), and approval persists (Definition of Ready, PO acceptance, release gates). What Agile eliminated is the heavyweight batch-mode implementation of these functions in low-change contexts — the functions themselves are load-bearing in any regime where multiple people build against shared, evolving intentions",
+        "D": "Agree — Agile teams don't manage requirement lifecycles"
+      },
+      "correct": "C",
+      "explanation": "The advanced synthesis distinguishes function from mechanism: Agile is an alternative implementation of the same five guarantees at different granularity, not their abolition. The rebuttal maps each function to its Agile-native mechanism — the mapping itself is the exam-grade understanding."
+    },
+    {
+      "id": 59,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A dependency-aware release plan must sequence 3 items: X (no dependencies, highest business value), Y (depends on Z, medium value), Z (no dependencies, lowest value but prerequisite to Y). Capacity allows 2 items this release. The value-maximizing selection over a TWO-release horizon, and its principle, is:",
+      "options": {
+        "A": "Y and Z — dependencies first always",
+        "B": "X and Z — and the reasoning that enablers carry the value of what they unlock",
+        "C": "It depends on Y's value versus X's, computed over the horizon: X+Z this release enables Y next release (total: X now, Y later); X+Y is invalid (Y cannot ship without Z). The principle: prerequisite items carry OPTION VALUE beyond their standalone worth — Z's 'lowest value' rating ignores that it unlocks Y; dependency-blind value ranking systematically underprices enablers. The correct comparison is between feasible PORTFOLIOS across the horizon, not items in isolation — and X+Z dominates any portfolio containing an unshippable Y",
+        "D": "X and Y this release — highest combined value"
+      },
+      "correct": "B",
+      "explanation": "Advanced portfolio prioritization: (note the correct answer is X and Z with the option-value reasoning). Item-level ranking misprices enablers; portfolio-level feasibility analysis over the planning horizon is the correct frame. B's naive combination is infeasible (Y needs Z); C's dogma ships the lowest-value pair when X is independently available. The option-value insight — Z inherits worth from Y — is the principle exams probe."
+    },
+    {
+      "id": 60,
+      "ka": "KA5",
+      "kaName": "Requirements Life Cycle Management",
+      "question": "A SWOT analysis for the fraud-analytics initiative lists 'experienced claims workforce' as a Strength and 'no ML capability' as a Weakness. The advanced critique of stopping at this list is:",
+      "options": {
+        "A": "SWOT is obsolete and should never be used",
+        "B": "The strength and weakness cancel out to neutral",
+        "C": "A SWOT list without INTERACTION analysis is inventory, not strategy: the analytical value comes from the cross-quadrant questions — how does the workforce strength convert the ML weakness into a buildable path (SO/WO strategies: domain experts can label training data and validate model outputs, making a partner-supplied ML capability viable where a pure-tech build would fail)? Which Threats do the Weaknesses amplify (competitor AI adoption × no ML capability)? Strategy emerges from the pairings; the quadrant list is just the raw material — and most real SWOT failures are lists presented as conclusions",
+        "D": "SWOT lists are complete analyses in themselves"
+      },
+      "correct": "C",
+      "explanation": "Advanced technique application: SWOT's analytical payload is in cross-quadrant strategy derivation (SO/WO/ST/WT), where the workforce-labels-the-data insight lives. The list-as-conclusion failure is the most common real-world SWOT defect; D's 'canceling' is a category error — strengths and weaknesses in different capability dimensions don't net."
+    },
+    {
+      "id": 61,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Benchmarking shows a competitor processes claims in 2.5 days. A stakeholder demands the future-state target match it. The advanced benchmarking caution before adopting the number is:",
+      "options": {
+        "A": "Interrogate comparability before importing the number: does the competitor's 2.5 days cover the same claim mix (they may decline complex claims MayOptimize accepts), the same measurement definition (submission-to-decision vs. complete-documents-to-decision), the same regulatory regime, and the same service model (their speed may be bought with a fraud-loss rate or customer-experience trade-off invisible in the headline)? Benchmarks imported without comparability analysis smuggle in unexamined trade-offs and definitional mismatches — the benchmark is a QUESTION-GENERATOR (how do they achieve it, at what cost, on what population?), not a target-setting shortcut",
+        "B": "Beat it — target 2 days to be safe",
+        "C": "Ignore competitors entirely",
+        "D": "Match it — benchmarks are targets by definition"
+      },
+      "correct": "A",
+      "explanation": "Advanced benchmarking discipline: headline metrics encode population, definition, and trade-off choices that must be unpacked before adoption. The claim-mix and measurement-definition issues mirror earlier internal lessons (mixed-claims segmentation; the elapsed-from-when definitional conflict) applied externally. D compounds the error with an arbitrary margin."
+    },
+    {
+      "id": 62,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Current-state analysis for the fraud initiative must establish the ACTUAL fraud loss baseline, but investigation reveals the current process only detects fraud it catches — undetected fraud is, by definition, absent from the records. The advanced baseline approach for this measurement problem is:",
+      "options": {
+        "A": "Acknowledge and estimate the detection gap: detected-fraud figures measure the current process's catch rate times true fraud, not true fraud — treating them as the baseline would make a BETTER detection system look like a fraud INCREASE (it catches more of what was always there). Approaches: industry-standard incidence rates for comparable books as a triangulation bound, retrospective sampling audits (deep-review a random claim sample to estimate the undetected rate), and framing the baseline as a range with explicit uncertainty. The initiative's success metric must be designed for this ('detected fraud will initially RISE' as an expected success signature, not a failure)",
+        "B": "Wait until the new system reveals the truth, then baseline",
+        "C": "Assume zero undetected fraud for simplicity",
+        "D": "Use detected fraud as the baseline — it's the only data"
+      },
+      "correct": "A",
+      "explanation": "Advanced measurement design for detection problems: the observed baseline is censored by the very capability being replaced. The rising-detections-as-success paradox must be pre-explained to stakeholders or the initiative's early wins will read as deterioration. Sampling audits and industry triangulation bound the unobservable; D makes the baseline unrecoverable (post-deployment data can't reconstruct the pre-state)."
+    },
+    {
+      "id": 63,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The future-state definition for fraud analytics must set a target balancing two error types: false negatives (fraud paid) and false positives (legitimate customers investigated). A stakeholder proposes 'minimize both.' The advanced objective-design response is:",
+      "options": {
+        "A": "Expose the trade-off frontier: at any capability level, the two error rates trade against each other via the decision threshold — 'minimize both' is not an operating point, and leaving the balance unspecified delegates a VALUES decision (how many wrongly-investigated customers per prevented fraud dollar?) to whoever tunes the threshold. The objective must encode the organization's chosen exchange rate explicitly (e.g., false-positive rate ≤2% of legitimate claims, subject to which: maximize detection), with the choice made by business/compliance owners who can weigh customer-experience and reputational costs against loss prevention — not defaulted to a technical setting",
+        "B": "Set both error rates to zero as the target",
+        "C": "Let the data scientists choose the balance",
+        "D": "Accept it — minimizing both is obviously the goal"
+      },
+      "correct": "A",
+      "explanation": "Advanced objective design for classification systems: threshold-mediated error trade-offs are policy choices wearing technical clothes (the same structure as the fraud-override policy question). Unspecified balance means the values decision happens by default at tuning time. The lexicographic form (constraint on one rate, optimize the other) is a standard encoding of the chosen exchange rate."
+    },
+    {
+      "id": 64,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A risk workshop for v1.1 generates 40 risks. The BA notices they cluster into: 12 restatements of v1.0 risks that never materialized, 20 generic project risks ('key staff may leave'), and 8 genuinely v1.1-specific items. The advanced risk-quality intervention is:",
+      "options": {
+        "A": "Restructure for signal: the never-materialized v1.0 restatements deserve a disposition decision (were they over-rated then, mitigated successfully, or still live? — each answer differs), the generics get standard-treatment templates rather than bespoke analysis time, and the workshop's scarce analytical attention concentrates on the 8 initiative-specific risks (mixed-claims routing regression against live traffic; concurrent-release change collisions) that only this team can assess. Risk-register quality is signal density, not item count — undifferentiated registers bury the 8 that matter under 32 that don't",
+        "B": "Rank all 40 purely by workshop vote",
+        "C": "Delete everything except the 8 specific risks",
+        "D": "Keep all 40 — more risks means better coverage"
+      },
+      "correct": "A",
+      "explanation": "Advanced risk-portfolio hygiene: triage by information value. The v1.0-restatement disposition question is the subtle part — non-materialization has three different meanings with three different treatments. C loses the generics' real (if standard) content; the attention-allocation principle mirrors validation prioritization."
+    },
+    {
+      "id": 65,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "v1.1's change strategy must handle a subtle transition problem: v1.0's Champions are now the OLD guard, and their hard-won v1.0 expertise makes some resistant to v1.1's workflow changes ('we just got everyone comfortable'). The advanced change-strategy insight is:",
+      "options": {
+        "A": "Yesterday's change agents can be today's incumbents: the Champions' identity and status are now invested in the v1.0 ways they evangelized, making them potential resistance leaders with outsized floor credibility — the strategy must re-recruit them deliberately (early involvement in v1.1 design so the changes are partly THEIRS, first-access positioning that renews the status reward, honest engagement with their 'stability' concern which contains real signal about change fatigue) rather than assuming enrollment. Change capital depreciates and transfers imperfectly between changes; the champion NETWORK is the durable asset, but its allegiance is per-change",
+        "B": "Replace all Champions with fresh staff",
+        "C": "Skip champions for v1.1 — the concept expired",
+        "D": "Champions are permanent assets — reuse them as-is"
+      },
+      "correct": "A",
+      "explanation": "Advanced change dynamics: the incumbent-former-innovator pattern. The mechanism (identity/status investment in the previous change) predicts the resistance and prescribes the counter (co-design, renewed status economics). The change-fatigue signal buried in their objection is also legitimate strategy input — pace matters. B destroys the network; D abandons a proven mechanism."
+    },
+    {
+      "id": 66,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A capability assessment must rate the organization's 'data quality management' capability. Interviews yield confident 'strong' ratings; the CRM field-mapping incident and the 94%-clean migration scrub suggest otherwise. The advanced capability-rating discipline is:",
+      "options": {
+        "A": "Rate against behavioral evidence and defined maturity anchors, not self-assessment: 'strong' from interviews reflects aspiration and relative internal comparison, while the incident record (production field-format defects undetected until live traffic; a migration requiring a major scrub) evidences the actual capability level — anchor ratings to observable criteria (defined data standards? monitoring in production? incident history?) and reconcile the perception-evidence gap explicitly, because capability assessments feed feasibility judgments (can this organization support real-time fraud analytics?) where optimistic ratings produce infeasible strategies",
+        "B": "Skip capability assessment — it's too subjective",
+        "C": "Rate everything 'weak' to be conservative",
+        "D": "Average the interview ratings — perception is reality"
+      },
+      "correct": "A",
+      "explanation": "Advanced capability assessment parallels the readiness self-report-versus-behavior question: anchored behavioral criteria beat perception surveys, and the specific downstream stake (feasibility of the data-hungry fraud initiative) is why inflation is dangerous. Blanket pessimism (C) is equally unanchored; the reconciled evidence-based rating is the discipline."
+    },
+    {
+      "id": 67,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "An external-environment scan for the strategy must process a vendor's claim that 'new AI regulation will effectively ban fraud scoring by 2027 — buy our compliant platform now.' The advanced analytical posture toward interested-party environmental intelligence is:",
+      "options": {
+        "A": "Ignore all vendor input as biased",
+        "B": "Forward the claim to the sponsor as urgent intelligence",
+        "C": "Decompose the claim into verifiable components and check each against disinterested sources: what is the actual regulatory instrument (proposed? enacted? which jurisdiction?), what does its text say about scoring (ban? transparency requirements? human-review mandates?), and what do primary sources (the regulator's publications, legal analyses, the external law firm) say — vendor environmental claims bundle real signal with sales framing, and the deconstruction typically finds a true kernel (explainability requirements ARE tightening) inside an inflated wrapper ('ban'). The scan records the verified kernel with its source quality graded, and the strategy responds to the evidence, not the pitch",
+        "D": "Act on it — vendors know their markets"
+      },
+      "correct": "C",
+      "explanation": "Advanced environmental scanning: source-interest-aware verification. The decomposition method (instrument, text, jurisdiction, primary-source check) extracts the real regulatory signal — which, notably, would vindicate the earlier explainability requirement — from the sales inflation. A and D transmit unverified framing in opposite directions; B discards genuine market intelligence vendors do carry."
+    },
+    {
+      "id": 68,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The business case for v1.1 shows the mixed-claims routing investment recovering its cost in 14 months via processing savings. A challenge arrives: 'v1.0's actual benefits ran 20% under projection — why trust this model?' The advanced business-case response uses v1.0's variance how?",
+      "options": {
+        "A": "Calibrate the new model with the old model's error structure: decompose v1.0's 20% shortfall into its causes (adoption ramped slower than modeled — a factor v1.1 shares and should now model from actuals; the CSAT-dependent benefits lagged the portal limitations — a mechanism v1.1's scope directly addresses), adjust v1.1's projections with the observed parameters (real adoption curves, real per-day processing values from production data), and present the case with the calibration shown — forecast credibility is rebuilt by demonstrating the model LEARNED from its errors, and v1.1's model is actually stronger than v1.0's was because production data replaced assumptions",
+        "B": "Concede that benefit projections are unknowable",
+        "C": "Inflate v1.1's projections 20% to offset skepticism",
+        "D": "Dismiss it — v1.1 is a different initiative"
+      },
+      "correct": "A",
+      "explanation": "Advanced forecasting governance: variance decomposition converts past error into model calibration — the error's CAUSES (slow adoption, portal-limited CSAT) are identifiable parameters the new model can carry at observed values. B is manipulation; D overcorrects into nihilism; the calibrated-and-shown approach is what makes round-two cases MORE credible than round one."
+    },
+    {
+      "id": 69,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Deciding v1.1's transition approach, the team must choose whether the mixed-claims routing goes live for ALL branches simultaneously or pilots in one branch. Unlike v1.0's situation, the arguments now cut differently because:",
+      "options": {
+        "A": "The context changed the risk calculus: v1.0's pilot managed the risk of an unproven PLATFORM with unpracticed users; v1.1 adds one routing capability to a proven platform with practiced users — the marginal change is smaller, the rollback is cleaner (routing rules can revert to manual-queue behavior by configuration), and a single-branch pilot has a NEW cost v1.0's didn't: cross-branch inconsistency in how identical claim types are handled (mixed claims auto-routed in Branch A, manual in Branch B) creates fairness, SLA-reporting, and compliance-consistency questions. Transition design is re-derived per change from ITS risk profile — pattern-repeating v1.0's answer without re-running the analysis is cargo-cult transition planning",
+        "B": "Big-bang is always right for small changes",
+        "C": "Flip a coin — both approaches are defensible",
+        "D": "Pilots are always right — repeat the v1.0 pattern"
+      },
+      "correct": "A",
+      "explanation": "Advanced transition reasoning: the pilot-versus-bigbang answer is derived from the change's specific risk-and-rollback profile, not inherited from precedent. The cross-branch-inconsistency cost of piloting a POLICY-like capability (identical claims treated differently by geography) is the non-obvious factor that can flip the v1.0 answer. The meta-lesson — re-derive, don't pattern-match — is the exam target."
+    },
+    {
+      "id": 70,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "An organizational risk-appetite statement says the company 'accepts moderate operational risk in pursuit of digital efficiency but has zero tolerance for regulatory breach.' The advanced use of this statement in Task 6.3's risk response selection is:",
+      "options": {
+        "A": "It is the response-selection calibrator: risks mapping to the regulatory-breach category get mitigation/avoidance regardless of cost-benefit arithmetic (zero tolerance overrides expected-value logic — the batch-window compliance-report risk gets a guaranteed-delivery redesign even if 'cheap acceptance' pencils out), while operational-efficiency risks get the cost-benefit treatment the 'moderate acceptance' posture licenses (the 15-minute lag acceptance was legitimate precisely because it sat in the tolerated category). Appetite statements translate board-level values into per-risk decision rules; the BA's job is the category mapping and the consistency audit — flagging any response that violates the declared appetite",
+        "B": "Appetite statements only bind the board, not projects",
+        "C": "Zero tolerance means the company should exit insurance",
+        "D": "It's wall art — ignore it in practice"
+      },
+      "correct": "A",
+      "explanation": "Advanced risk governance integration: appetite statements are decision-rule generators, making some risk responses non-discretionary (category-triggered mitigation) and licensing others (tolerated-category acceptance). The consistency-audit role — checking each planned response against the declared appetite — is how the abstract statement becomes operational, and retroactively explains why the two earlier acceptance decisions (data lag: legitimate; audit-gap: would not be) differ."
+    },
+    {
+      "id": 71,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A strategy review discovers the v1.0 objectives ('≤3 days, <2%, ≥80%') have been ACHIEVED and sustained for two quarters. A stakeholder argues the strategy work is 'done.' The advanced strategy-lifecycle response is:",
+      "options": {
+        "A": "Raise all targets 20% automatically",
+        "B": "Keep the strategy frozen so the achievement is preserved",
+        "C": "Achieved objectives trigger the next strategy question, not strategic silence: sustained target achievement re-opens the need analysis at a higher level — has the competitive gap the need identified actually closed (external check: the same-day competitor question), do the targets still represent adequacy or has achievement revealed the next constraint (the appeals-dispute trend; the segment-level CSAT gap beneath the aggregate), and what does the organization's strategic position now make possible that it didn't before (the v1.0 platform as a foundation for capabilities the original analysis deferred)? Strategy analysis is a standing capability that achievement re-tasks rather than retires — 'done' is only true of the specific objectives, never of the analytical function",
+        "D": "Agree — achieved objectives close the strategy"
+      },
+      "correct": "C",
+      "explanation": "Advanced strategy-lifecycle thinking: objective achievement is a re-analysis trigger (external position check, next-constraint identification, option-space expansion) — connecting the threads of the competitor question, the emerging-measure question, and the segment-gap question into the standing-capability view of strategy analysis. B changes numbers without analysis; D confuses stasis with success."
+    },
+    {
+      "id": 72,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Current-state analysis of the claims APPEALS process (the emerging Post-v1.0 issue) finds no documented process at all — appeals are handled ad hoc by whoever receives them. Before designing a future state, the advanced insight about analyzing an UNDOCUMENTED, UNSTANDARDIZED current state is:",
+      "options": {
+        "A": "The current state exists as a distribution of practices, not a process — and analyzing that distribution IS the analysis: sample actual appeal cases across handlers (how were they decided? what criteria emerged organically? what outcomes resulted?), because the variation reveals both the implicit decision criteria practitioners converged on (candidate future-state rules with practitioner legitimacy) and the inconsistency costs (identical appeals decided differently — a fairness and regulatory exposure that quantifies the need). Designing the future state from a blank page discards the organically-evolved knowledge AND the evidence of what standardization must fix",
+        "B": "Wait for the process to standardize itself before analyzing",
+        "C": "Document whatever the most senior handler does as the current state",
+        "D": "No current state exists, so skip to future-state design"
+      },
+      "correct": "A",
+      "explanation": "Advanced current-state method for emergent practices: the practice DISTRIBUTION is the object of analysis — its central tendencies are candidate rules with built-in legitimacy, its variance is the quantified case for standardization. A discards evolved knowledge; B samples one point of a distribution and crowns it; the case-sampling method mirrors the appeals of observation-plus-data triangulation."
+    },
+    {
+      "id": 73,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A future-state workshop produces two camps: 'automate appeals triage with the fraud-score infrastructure' versus 'appeals REQUIRE human judgment — automation is categorically wrong here.' The advanced facilitation reframe that unlocks the deadlock is:",
+      "options": {
+        "A": "Side with human judgment — it sounds safer",
+        "B": "Side with automation — it's the strategic direction",
+        "C": "Decompose 'appeals' into decision types before debating automation: the categorical framing treats appeals as one thing, but case analysis shows a mix — factual-error corrections (wrong document linked: mechanically checkable, automatable with high consensus), judgment disputes (assessment disagreement: genuinely human territory), and hybrid cases (automatable screening, human decision) — and the camps largely agree once the question becomes 'WHICH appeal types warrant WHICH treatment' rather than 'automation: yes/no.' Most categorical design deadlocks dissolve under type decomposition because the disagreement was about different exemplars each camp had in mind",
+        "D": "Vote and move on"
+      },
+      "correct": "C",
+      "explanation": "Advanced facilitation of design conflicts: categorical yes/no debates usually indicate an undecomposed problem where each side argues from different exemplars. The type-decomposition move (mirroring the customer-definition subtype resolution and the appeals-distribution analysis) converts ideology into allocation — the standard dissolution pattern for automation debates."
+    },
+    {
+      "id": 74,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "Synthesis: comparing the v1.0 strategy cycle with the emerging fraud-analytics cycle, what has FUNDAMENTALLY changed about the current-state input to strategy analysis, and what stays invariant?",
+      "options": {
+        "A": "Changed: the current state now includes the ORGANIZATION'S OWN PRIOR CHANGE — v1.0's platform, its production data (which replaces assumptions with measurements), its change-fatigued-but-practiced workforce, and its achieved-objective position all become current-state facts the new analysis builds on; the evidence base is richer and partly self-generated. Invariant: the analytical discipline itself — needs must still be evidenced not assumed, root causes still distinguished from symptoms, future states still bounded by real capabilities and constraints, risks still mined from both states, and change strategies still sized to the gap. Strategy analysis compounds: each cycle's outputs become the next cycle's inputs, but the epistemics of the cycle never change",
+        "B": "Nothing changes — each initiative starts from zero",
+        "C": "The discipline changes but the facts stay the same",
+        "D": "Everything is different — no continuity exists"
+      },
+      "correct": "A",
+      "explanation": "The capstone synthesis: organizational learning makes each strategy cycle's CURRENT STATE richer (production evidence, built capabilities, change history as data) while the analytical INVARIANTS (evidence over assumption, cause over symptom, feasibility over aspiration) persist. The compounding view — cycles feeding cycles — is the mature understanding of strategy analysis as a standing capability, and B states its exact inverse."
+    },
+    {
+      "id": 75,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A traceability question arrives from an unexpected consumer: the CFO wants 'which requirements does the depreciation schedule for the DCMS asset depend on?' — linking requirements to CAPITALIZED value for accounting. The advanced insight about traceability's consumer base is:",
+      "options": {
+        "A": "Requirements and accounting must never mix",
+        "B": "Build a second matrix just for finance",
+        "C": "Traceability's consumers extend beyond the delivery organization: capitalization treatment (which development costs are capitalizable depends on which requirements delivered enhancing capability versus maintenance), contract disputes, insurance claims, and M&A due diligence all interrogate the requirements record — and each consumer needs specific link types and evidentiary quality the matrix may or may not carry. The mature response maps the new consumer's question to the existing structure, identifies gaps (cost-to-requirement links may not exist), and prices extending versus one-off analysis — the requirements record is an organizational asset whose consumer base grows with organizational maturity",
+        "D": "Refuse — finance is not a traceability consumer"
+      },
+      "correct": "C",
+      "explanation": "Advanced asset thinking: the requirements record serves consumers the delivery team never anticipated (capitalization, disputes, diligence), each demanding specific linkage. The map-gap-price response pattern handles novel consumers without either refusal or duplicate infrastructure; capitalization-requirement linkage is a real and commonly missed consumer."
+    },
+    {
+      "id": 76,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "An approval workflow automation proposal would auto-approve requirements that pass verification checks and match 'previously approved patterns.' The governance boundary this proposal crosses is:",
+      "options": {
+        "A": "It automates the JUDGMENT the approval exists to apply: verification checks are automatable (well-formedness is mechanical), but approval attests that an accountable human with domain authority accepts the COMMITMENT — pattern-matching to prior approvals cannot detect that this instance's context differs (the pattern-similar requirement may carry different compliance stakes or business consequences). The defensible automation boundary: automate the PIPELINE (routing, readiness gating, reminder escalation, evidence assembly) and the pre-checks, while the accept/reject act remains human — with the efficiency gain coming from approvers receiving decision-ready packages, not from removing the decision",
+        "B": "Automation should be banned from requirements work entirely",
+        "C": "All approvals should be automated for speed",
+        "D": "None — automation is progress"
+      },
+      "correct": "A",
+      "explanation": "Advanced governance-automation design: the mechanical/judgment boundary — automate evidence assembly and workflow, preserve the human commitment act. Pattern-matching approval fails exactly where approval matters (context divergence within surface similarity); the decision-ready-package framing captures the legitimate efficiency without hollowing accountability."
+    },
+    {
+      "id": 77,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A requirement's business owner leaves the organization mid-lifecycle with no successor named. Twelve of 'her' requirements now have no accountable owner for validation questions, change consultation, or approval participation. The lifecycle-continuity practice this exposes as missing is:",
+      "options": {
+        "A": "Ownership succession as a maintained attribute: requirement ownership should be role-anchored (Claims Manager role, not Sarah personally) with the role-to-person mapping maintained separately, transition protocols when incumbents change (successor briefed on owned requirements and open questions), and orphan detection (periodic scans for requirements whose owner mapping is broken). Twelve orphaned requirements mean twelve items whose changes cannot be validly consulted and whose approvals have no living authority — a governance hole that stays invisible until the first change request hits it",
+        "B": "The BA inherits ownership of everything by default",
+        "C": "Requirements should never have owners to avoid this",
+        "D": "Nothing — ownerless requirements are fine"
+      },
+      "correct": "A",
+      "explanation": "Advanced lifecycle continuity: role-anchored ownership plus succession protocol plus orphan scanning — the requirement-level version of the authority-continuity provision from the PO-absence question. D concentrates business authority in the wrong role; the invisible-until-exercised nature of the hole is why proactive orphan detection matters."
+    },
+    {
+      "id": 78,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "A pre-mortem exercise ('imagine v2.0 failed — write its history') generates failure narratives dominated by one theme: integration with the fraud platform collapsed under conflicting release schedules. The advanced use of pre-mortem output in risk assessment is:",
+      "options": {
+        "A": "Treat narrative convergence as elicited risk-perception data with unique properties: the pre-mortem's prospective-hindsight framing surfaces risks participants self-censor in standard workshops (naming a risk feels like predicting failure; narrating an imagined failure feels safe) — the convergent integration-schedule theme is a strong signal the standard register underweights it, warranting explicit dependency-governance design between the initiatives (shared release calendar, interface freeze protocols, joint change review). Pre-mortems complement registers by extracting the socially-suppressed risks; convergence across independent narrators is the validity indicator",
+        "B": "Run the pre-mortem again until happier stories emerge",
+        "C": "Cancel v2.0 since people imagine it failing",
+        "D": "File the narratives as creative writing"
+      },
+      "correct": "A",
+      "explanation": "Advanced risk elicitation: the pre-mortem's mechanism (prospective hindsight defeating optimism bias and social censorship) and its validity signal (independent convergence). The output routes into concrete dependency governance — the exact cross-initiative collision risk the multi-release change question raised. D inverts the technique's purpose."
+    },
+    {
+      "id": 79,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "The change strategy must decide the fate of a transition mechanism: the parallel-run of the legacy system, still active 8 months post-go-live 'for safety.' Monthly cost is real; usage logs show 2 lookups per month, both satisfiable from the archive. The decision framework for retiring safety mechanisms is:",
+      "options": {
+        "A": "Sunset by evidence: the parallel-run was transition scaffolding whose justification (rollback option, comparison reference) has a natural expiry once the new system's stability is demonstrated — the retirement case rests on measured facts (8 months of stable targets, near-zero usage, archive coverage of residual needs) plus a defined residual-risk treatment (archive access procedure, documented restoration path if ever catastrophically needed). Safety mechanisms without sunset criteria become permanent costs by inertia; the discipline is the same premise-tripwire logic as limitation acceptances, pointed at protective spending",
+        "B": "Reduce it to weekends only as a compromise",
+        "C": "Turn it off immediately without analysis",
+        "D": "Keep it forever — safety has no price"
+      },
+      "correct": "A",
+      "explanation": "Advanced transition-mechanism lifecycle: scaffolding needs sunset criteria, retired on demonstrated-stability evidence with residual-risk provisions. The inertia mechanism (nobody owns turning safety off) is why the criteria must be pre-defined; D's compromise keeps the cost structure while degrading the protection — worst of both."
+    },
+    {
+      "id": 80,
+      "ka": "KA6",
+      "kaName": "Strategy Analysis",
+      "question": "An initiative's business case survives sensitivity testing on every single variable — but a stakeholder asks: 'what if adoption AND the regulatory timeline AND the vendor delivery all disappoint together?' The advanced business-case robustness practice this invokes is:",
+      "options": {
+        "A": "Correlated-scenario stress testing: single-variable sensitivity assumes independence, but real disappointments cluster (a difficult economic period simultaneously slows adoption, tightens budgets, and strains vendors) — robustness requires testing coherent adverse SCENARIOS (plausible combinations with narrative logic) and identifying the case's break conditions under correlation. A case that survives every variable alone but dies under a plausible combination is fragile in exactly the way one-at-a-time testing conceals; the scenario results feed contingency triggers, not just the invest decision",
+        "B": "Refuse to model combinations as too speculative",
+        "C": "Add 20% pessimism to everything simultaneously",
+        "D": "Dismiss it — testing variables one at a time is standard"
+      },
+      "correct": "A",
+      "explanation": "Advanced case robustness: correlation-aware scenario testing versus independent-variable sensitivity — the difference between testing parts and testing plausible worlds. B's uniform haircut lacks the narrative coherence that makes scenarios decision-useful; the break-condition identification converts stress testing into contingency design."
+    },
+    {
+      "id": 81,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Specifying the v1.1 notification digest (fixing the 9-notifications-per-claim problem), the BA must define WHEN individual notifications aggregate versus send immediately. Customer research shows decision notifications are urgent to customers while intermediate status changes are noise. The specification pattern that encodes this is:",
+      "options": {
+        "A": "Let customers configure everything individually",
+        "B": "Send everything twice — immediately and in digest",
+        "C": "Event-classification with per-class delivery rules: partition notification-triggering events into defined classes by customer urgency (Class 1 — decision, payment, document-required: immediate individual delivery; Class 2 — internal status transitions: daily digest at a set time; with the classification table itself maintained as a business-configurable rule set), making the urgency policy explicit, testable per class, and adjustable without respecifying. The anti-pattern is either global immediacy (the original spam) or global digest (delaying the urgent) — the requirement's job is encoding the DISTINCTION the research found",
+        "D": "'The system shall send notifications appropriately'"
+      },
+      "correct": "C",
+      "explanation": "Advanced specification of aggregation logic: the research finding (urgency varies by event type) must survive into the requirement's structure — event classes with per-class rules. C outsources the policy to users who won't configure it (default design still needed); the configurable-classification note applies the parameterization pattern from the fraud-scoring question."
+    },
+    {
+      "id": 82,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A data requirement states: 'The system shall retain claim records for 7 years.' Verification passes; the external law firm's review adds: 'Retention and DELETION are distinct obligations — GDPR requires erasure of personal data when no longer necessary, and a blanket 7-year retention of full records may violate minimization for closed claims.' The specification restructure this forces is:",
+      "options": {
+        "A": "Decompose retention into data-category lifecycle rules: the record's components have different legal clocks — financial/audit elements (7-year retention obligation), personal data beyond necessity (minimization/erasure obligations, potentially anonymization of closed-claim personal fields after a shorter period), and litigation-hold exceptions (suspension of deletion under dispute) — so the requirement becomes a retention-and-disposition SCHEDULE per data category with defined triggers, not a single duration. 'Retain for N years' is almost always an under-specified compound obligation in regulated personal-data contexts",
+        "B": "Change 7 years to 10 to be safer",
+        "C": "Delete all data at 7 years exactly, no exceptions",
+        "D": "Ignore it — 7 years is what the business asked for"
+      },
+      "correct": "A",
+      "explanation": "Advanced data-requirement specification: retention is a per-category lifecycle policy (retain/anonymize/erase/hold) with conflicting legal clocks that a single duration cannot encode. B worsens the minimization violation; D's rigid deletion breaks litigation-hold obligations. The schedule structure is the standard resolution — and another payoff of the external firm's decision-shaped consultation."
+    },
+    {
+      "id": 83,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "An interface requirement between DCMS and the Finance System must handle the case where Finance REJECTS a payment trigger (account flagged, validation failure). The v1.0 requirement covered only successful triggers; production saw 3 rejections handled by confused improvisation. The advanced interface-specification principle this teaches is:",
+      "options": {
+        "A": "Finance should be required to never reject",
+        "B": "Log rejections and deal with them manually forever",
+        "C": "Interface contracts must specify BOTH directions and ALL response classes: for each outbound message, the requirement defines the possible responses (accepted / rejected-with-reason-codes / timeout / malformed) and the system's obligated behavior per response class (rejection → claim status update, handler notification with the reason, retry policy per code) — because an interface requirement that specifies only the request is half a contract, and the unspecified half gets improvised inconsistently at 2 AM. The production incidents are the empirical case: three rejections, three different improvised handlings",
+        "D": "Interfaces only need happy-path specification — errors are rare"
+      },
+      "correct": "C",
+      "explanation": "Advanced interface specification: response-class completeness (the interface analogue of the exception-completeness characteristic). The per-response obligated behavior converts the contract from request-documentation into behavior specification. B specifies away the counterparty's legitimate controls; the incident evidence makes this a production-taught lesson, not theory."
+    },
+    {
+      "id": 84,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A STATE MODEL for claims defines states (Submitted → Under Review → Decided → Paid → Closed). The appeals process (being formalized) requires claims to LEAVE Closed and re-enter review. The modeling decision this forces, and its downstream consequence, is:",
+      "options": {
+        "A": "Extend the state machine deliberately: either a re-opening transition (Closed → Under Appeal → re-decided) or an appeal as a linked sub-entity with its own lifecycle referencing the closed claim — and the choice cascades: re-opening mutates the original record (audit implications: the 'final' decision wasn't; reporting implications: closed-claim counts become unstable) while the linked-entity design preserves the original's immutability at the cost of relational complexity. State models are commitments consumed by audit, reporting, and integration logic — extending one is a design decision with stakeholder-visible consequences, not a diagram edit",
+        "B": "Draw the new arrow and move on — it's just a diagram",
+        "C": "Delete the Closed state so nothing is ever final",
+        "D": "Forbid appeals on closed claims to preserve the model"
+      },
+      "correct": "A",
+      "explanation": "Advanced state modeling: lifecycle extensions propagate into audit semantics, report definitions, and integration contracts — the re-open-versus-linked-entity choice is the classic pattern with the immutability trade-off as its crux. A inverts priorities (model serving reality, not vice versa); C treats a consumed specification as decoration."
+    },
+    {
+      "id": 85,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Writing acceptance criteria for the digest feature, the BA drafts: 'Given a claim with 3 status changes in one day, when the digest job runs at 18:00, then one digest email is sent containing all 3 changes.' A reviewer asks: 'What about zero changes? Changes at 17:59:59? A digest job failure?' The criteria-quality principle invoked is:",
+      "options": {
+        "A": "Three scenarios per story is the standard, so it's done",
+        "B": "The developer will handle edge cases naturally",
+        "C": "Boundary and degenerate-case coverage in acceptance criteria: the zero-case (no email? empty email?), the boundary instant (inclusion window edges), and the failure-mode behavior (missed digest → next-day catch-up? immediate on recovery?) are BUSINESS decisions that the criteria must capture — leaving them to testing means testers either block on undefined behavior or silently decide business policy. Given/When/Then sets are complete when they cover typical, boundary, degenerate, and failure scenarios for the behavior — the same completeness characteristic, applied at criteria granularity",
+        "D": "Criteria should cover the typical case only — edge cases are testing's job"
+      },
+      "correct": "C",
+      "explanation": "Advanced criteria quality: the minimum-3-criteria rule is a floor, not a completeness definition — coverage classes (typical/boundary/degenerate/failure) define done. The 'testers deciding business policy by default' consequence is the systemic harm; this extends requirement-level completeness discipline down to criteria granularity."
+    },
+    {
+      "id": 86,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Verification of v1.1 requirements uses the checklist, but the BA adds a NEW check absent from v1.0: 'compatible with live production behavior' (does this requirement change anything v1.0 users/integrations currently depend on?). The justification for verification evolving between releases is:",
+      "options": {
+        "A": "The quality-risk landscape changed: v1.0 verified requirements against a blank slate; v1.1's requirements land on a LIVE system with users trained on current behavior, integrations consuming current interfaces, and reports built on current data shapes — introducing a defect class (breaking compatibility) that v1.0 could not have. Verification checklists encode the known ways requirements fail, and that set grows with context: brownfield releases add compatibility, migration, and coexistence checks. The lesson generalizes: quality instruments are versioned artifacts that learn",
+        "B": "New checks require IIBA approval first",
+        "C": "Compatibility is the architect's problem, not verification's",
+        "D": "Checklists should never change — consistency is everything"
+      },
+      "correct": "A",
+      "explanation": "Advanced quality-system evolution: verification checks map to failure modes, and brownfield context creates new ones (compatibility breakage). The 'instruments learn' principle mirrors the confirmation-design and measure-portfolio lessons — quality apparatus is itself lifecycle-managed. D misses that compatibility IMPACT is discoverable at requirement level, before design."
+    },
+    {
+      "id": 87,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Validating the appeals-process requirements, the BA faces a stakeholder set with a structural gap: the people MOST affected by appeal decisions — customers whose appeals were mishandled under the ad-hoc process — are unidentifiable individually and unrepresented institutionally. The validation design that addresses unrepresented affected parties is:",
+      "options": {
+        "A": "Construct proxy evidence for the absent perspective: the sampled appeal-case analysis (actual mishandled cases as concrete scenarios — 'would the proposed process have produced a different outcome for case #23?'), complaint-record mining for appeal-related dissatisfaction patterns, an ombudsman/customer-advocate role review if one exists, and adversarial walkthrough ('argue each requirement from the appellant's interest') — validation legitimacy for affected-but-absent parties comes from evidence-based advocacy structures, since their absence otherwise means requirements get validated exclusively by the process's OPERATORS, whose interests (efficiency, defensibility) systematically differ from appellants' (fairness, accessibility)",
+        "B": "Assume operator validation covers everyone adequately",
+        "C": "Delay the initiative until affected customers volunteer",
+        "D": "Validate with available stakeholders only — you can't invite ghosts"
+      },
+      "correct": "A",
+      "explanation": "Advanced validation ethics and method: operator-only validation of a fairness-critical process bakes in operator bias — the structural version of the representation-bias prioritization problem. Case-replay against real mishandled appeals is the strongest proxy (behavioral evidence again); adversarial walkthrough institutionalizes the absent voice. D names the failure; B is paralysis."
+    },
+    {
+      "id": 88,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The requirements architecture for v1.1 must now represent requirements at THREE lifecycles simultaneously: production (v1.0 live), development (v1.1), and exploration (fraud analytics). A stakeholder asks for 'one diagram showing everything.' The architecture-communication judgment is:",
+      "options": {
+        "A": "Diagnose the question behind the request before choosing the artifact: 'show everything' usually means a specific concern (overlap risk between initiatives? total scope visibility? dependency collisions?) — a literal everything-diagram at three-lifecycle scale is unreadable and answers nothing, while the actual concern maps to a designed view (a cross-initiative dependency-and-overlap view for collision worry; a capability-coverage roadmap for scope visibility). The views principle scales: as the requirement estate grows, view DESIGN (audience, question, abstraction level) matters more, and the BA's job includes translating artifact requests into information needs",
+        "B": "Refuse — three initiatives means three separate documents forever",
+        "C": "Show the raw traceability matrix as the everything-view",
+        "D": "Build the one mega-diagram — stakeholders get what they ask for"
+      },
+      "correct": "A",
+      "explanation": "Advanced architecture communication: requests for artifacts encode questions, and the BA elicits the question (the same peel-back pattern applied to information requests). Mega-diagrams and raw matrices (A, D) transfer data without answering anything; rigid separation (C) refuses the legitimate cross-initiative concerns that DO exist (overlaps, collisions)."
+    },
+    {
+      "id": 89,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Design options for the appeals capability include using the EXISTING fraud-score infrastructure for appeal triage. The reuse is technically elegant, but the BA's option analysis flags a non-technical coupling risk:",
+      "options": {
+        "A": "Purpose-coupling: binding appeals triage to fraud infrastructure couples two capabilities with different change drivers, stakeholders, and regulatory postures — fraud-model retuning (driven by loss patterns) would silently alter appeal-triage behavior (governed by fairness expectations), fraud's explainability obligations and appeals' fairness obligations may impose conflicting constraints on the shared component, and a future regulatory intervention on automated fraud decisions would collaterally entangle appeals. The option analysis must price the coupling: shared infrastructure with governance separation (distinct rule sets, independent tuning authority, per-purpose audit trails) or accept the entanglement explicitly",
+        "B": "The naming should just be changed to hide the coupling",
+        "C": "Reject reuse — always build separate everything",
+        "D": "No risk — reuse is always good"
+      },
+      "correct": "A",
+      "explanation": "Advanced design-option analysis: technical reuse creates GOVERNANCE coupling — shared components inherit the union of their consumers' regulatory and change-driver constraints. The mitigation (shared infrastructure, separated rule governance) preserves reuse economics while decoupling the purposes; the pricing-the-coupling framing keeps it a documented trade-off rather than a hidden liability."
+    },
+    {
+      "id": 90,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A value analysis for the appeals redesign struggles because the primary benefit is RISK AVOIDANCE (regulatory exposure from inconsistent appeals) rather than measurable gain. The stakeholder challenge: 'You can't prove avoided events — this case is unfalsifiable.' The advanced valuation response is:",
+      "options": {
+        "A": "Invent a precise number and defend it confidently",
+        "B": "Reclassify the initiative as mandatory to skip valuation",
+        "C": "Value the exposure with standard risk economics and observable anchors: exposure = plausible-event probability × consequence, both estimable from evidence (regulator enforcement history and penalty scales for comparable inconsistency findings; the sampled case analysis showing X% of appeals decided inconsistently — the raw material of a finding; legal-firm assessment of the current process's defensibility), presented as a range with assumptions explicit. Additionally identify the measurable co-benefits (appeal cycle time, overturn-rate consistency) that ARE falsifiable. Risk-avoidance cases are probabilistic, not unfalsifiable — insurance companies of all organizations price unrealized events daily",
+        "D": "Concede — risk-avoidance benefits can't be valued"
+      },
+      "correct": "C",
+      "explanation": "Advanced value analysis for protective investments: exposure quantification with evidence-anchored probability and consequence, ranged presentation, plus falsifiable co-benefits. The insurance-company irony is apt — the organization's core business is pricing unrealized events. C is false precision; D dodges analysis by fiat and fails when the 'mandatory' framing is challenged."
+    },
+    {
+      "id": 91,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Two NFRs conflict at design time: the security requirement (session timeout at 10 idle minutes, from the compliance review) and the usability finding (handlers' claim assessments involve 15-20 minute document-reading stretches that the timeout would interrupt, forcing re-login mid-assessment and — per observation — driving workaround behavior like keep-alive mouse jiggling). The advanced NFR-conflict resolution is:",
+      "options": {
+        "A": "Resolve at the requirement-intent level, not the parameter level: the security intent is preventing UNATTENDED-session exposure; the usability reality is ATTENDED-but-passive reading — and the conflict dissolves with a mechanism distinguishing them (activity detection including document-scroll/read events, not just keystrokes; or re-authentication that preserves work state; or risk-tiered timeouts — shorter for credit-data screens, longer for document reading). Present the mechanism options to BOTH requirement owners (compliance and operations) since the resolution must satisfy the security INTENT while eliminating the workaround incentive — a timeout that breeds jiggler scripts delivers less security than a smarter mechanism",
+        "B": "Split the difference at 15 minutes",
+        "C": "Usability wins — handlers' productivity is the point",
+        "D": "Security wins — implement the 10-minute timeout as specified"
+      },
+      "correct": "A",
+      "explanation": "Advanced NFR-conflict resolution: parameter-level conflicts often dissolve at intent level (unattended-exposure vs. passive-attendance are distinguishable states). The workaround-behavior observation is the clincher — a control that incentivizes circumvention undermines its own intent, so the 'strict' option (A) is actually weaker security. Joint-owner resolution keeps both intents authoritative."
+    },
+    {
+      "id": 92,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The BA models the appeals data requirements and must decide whether 'appeal reason' is free text or a controlled taxonomy. The downstream-consumer analysis that decides it is:",
+      "options": {
+        "A": "Controlled taxonomy with no escape valve — force every appeal into a box",
+        "B": "Both fields fully optional so no one is inconvenienced",
+        "C": "Enumerate what will CONSUME the field: trend analysis ('are documentation-error appeals rising?' — requires categorization), routing rules (appeal type → review path — requires controlled values), regulatory reporting (consistent classification), and fairness auditing (comparing outcomes across like reasons — impossible over free text) — the consumers demand a controlled taxonomy, with a structured 'other + description' escape valve and periodic taxonomy review to absorb emerging categories. Data-requirement decisions are consumer-driven: fields exist to be used, and free text is a decision to make every future analytical use expensive or impossible",
+        "D": "Free text — flexibility is user-friendly"
+      },
+      "correct": "C",
+      "explanation": "Advanced data specification: the consumer-enumeration method converts a format preference into a derivation from downstream needs — the analytical and fairness-audit consumers (echoing the appeals themes) are what free text forecloses. The escape-valve-plus-review pattern handles taxonomy incompleteness without surrendering structure; C's rigidity and D's optionality each break named consumers."
+    },
+    {
+      "id": 93,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A validation session uses the case-replay technique: walking 10 real historical appeals through the proposed process requirements. Case #7 produces a result all stakeholders agree is WRONG — the proposed rules would deny an appeal everyone believes had merit. The advanced interpretation of a validation counterexample is:",
+      "options": {
+        "A": "The counterexample is the session's most valuable output: it proves the requirement set encodes a rule that misfires on a real, recognized-as-meritorious pattern — the analysis question is WHICH requirement produces the wrong outcome and whether the fix is a rule refinement (the merit pattern is definable and the rule extends) or an escape mechanism (some merit patterns resist codification — a human-review valve for rule-denied appeals meeting certain signals). One live counterexample outweighs nine confirmations because confirmations show the rules handle the expected; the counterexample maps the boundary of where they fail — and boundary knowledge is what validation exists to produce",
+        "B": "Change the stakeholders' minds about case #7's merit",
+        "C": "All 10 must pass or the requirements are rejected wholesale",
+        "D": "Discard case #7 as an outlier and validate on the other 9"
+      },
+      "correct": "A",
+      "explanation": "Advanced validation epistemics: counterexamples carry more information than confirmations (falsification asymmetry). The refine-versus-escape-valve fork is the standard design response to codification limits — and the escape valve connects to the automation-decomposition insight (some appeal types resist rules). A is evidence suppression; D reverses the direction of validation."
+    },
+    {
+      "id": 94,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The v1.1 recommendation must now account for something the v1.0 recommendation didn't: the LIVE system's users have adapted workflows and unofficial optimizations around v1.0's exact behavior. The recommendation-analysis addition this forces is:",
+      "options": {
+        "A": "Ban unofficial optimizations before v1.1 lands",
+        "B": "Delay v1.1 until users forget their habits",
+        "C": "Adaptation-debt assessment: production users have built habits, personal efficiencies, and team norms around current behavior — v1.1 changes destroy some of that invested adaptation (temporary productivity dip, relearning cost, resistance from those whose optimizations die) even when objectively superior, so the recommendation's value analysis must include the transition dip (quantified from v1.0's own adoption-curve data), sequence changes to bundle related disruptions rather than dripping them, and identify which current unofficial optimizations reveal REQUIREMENTS (if everyone built the same workaround, v1.1 should absorb it as a feature). Brownfield recommendations price the disruption of success — the installed base's adaptation is an asset the change spends",
+        "D": "Nothing — better is better, roll it out"
+      },
+      "correct": "C",
+      "explanation": "Advanced brownfield recommendation analysis: the installed base's adaptation is both a cost driver (relearning dip) and an elicitation source (convergent workarounds = revealed requirements — the Mike Chen principle at population scale). The bundling and dip-quantification points are the operational additions; A destroys evidence and goodwill simultaneously."
+    },
+    {
+      "id": 95,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "An architect proposes that the appeals requirements 'inherit' the claims requirements' NFRs wholesale (performance, availability, security) 'for consistency.' The requirements-architecture scrutiny this inheritance deserves is:",
+      "options": {
+        "A": "Reject inheritance — every capability writes NFRs from zero",
+        "B": "Inherit only the cheapest NFRs",
+        "C": "Per-NFR applicability review: NFR inheritance imports requirements whose calibration reflects the SOURCE capability's stakes — claims processing's 99.9% availability and 2-second response reflect 45 concurrent handlers on time-critical work, while appeals (low volume, non-interactive deadlines measured in days) may warrant materially cheaper targets, and conversely appeals' fairness-audit obligations may DEMAND logging depth claims never needed. Blanket inheritance either gold-plates (paying claims-grade infrastructure for appeal-grade needs) or under-serves (missing appeals-specific obligations); the efficient move is inheritance as DEFAULT with mandatory per-NFR justify-or-adjust review",
+        "D": "Approve — inheritance is efficient and consistent"
+      },
+      "correct": "C",
+      "explanation": "Advanced NFR governance: inheritance is a starting-point discipline, not a conclusion — calibration is capability-specific in both directions (over-provisioning AND missing obligations). The default-plus-review pattern captures reuse efficiency while forcing the applicability question per NFR; C discards legitimate reuse, and the gold-plating cost of A is real money."
+    },
+    {
+      "id": 96,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Comparing specification effort across the three concurrent initiatives, the BA allocates DEEP specification to the appeals process, MODERATE to v1.1 routing, and DELIBERATELY LIGHT to fraud-analytics requirements. The allocation principle, per initiative characteristics, is:",
+      "options": {
+        "A": "Deepest specification for the newest technology always",
+        "B": "Whatever each team's habit prefers",
+        "C": "Specification depth tracks decision permanence and knowability: appeals encodes fairness policy with regulatory exposure (decisions are consequential and long-lived — specify deeply); v1.1 routing extends a proven pattern on a known platform (moderate specification against established conventions suffices); fraud analytics is in discovery where detailed upfront specification would fabricate certainty about model behavior that only experimentation reveals (light hypothesis-level specification with learning gates, hardening as knowledge stabilizes). Depth follows the cost of being wrong times the ability to know — the stability-attribute logic applied at initiative scale",
+        "D": "Equal depth everywhere — fairness in documentation"
+      },
+      "correct": "C",
+      "explanation": "Advanced effort allocation: the knowability-and-permanence calculus, integrating the stability-attribute principle, the discovery-approach epistemics, and proportionality — one coherent allocation logic across three different initiative types. B inverts it (newest tech = least knowable = lightest UPFRONT spec); A spends scarce depth uniformly where it is differentially valuable."
+    },
+    {
+      "id": 97,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Synthesis: across specification, verification, validation, architecture, options, and recommendation, what single discipline distinguishes the advanced practitioner's KA7 from the checklist-follower's, based on this set's scenarios?",
+      "options": {
+        "A": "Locating the DECISION inside the specification task: every scenario turned on recognizing that an apparently technical choice encoded a policy or trade-off belonging to someone — the override's control policy, the retention schedule's legal clocks, the error-balance's values choice, the timeout's intent conflict, the taxonomy's consumer commitments, the inheritance's calibration stakes — and routing that decision to its owner with the analysis that makes it decidable, rather than letting it be made by default, by syntax, or by whoever tunes the system last. The checklist verifies the text; the advanced practitioner interrogates what the text commits the organization to, and who must own that commitment",
+        "B": "Memorizing all eight quality characteristics",
+        "C": "Using more diagram types than anyone else",
+        "D": "Faster document production"
+      },
+      "correct": "A",
+      "explanation": "The KA7 capstone: specification is decision-surfacing. The recurring pattern across this set — policy hiding in parameters, values hiding in thresholds, commitments hiding in formats — is the advanced skill the exam's hardest scenarios test: seeing THROUGH the artifact to the decision, and routing it to authority with decidable analysis."
+    },
+    {
+      "id": 98,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The v1.1 mixed-claims routing launches. To attribute its effect cleanly, the BA arranges a 4-week measured comparison: mixed claims are randomly assigned between auto-routing and the manual queue during the transition. Legal asks whether randomizing customer treatment is acceptable. The advanced evaluation-design response is:",
+      "options": {
+        "A": "Randomization is always fine — it's just statistics",
+        "B": "Roll out to everyone and compare against last month instead",
+        "C": "Address the ethics within the design rather than abandoning rigor: the comparison is justifiable when genuine uncertainty exists about which treatment is better (it does — that's why we're measuring), no customer receives WORSE-than-current treatment (the manual queue IS the status quo; auto-routing is the candidate improvement), the window is bounded with pre-defined stopping rules (if auto-routing shows clear superiority or any harm signal, assignment ends early), and monitoring covers customer-outcome differences in real time. Document the design rationale with Legal's review — measured rollouts under equipoise with stop conditions are the responsible middle between untested full deployment and unattributable gradual drift",
+        "D": "Cancel measurement — comparisons are too risky"
+      },
+      "correct": "C",
+      "explanation": "Advanced evaluation design: the equipoise-plus-no-worse-than-status-quo-plus-stopping-rules structure is how measured comparisons are done responsibly in service contexts. D's before-after comparison reintroduces the seasonal/mix confounds the design exists to eliminate; A abandons attribution; B ignores the legitimate ethical dimension Legal raised."
+    },
+    {
+      "id": 99,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "Six months post-v1.1, processing time has crept from 3.0 to 3.4 days with no system changes. Investigation candidates: claim-mix drift, volume growth, staff turnover diluting experience, and 'benefit erosion' — gradual relaxation of the practices that produced the gain. The advanced diagnostic sequence is:",
+      "options": {
+        "A": "Decompose before concluding: segment the regression by claim type (mix drift shows as composition change with stable per-type times), by volume-load correlation (queuing effects show as time-of-day/period patterns), by handler tenure (turnover shows as per-cohort differences), and by process-conformance sampling (erosion shows as reverted behaviors — manual steps resumed, escalation timings slipping). Each cause has a distinct signature and a different owner: mix drift may warrant scope extension, volume may warrant capacity, turnover warrants onboarding, erosion warrants management attention — and they compound, so the answer is usually a weighted combination. Regression diagnosis is the same segmentation discipline as gap diagnosis, applied to decay",
+        "B": "Retrain everyone on everything simultaneously",
+        "C": "Add staff — regression always means capacity",
+        "D": "Announce the solution is failing and plan v2.0"
+      },
+      "correct": "A",
+      "explanation": "Advanced sustainment analysis: performance decay has multiple mechanisms with distinguishable data signatures, and shotgun responses (C, D) spend on unweighted causes. The erosion category — practices relaxing after attention moves on — is the distinctive post-success failure mode, detectable only by conformance sampling since the system itself is unchanged."
+    },
+    {
+      "id": 100,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A proxy-metric audit finds the 'portal adoption' KPI (% of claims with ≥1 portal-uploaded document) has been drifting up while the underlying goal (faster document collection) stalled — because branches learned to ask customers to upload ONE trivial document via portal while continuing postal collection for the rest. The measurement lesson is:",
+      "options": {
+        "A": "Goodhart's law in production: a proxy under performance pressure gets optimized as a TARGET, decoupling from the goal it proxied — the gaming pathway (minimum-compliance uploads) was predictable from the metric's definition (≥1 document is satisfiable without changing collection behavior). Responses: re-anchor the metric to the goal (median document-collection elapsed time — hard to game without actually improving), use paired metrics that gaming moves in opposite directions (portal share AND collection time), and audit metric-goal correlation periodically. Metrics used for accountability need gaming-resistance review at design time",
+        "B": "Punish the branches for cheating",
+        "C": "Stop measuring adoption entirely",
+        "D": "Celebrate the KPI — the number is the number"
+      },
+      "correct": "A",
+      "explanation": "Advanced measurement governance: the ≥1-document threshold is a textbook gameable definition, and the branches responded rationally to the incentive. Goal-proximate metrics (elapsed collection time) and opposing-pair designs are the anti-gaming toolkit; C punishes rational response to bad design; the periodic correlation audit institutionalizes detection."
+    },
+    {
+      "id": 101,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The fraud-analytics pilot reports: detected fraud UP 240%, investigation workload UP 300%, and false-positive complaints from customers UP sharply. Leadership reads catastrophe. The evaluation-literate reading, given the detection-baseline problem established earlier, is:",
+      "options": {
+        "A": "Decompose the composite before judging: rising detection was the PREDICTED success signature (the old process's detection gap meant true fraud was always there uncounted) — the real evaluation questions are the RATIOS, not the levels: what share of new detections are confirmed fraud versus false positives (precision), what is the investigated-to-confirmed ratio trend as the model tunes, and are the customer complaints concentrated in identifiable model-error patterns (fixable calibration) or diffuse (structural)? The pilot's success criteria should have pre-registered these ratio expectations — if they didn't, that is the evaluation-design lesson: novel-capability pilots need their success SIGNATURES defined in advance precisely because raw movements mislead",
+        "B": "All three numbers up means triple success",
+        "C": "The complaints are irrelevant — fraud detection matters more",
+        "D": "The pilot failed — shut it down"
+      },
+      "correct": "A",
+      "explanation": "Advanced pilot evaluation: composite movements require ratio decomposition (precision, confirmation trends, error-pattern concentration), and the rising-detections paradox was pre-explained in the baseline analysis — pre-registered success signatures are what prevent the leadership misreading. B and D fail in opposite directions: undifferentiated celebration and dismissal of the customer-harm signal that feeds the false-positive policy constraint."
+    },
+    {
+      "id": 102,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "An enterprise-limitation assessment concludes that the appeals backlog persists because 'the review committee meets only monthly.' The proposed fix — weekly meetings — fails after two months: attendance collapses. The deeper diagnostic the first assessment missed is:",
+      "options": {
+        "A": "Return to monthly meetings — weekly was too ambitious",
+        "B": "Outsource all appeals to the law firm",
+        "C": "The meeting frequency was a symptom, not the constraint: the committee's members are senior staff for whom appeal review is an unfunded side duty competing with their primary accountabilities — quadrupling the meeting demand without changing the incentive and capacity structure predictably collapsed compliance. The real enterprise limitation is the RESOURCING MODEL (no dedicated capacity, no performance recognition for review work), and the fix operates there: dedicated review capacity, delegation of routine appeal types to a resourced role (per the type-decomposition), or formal workload recognition. First-order fixes to symptoms of structural constraints fail in ways that discredit the diagnosis — enterprise-limitation analysis must find the constraint that BINDS, not the schedule that displays it",
+        "D": "People are lazy — mandate attendance"
+      },
+      "correct": "C",
+      "explanation": "Advanced enterprise diagnosis: the failed fix is itself diagnostic data — compliance collapse under increased demand reveals the binding constraint (unfunded capacity, misaligned incentives) beneath the visible symptom (frequency). The structural-fix menu operates on the real constraint; A doubles down on the symptom-level theory the failure just falsified."
+    },
+    {
+      "id": 103,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "The organization must decide whether v1.0's platform should be EXTENDED (v2.0 on the same architecture) or REPLACED. The solution-assessment inputs that most distinguish this decision from a greenfield choice are:",
+      "options": {
+        "A": "The live system's accumulated evaluation record: the limitation register with each item's trajectory (which accepted limitations are approaching their re-evaluation triggers — the data-lag under doubled volume), the architecture's demonstrated extension cost curve (did v1.1 land at estimated cost, or is each addition costing more than the last — the technical-debt signature), the performance-sustainment record (is the platform holding targets or requiring growing effort to hold them), and the requirements pipeline (does the coming capability roadmap fit the architecture's proven envelope or fight it). Extend-versus-replace is decided on the incumbent's measured trajectory, not on comparing feature lists — the evaluation practice built since go-live IS the decision's evidence base",
+        "B": "A fresh requirements elicitation ignoring the current system",
+        "C": "The age of the codebase in years",
+        "D": "Vendor brochures for replacement candidates"
+      },
+      "correct": "A",
+      "explanation": "Advanced lifecycle decision-making: the KA8 practice compounds into strategic option value — limitation trajectories, extension-cost curves, and sustainment effort are the incumbent's honest resume. The rising-marginal-cost signature is the classic replace signal; age alone (D) and brochures (A) measure nothing decision-relevant. This is where solution evaluation feeds the next strategy-analysis cycle."
+    },
+    {
+      "id": 104,
+      "ka": "KA7",
+      "kaName": "Requirements Analysis and Design Definition",
+      "question": "A benefits-sustainment review finds the Champions Program was quietly discontinued 4 months ago ('mission accomplished') and new-hire handlers now learn DCMS informally from neighbors, with new-hire proficiency metrics declining. The organizational-learning failure this represents is:",
+      "options": {
+        "A": "Restart the program identically and permanently freeze it",
+        "B": "New hires should simply try harder",
+        "C": "Conflating transition scaffolding with permanent operating capability: some change-strategy mechanisms are genuinely temporary (go-live war rooms), but others — structured onboarding, champion networks — were load-bearing parts of HOW the benefit sustains, and the discontinuation decision was made without evaluating which category the program occupied. The evidence (declining new-hire proficiency) shows it was operational infrastructure. The systemic fix: change strategies should explicitly classify each mechanism as transitional or permanent at design time, with permanent ones handed to operational owners and budgets — benefits realization includes institutionalizing the practices the benefits stand on",
+        "D": "None — programs should end when their project ends"
+      },
+      "correct": "C",
+      "explanation": "Advanced benefits sustainment: the transitional-versus-permanent classification of change mechanisms, decided at strategy design and enforced at handover, prevents the silent-scaffolding-removal failure. The declining-proficiency metric is the detection instrument working as designed — evaluation catching the erosion the discontinuation caused. B restores without the classification lesson; the operational-ownership transfer is the missing institutional step."
+    },
+    {
+      "id": 105,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Comparing solution performance across the 5 branches for an annual review, the BA is asked to publish a branch league table. The measurement-design objection to naive league tables, and the defensible alternative, is:",
+      "options": {
+        "A": "Naive rankings conflate performance with context: branches differ in claim mix, customer demographics (the 65+ concentration varies), staffing tenure, and volume — a raw table rewards favorable context and punishes unfavorable, teaching branches to game intake (avoid complex claims) rather than improve. The defensible design: context-adjusted comparison (performance versus expected-given-mix), trend-versus-self measures (improvement rate), and publication of the adjustment methodology — comparative measurement is legitimate when it isolates the controllable; it is destructive when it ranks the uncontrollable and calls it accountability",
+        "B": "Never compare branches — comparison is inherently toxic",
+        "C": "Rank only the bottom branch to motivate it",
+        "D": "Publish it raw — sunlight is the best disinfectant"
+      },
+      "correct": "A",
+      "explanation": "Advanced comparative measurement: the adjustment-for-context principle (mix, demographics, tenure) separates controllable performance from inherited circumstance, and the gaming prediction (intake selection) follows directly from ranking the uncontrollable. This applies the segmentation and gaming-resistance disciplines to organizational comparison; B overcorrects into abandoning legitimate accountability."
+    },
+    {
+      "id": 106,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "The v1.0 platform's decommissioning of the last legacy component (Claims Tracker, finally retiring in v2.0 planning) requires evaluation sign-off that 'nothing still depends on it.' The advanced dependency-verification method — beyond asking teams — is:",
+      "options": {
+        "A": "Instrument the actual usage: access-log analysis over a full business cycle (capturing month-end, quarter-end, and annual processes that quarterly-cycle dependencies would hide from a short observation window), interface-traffic monitoring on every integration touchpoint, a staged read-only/brownout period (degrade access deliberately and watch what breaks or who calls), and reconciliation against the traceability records of what was SUPPOSED to migrate — because declared dependencies systematically miss the forgotten ones (the scheduled job someone built in year 2; the report a director's assistant pulls annually), and the forgotten dependency IS the decommissioning risk. Behavioral evidence over declared knowledge, with a full-cycle observation window",
+        "B": "Keep it running forever to be safe",
+        "C": "Just turn it off — anything that breaks will identify itself",
+        "D": "Email all teams asking 'do you use Claims Tracker?' and trust the replies"
+      },
+      "correct": "A",
+      "explanation": "Advanced decommissioning evaluation: revealed-dependency instrumentation (logs, traffic, brownout probes) over declared knowledge — the same behavioral-over-self-report principle from readiness assessment, applied to systems. The full-business-cycle window catches periodic dependencies; the brownout stage is the controlled version of C's uncontrolled discovery; D converts a risk decision into permanent cost."
+    },
+    {
+      "id": 107,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "An evaluation-maturity review asks what distinguishes the organization's CURRENT solution-evaluation practice from its state at v1.0 go-live. The strongest maturity evidence from this scenario set's history is:",
+      "options": {
+        "A": "The practice's failures have become design inputs: the trigger that measured level but missed trajectory led to slope-aware triggers; the acceptance without expiry conditions led to premise-tripwired acceptances; the gameable adoption proxy led to goal-anchored and paired metrics; the survey composition bias led to representativeness checks; the discontinued-scaffolding erosion led to transitional/permanent classification — the measurement system now contains the encoded lessons of its own past mistakes, and new instruments (pre-registered pilot signatures, context-adjusted comparisons) exist BECAUSE prior instruments failed detectably. Evaluation maturity is the institutionalized error-correction of the evaluation system itself — a practice that learns, applied to the practice of learning",
+        "B": "Fewer performance problems occur now",
+        "C": "The BA has more experience personally",
+        "D": "More dashboards exist now"
+      },
+      "correct": "A",
+      "explanation": "The maturity synthesis: the meta-pattern across this set is instruments failing informatively and the failures being encoded into improved instruments — second-order learning. Personal experience (D) evaporates with turnover; institutionalized design changes persist. B may reflect maturity or luck; the encoded-lessons evidence is causal."
+    },
+    {
+      "id": 108,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "A new CFO asks the BA to justify the ongoing cost of the evaluation function itself ('dashboards, reviews, your time — what does measuring buy us?'). The strongest evidence-based justification from the initiative's history is:",
+      "options": {
+        "A": "The decision record measurement paid for: the segmentation that redirected intervention from system-tuning to champion coverage (avoiding a misdirected technical spend), the Month-2 interpretation that prevented a sponsor-level 'DCMS is failing' misjudgment, the trigger that caught the Branch C pattern worth ~1.4 days per claim, the erosion detections (Champions discontinuation, proxy gaming) caught while cheaply correctable, and the attribution defense that protected the benefits claim against the seasonal-confound challenge — each is a dated decision where measurement changed the action taken, with the counterfactual cost estimable. The evaluation function is justified the way it justifies everything else: by its measured effect on decisions, not by appeal to virtue",
+        "B": "It employs the BA, which is justification enough",
+        "C": "Regulators indirectly require it somewhere",
+        "D": "Measurement is a best practice that good companies do"
+      },
+      "correct": "A",
+      "explanation": "The reflexive capstone: the evaluation function justifies itself with its own methods — a decision-changed ledger with counterfactual costs, applying prevented-cost instrumentation to the measurement practice itself. A argues from virtue (the exact posture the CFO is challenging); the ledger converts 'what does measuring buy' into itemized, dated answers."
+    },
+    {
+      "id": 109,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Final synthesis across both advanced sets: an exam scenario describes ANY performance gap in ANY deployed solution. The universal diagnostic sequence that the entire KA8 architecture encodes — and that correct answers consistently follow — is:",
+      "options": {
+        "A": "Verify the measurement before trusting the gap (definition, composition, gaming, confounds) → segment to localize it (by unit, type, cohort, time) → sequence the causal hypotheses through the elimination ladder (adoption/usage first, then defect, then solution-design limitation, then enterprise/organizational constraint, then external factors) — matching each confirmed cause to its category-congruent remedy with quantified expected impact, a monitoring plan that would detect the remedy failing, and honest attribution of any improvement against confounds. Every KA8 scenario is this sequence with different surface details; wrong answers are always a skipped step — trusting unverified numbers, intervening before localizing, or remedying across categories",
+        "B": "Escalate every gap to the sponsor immediately",
+        "C": "Rebuild the solution — gaps mean the design failed",
+        "D": "Recommend more training, since people are usually the problem"
+      },
+      "correct": "A",
+      "explanation": "The universal KA8 algorithm: measurement-verification → segmentation → elimination-ladder causation → category-congruent remedy → falsifiable monitoring → confound-honest attribution. Both advanced sets' KA8 questions instantiate this sequence; recognizing which step a scenario is testing — and which step the wrong answers skip — is the transferable exam skill and the transferable professional skill."
+    },
+    {
+      "id": 110,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "A requirement for the appeals process must specify WHO can file an appeal: 'the customer' seems obvious until edge cases arrive — deceased policyholders' estates, power-of-attorney holders, minors' guardians, brokers acting for clients. The specification discipline for ACTOR definition is:",
+      "options": {
+        "A": "Enumerate the authorized-actor classes with their evidence requirements: each filer class (policyholder, estate representative, POA holder, guardian, authorized broker) carries distinct authentication and authorization evidence (death certificate + grant of probate; registered POA; guardianship order; broker mandate) and possibly distinct process variants — 'the customer' in requirements involving legal standing is almost always a compound actor whose decomposition determines identity-verification requirements, fraud exposure, and compliance obligations. Actor enumeration is to WHO what response-class completeness is to interface behavior",
+        "B": "Only the policyholder personally, no exceptions ever",
+        "C": "Anyone should be able to file to maximize access",
+        "D": "'The customer' is clear enough — edge cases are rare"
+      },
+      "correct": "A",
+      "explanation": "Advanced actor specification: 'the customer' in legal-standing contexts decomposes into authorization classes with per-class evidence requirements — the same universal-quantifier discipline ('every access' → enumerated actors) from the batch-job forensics question, applied to human actors. D breaks legitimate representation cases; C creates fraud and privacy exposure."
+    },
+    {
+      "id": 111,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "The appeals requirements include a fairness obligation: 'similar appeals shall receive similar outcomes.' A reviewer challenges its testability. The advanced specification response converts it into verifiable form by:",
+      "options": {
+        "A": "Operationalizing similarity and consistency measurably: define the similarity dimensions (appeal type, evidence category, claim value band), specify the consistency instrument (periodic paired-case audit: sampled same-band appeals reviewed for outcome divergence; divergence rate threshold as the acceptance bound; outlier cases triggering documented-rationale review), and assign the audit as an operational requirement with owner and cadence — fairness-type obligations are testable as STATISTICAL properties of the process over time rather than per-transaction assertions, and the specification's job is naming the statistic, the threshold, and the measurement apparatus",
+        "B": "Rewording it to 'the system shall be fair'",
+        "C": "Making it a comment rather than a requirement",
+        "D": "Deleting it as untestable aspiration"
+      },
+      "correct": "A",
+      "explanation": "Advanced specification of process-level properties: fairness obligations verify statistically (divergence rates over sampled bands) rather than per-transaction — requiring the specification to define the measurement apparatus itself. This connects the fairness-audit data consumer (taxonomy question) to its governing requirement; A discards a regulatory-significant obligation because its verification form is unfamiliar."
+    },
+    {
+      "id": 112,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "A design option evaluation must compare a vendor's 'configurable workflow engine' against custom build for appeals. The vendor demo configures the happy path impressively in 20 minutes. The advanced evaluation discipline for configurability claims is:",
+      "options": {
+        "A": "Stress the configurability at ITS boundaries with YOUR hardest cases: demos configure the vendor's chosen scenario; the evaluation configures the initiative's known edge cases (the mid-processing claim-type conversion, the multi-actor filing classes, the counterexample case #7 pattern) and measures where configuration ends and vendor customization begins — because 'configurable' platforms have a configurability envelope, and total cost of ownership depends on how much of YOUR requirement set lives outside it (each outside item = vendor change request at vendor prices on vendor timelines). The evaluation artifact is a requirements-to-configurability mapping, not a demo impression",
+        "B": "Ask the vendor to promise everything is configurable in writing",
+        "C": "Custom build always beats configuration",
+        "D": "The demo settles it — configuration beats code"
+      },
+      "correct": "A",
+      "explanation": "Advanced vendor-option evaluation: the configurability-envelope mapping against the initiative's OWN hard cases — the requirement-allocation discipline applied to a vendor platform. Demos are vendor-selected evidence; written promises (D) without the mapping just relocate the dispute to contract interpretation. The outside-envelope cost structure is the TCO driver."
+    },
+    {
+      "id": 113,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "An architecture review finds two initiatives independently specifying near-identical 'document upload' requirements (appeals evidence; fraud investigation materials) with subtle differences (file types, retention, access rules). The requirements-architecture decision is:",
+      "options": {
+        "A": "Force them identical regardless of differences",
+        "B": "Build both then merge later",
+        "C": "Evaluate deliberate convergence versus justified divergence: near-identical requirements across initiatives are candidates for a shared capability (one upload service with per-context policy parameters — file-type sets, retention schedules, access rules as configuration), UNLESS the differences are load-bearing (fraud materials may carry chain-of-custody obligations appeals evidence doesn't) — the architecture-level analysis makes the shared/separate decision explicitly, pricing the shared service's governance coupling (per the fraud-infrastructure lesson) against duplicate build-and-maintain costs. What must not happen is accidental divergence: two teams unknowingly building 90%-overlapping capabilities whose 10% difference was never examined",
+        "D": "Let both proceed independently — they're different initiatives"
+      },
+      "correct": "C",
+      "explanation": "Advanced cross-initiative architecture: the convergence-versus-divergence decision made deliberately, with the parameterized-shared-service pattern balanced against governance coupling (the purpose-coupling lesson) and load-bearing differences (chain of custody). The named failure mode — accidental divergence — is what portfolio-level requirements architecture exists to catch."
+    },
+    {
+      "id": 114,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "A recommendation must present three options to a decision body known to anchor heavily on whichever option is presented FIRST. The presentation-design ethics for the analytically-neutral BA are:",
+      "options": {
+        "A": "Neutralize the anchoring structurally while keeping the recommendation explicit: present options in a rationalized neutral order (chronological by option genesis, or alphabetical — declared to the body), lead with the comparison framework and criteria BEFORE any option details (anchoring the criteria, not an option), and place the BA's recommendation clearly AFTER the comparative evidence with its reasoning — the BA is entitled to recommend forcefully but not to weaponize presentation-order psychology; the distinction is between persuasion through evidence (legitimate) and persuasion through cognitive exploitation (illegitimate, and corrosive when detected)",
+        "B": "Present no recommendation to avoid all influence",
+        "C": "Randomize the order silently each meeting",
+        "D": "Present the BA's preferred option first — use the anchor"
+      },
+      "correct": "A",
+      "explanation": "Advanced recommendation ethics: criteria-first sequencing anchors the decision framework rather than an option, the declared neutral ordering removes the exploitation channel, and the explicit post-evidence recommendation preserves the BA's analytical duty. A crosses the evidence/exploitation line; D abandons the recommendation obligation established earlier."
+    },
+    {
+      "id": 115,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "The final KA7 integration: verification, validation, and the architecture's interaction analysis each catch DIFFERENT defect classes. A quality review maps recent escaped defects (found in production) to the gate that should have caught them: 3 ambiguity defects, 2 stakeholder-mismatch defects, 4 compositional defects. The improvement-targeting conclusion is:",
+      "options": {
+        "A": "Add a fourth gate to catch everything",
+        "B": "Production defects are development's problem, not requirements'",
+        "C": "The escape profile localizes the weakest gate: compositional defects dominating (4 of 9) indicates the interaction-analysis layer — end-to-end scenario walkthroughs across the requirement SET — is the under-invested gate, while verification (ambiguity: 3) and validation (mismatch: 2) leak at lower rates; improvement investment goes to the highest-leakage gate first (institutionalize whole-journey walkthroughs, cross-requirement consistency checks in the architecture review). Defect-to-gate mapping converts quality investment from uniform exhortation into targeted repair — the same segmentation-then-localize discipline KA8 applies to solution gaps, applied to the requirements quality system itself",
+        "D": "All gates failed equally — retrain everyone"
+      },
+      "correct": "C",
+      "explanation": "The quality-system capstone: escaped-defect-to-gate attribution localizes improvement investment — KA8's diagnostic discipline turned reflexively onto KA7's own gates. The compositional-defect dominance echoes the notification-interaction lesson (composition is the least-instrumented layer); uniform retraining (A) is the shotgun response the localization replaces."
+    },
+    {
+      "id": 116,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "A dashboard redesign proposal wants to show executives a single composite 'DCMS Health Score' (weighted blend of all KPIs). The measurement-communication analysis of composite scores is:",
+      "options": {
+        "A": "Composites trade diagnostic content for glanceability, and the trade has failure modes: offsetting movements vanish (processing degrading while adoption improves nets to 'stable'), the weighting scheme is an invisible editorial decision (who decided CSAT is 20%?), and score movements prompt 'why?' — requiring decomposition anyway. Defensible design: a composite as an ATTENTION INDEX (triggering drill-down) paired with always-visible component states and a published weighting rationale, never as the decision surface itself — executives deciding on a blended number are deciding on the weighting committee's hidden choices",
+        "B": "Ban composites — executives must read all 8 KPIs raw",
+        "C": "Let each executive choose personal weights",
+        "D": "Perfect — one number is maximally clear"
+      },
+      "correct": "A",
+      "explanation": "Advanced measurement communication: composites as attention indices with mandatory decomposition, never decision surfaces — the offsetting-movement and hidden-weighting failure modes are the core content. C refuses the legitimate glanceability need; D fragments the shared reality measurement exists to create."
+    },
+    {
+      "id": 117,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Post-v1.1, the mixed-claims KPI hits target, but a handler survey comment cluster says the auto-routed mixed claims 'arrive with worse context than the manual queue used to provide' — manual routing had included a human triage note the automation dropped. The evaluation classification of this finding is:",
+      "options": {
+        "A": "A benefit with an embedded regression: the automation delivered its measured objective (speed) while silently discontinuing an UNMEASURED value the old process co-produced (triage context) — a classic instrumented/uninstrumented asymmetry where the metric captured what the change targeted but not what it displaced. Response: verify the loss's materiality (does missing context measurably affect assessment quality or time?), and if material, specify the recovery (auto-generated routing rationale replicating the note's function) — plus the meta-lesson: change evaluations should inventory what the replaced process produced BESIDE its headline output before declaring clean wins",
+        "B": "Tell handlers to stop complaining about green metrics",
+        "C": "Return to manual routing entirely",
+        "D": "Noise — the KPI is green"
+      },
+      "correct": "A",
+      "explanation": "Advanced change evaluation: displaced co-products of replaced processes — value the old way produced incidentally that no metric tracked. The green-KPI-with-real-regression structure is the instrumented-asymmetry trap; the co-product inventory practice is the preventive lesson. B discards the measured gain to recover the unmeasured one; the recovery specification gets both."
+    },
+    {
+      "id": 118,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "An evaluation must decide whether Branch C's post-coaching improvement (4.1→3.0 days) will PERSIST or regress once attention moves away. The leading indicators of durable versus attention-dependent change are:",
+      "options": {
+        "A": "Mechanism-embedding evidence: durable change shows the new behavior anchored in structures that outlast attention — the manager's revised review workflow codified into her team's standard practice, the decision-support usage visible in system logs (not just claimed), the onboarding protocol institutionalized so successors inherit the practice, and the behavior persisting through a no-monitoring window (deliberately pause observation and check whether logs show continuity) — versus attention-dependent change, which correlates with monitoring presence and reverts when it lapses (the erosion signature). Sustainability is assessed by WHERE the change lives: in structure and habit, or in the observer's gaze",
+        "B": "Durable — coaching always sticks",
+        "C": "Send the coach back monthly forever",
+        "D": "Impossible to know — wait and see"
+      },
+      "correct": "A",
+      "explanation": "Advanced sustainment prediction: the structure-versus-gaze diagnostic, with the deliberate no-monitoring window as the test instrument (behavioral evidence over claimed adherence, again). The institutionalization markers (codified workflow, protocol, log-verified usage) are the durable-change signature; D substitutes permanent supervision for embedded change — the attention-dependence it should be curing."
+    },
+    {
+      "id": 119,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "The fraud pilot's precision improves monthly as the model tunes, but an equity audit finds false-positive rates differ significantly across customer age bands. Aggregate precision is on target. The evaluation obligation this triggers is:",
+      "options": {
+        "A": "Exclude age from all data so differences can't be measured",
+        "B": "Accept it — models are models",
+        "C": "Disaggregated-impact analysis as a standing evaluation dimension: automated decisions with differential error rates across demographic groups carry fairness, regulatory (discrimination exposure), and reputational stakes invisible in aggregates — the audit finding requires root-cause analysis of the differential (training-data representation? feature proxies correlating with age? the 65+ digital-behavior differences feeding the model?), a remediation path with re-measurement, and disaggregated error monitoring added to the standing measure portfolio. The aggregate-versus-segment pattern recurs (CSAT segments, branch contexts) — for automated decisions it graduates from analytical nicety to compliance obligation",
+        "D": "None — aggregate targets are met"
+      },
+      "correct": "C",
+      "explanation": "Advanced automated-decision evaluation: disaggregated error monitoring as obligation, not option — the segment-analysis discipline meeting algorithmic-fairness stakes. C is the measurement-blinding fallacy (unmeasured disparity still exists, now undetectable and less defensible); the proxy-feature hypothesis connects to the 65+ behavioral data already in the model's world."
+    },
+    {
+      "id": 120,
+      "ka": "KA8",
+      "kaName": "Solution Evaluation",
+      "question": "Closing synthesis for the whole curriculum: a candidate asks what single habit most reliably generates correct answers across ALL six knowledge areas' hardest scenarios. Based on the recurring structure of every advanced question, the answer is:",
+      "options": {
+        "A": "Always choose the longest answer option",
+        "B": "Trust experience over process in every scenario",
+        "C": "Interrogate what each scenario's surface request actually commits someone to, and route decisions to evidence and authority: every hard scenario turned on the same move — behind the artifact request, the metric, the constraint, the approval, or the demand lies a decision with an owner and an evidence requirement; wrong answers consistently either let the decision happen by default (silence, automation, inertia, presentation order), accepted claims without evidence (self-reports, vendor demos, unverified constraints, confident testimony), or placed the decision with the wrong authority (BA deciding policy, developers deciding business rules, tuning deciding values). The habit — surface the decision, demand the evidence, find the owner — is the portable engine; task names and IO lists are its vocabulary",
+        "D": "Memorize the BABOK task inputs and outputs perfectly"
+      },
+      "correct": "C",
+      "explanation": "The curriculum capstone: the three-part habit (surface the hidden decision / demand evidence over claims / route to the accountable owner) is the generator behind every advanced answer across all six KAs — from the fraud-override policy to the horizon-choice transparency to the appetite-statement mapping. Task-and-IO memorization (A) is necessary vocabulary but not the reasoning engine the hardest scenarios test."
+    }
+  ]
+}
