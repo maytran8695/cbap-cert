@@ -2,7 +2,7 @@
   "use strict";
 
   const SET_FILES = { set1: "data/set1.json", set2: "data/set2.json", set3: "data/set3.json" };
-  const SET_LABELS = { set1: "Standard", set2: "Advanced Set 2", set3: "Expert" };
+  const SET_LABELS = { set1: "Standard", set2: "Advanced", set3: "Expert" };
   const SECONDS_PER_QUESTION = 90; // 1.5 min, matches real CBAP pace
 
   const LS_BOOKMARKS = "cbap_bookmarks";
@@ -100,6 +100,7 @@
     };
     showScreen("quiz");
     renderQuestion();
+    scrollToTop();
     if (mode === "exam") startTimer();
   }
 
@@ -204,11 +205,15 @@
     renderQuestion();
   }
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }
+
   function goPrev() {
-    if (session.index > 0) { session.index--; renderQuestion(); }
+    if (session.index > 0) { session.index--; renderQuestion(); scrollToTop(); }
   }
   function goNext() {
-    if (session.index < session.questions.length - 1) { session.index++; renderQuestion(); }
+    if (session.index < session.questions.length - 1) { session.index++; renderQuestion(); scrollToTop(); }
     else if (session.mode === "practice") finishSession();
   }
 

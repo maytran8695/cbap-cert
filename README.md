@@ -27,7 +27,7 @@ Pages project settings:
 
 - `index.html`, `style.css`, `app.js` — the app
 - `data/set1.json`, `set2.json`, `set3.json` — parsed question banks
-  (Standard / Advanced Set 2 / Expert), one object per file:
+  (Standard / Advanced / Expert), one object per file:
   `{ examId, title, questions: [{ id, ka, kaName, question, options, correct, explanation }] }`
 
 Progress (bookmarks and missed questions) is stored in the browser's
