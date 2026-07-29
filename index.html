@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>CBAP Mock Exam Trainer</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -41,17 +41,17 @@
 
     <div class="card">
       <h2>2. Filter by Knowledge Area</h2>
-      <div class="option-grid" id="ka-select">
-        <label class="chip"><input type="checkbox" value="KA3" checked> KA3 — Planning &amp; Monitoring</label>
-        <label class="chip"><input type="checkbox" value="KA4" checked> KA4 — Elicitation &amp; Collaboration</label>
-        <label class="chip"><input type="checkbox" value="KA5" checked> KA5 — Requirements Life Cycle Mgmt</label>
-        <label class="chip"><input type="checkbox" value="KA6" checked> KA6 — Strategy Analysis</label>
-        <label class="chip"><input type="checkbox" value="KA7" checked> KA7 — Requirements Analysis &amp; Design</label>
-        <label class="chip"><input type="checkbox" value="KA8" checked> KA8 — Solution Evaluation</label>
-      </div>
       <div class="ka-actions">
         <button type="button" class="link-btn" id="ka-select-all">Select all</button>
         <button type="button" class="link-btn" id="ka-select-none">Deselect all</button>
+      </div>
+      <div id="ka-select">
+        <label class="ka-row"><input type="checkbox" value="KA3" checked> KA3 — Planning &amp; Monitoring</label>
+        <label class="ka-row"><input type="checkbox" value="KA4" checked> KA4 — Elicitation &amp; Collaboration</label>
+        <label class="ka-row"><input type="checkbox" value="KA5" checked> KA5 — Requirements Life Cycle Mgmt</label>
+        <label class="ka-row"><input type="checkbox" value="KA6" checked> KA6 — Strategy Analysis</label>
+        <label class="ka-row"><input type="checkbox" value="KA7" checked> KA7 — Requirements Analysis &amp; Design</label>
+        <label class="ka-row"><input type="checkbox" value="KA8" checked> KA8 — Solution Evaluation</label>
       </div>
     </div>
 

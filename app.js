@@ -254,8 +254,10 @@
     const results = session.questions.map(q => {
       const chosen = session.answers[q.uid];
       const isCorrect = chosen === q.correct;
-      if (isCorrect) wrongSet.delete(q.uid);
-      else wrongSet.add(q.uid);
+      if (chosen !== undefined) {
+        if (isCorrect) wrongSet.delete(q.uid);
+        else wrongSet.add(q.uid);
+      }
       return { ...q, chosen, isCorrect };
     });
     saveSet(LS_WRONG, wrongSet);
