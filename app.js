@@ -369,11 +369,13 @@
     });
     document.getElementById("btn-exit-quiz").addEventListener("click", exitQuiz);
 
-    document.getElementById("btn-back-home").addEventListener("click", () => {
+    const goHome = () => {
       session = null;
       showScreen("home");
       updateReviewButton();
-    });
+    };
+    document.getElementById("btn-back-home").addEventListener("click", goHome);
+    document.getElementById("btn-back-home-fixed").addEventListener("click", goHome);
     document.getElementById("btn-review-wrong-now").addEventListener("click", () => {
       const wrongQuestions = session.lastResults.filter(r => !r.isCorrect).map(r => QUESTIONS_BY_UID[r.uid]);
       if (wrongQuestions.length === 0) { alert("No incorrect answers in this round!"); return; }

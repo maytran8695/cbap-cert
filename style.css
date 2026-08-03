@@ -115,6 +115,28 @@ body {
   }
 }
 
+/* Result screen's review list can run to hundreds of questions, so unlike
+   theme-toggle this stays position:fixed at every width — it's the only way
+   back to home without scrolling past the whole list. Styled to match
+   theme-toggle-btn (same pill shape) so it reads as an equally prominent
+   control instead of a tiny, easy-to-miss circular icon. */
+.back-fab {
+  position: fixed;
+  top: calc(14px + env(safe-area-inset-top));
+  left: calc(14px + env(safe-area-inset-left));
+  z-index: 10;
+  background: var(--chip-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.back-fab:hover { background: var(--chip-bg-active); }
+
 .app-header {
   text-align: center;
   margin-bottom: 24px;
@@ -231,6 +253,23 @@ body {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
+}
+/* h3's own margin-bottom only shows up below the whole row when it doesn't
+   wrap; once the chip drops to its own line, that gap ends up between the
+   heading and the chip instead of below them — so give the row its own
+   fixed gap and neutralize the heading's margin here. */
+.review-header { margin-bottom: 14px; }
+.review-header h3 { margin: 0; }
+
+/* button pairs (Start/Review, Review mistakes/Back home) size to their own
+   text by default, which makes the longer one push the other to a new row
+   at medium widths. Split the row evenly instead so they always stay put. */
+.row-between:has(> .btn) {
+  flex-wrap: nowrap;
+}
+.row-between:has(> .btn) > .btn {
+  flex: 1;
+  min-width: 0;
 }
 
 .btn {
@@ -372,8 +411,12 @@ body {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  /* never let Prev/Next/Submit wrap onto separate rows; if a very narrow
+     screen or larger accessibility font size ever makes them not fit,
+     scroll horizontally rather than break the icon+label apart */
+  overflow-x: auto;
 }
-.quiz-nav .btn { flex: 1; }
+.quiz-nav .btn { flex: 1; flex-shrink: 0; white-space: nowrap; }
 
 /* Result screen */
 .result-summary { text-align: center; }
@@ -420,6 +463,5 @@ body {
 }
 
 @media (max-width: 480px) {
-  .quiz-nav { flex-wrap: wrap; }
   .quiz-topbar { flex-wrap: wrap; }
 }
